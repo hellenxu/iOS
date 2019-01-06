@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var currentValue: Int = 0
+    var currentValue: Int = 50
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,16 +17,18 @@ class ViewController: UIViewController {
     }
 
     @IBAction func showAlert() {
-        let alert = UIAlertController(title:"TestTitle", message:"TestMessage", preferredStyle:.alert)
+        let msg = "Current percentage is: \(currentValue)"
+        let alert = UIAlertController(title:"Result", message:msg, preferredStyle:.alert)
         
-        let action = UIAlertAction(title:"ActionOK", style:.default, handler:nil)
+        let action = UIAlertAction(title:"OK", style:.default, handler:nil)
         
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
     }
     
     @IBAction func sliderMoved(_ slider: UISlider) {
-        print("Current percentage is: \(slider.value)")
+//        print("Current percentage is: \(slider.value)")
+        currentValue = Int(roundf(slider.value))
     }
 }
 
