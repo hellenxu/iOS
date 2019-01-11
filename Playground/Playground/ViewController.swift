@@ -28,8 +28,20 @@ class ViewController: UIViewController {
         let offset = abs(currentValue - targetValue)
         let score = 100 - offset
         scores += score
+        
         let msg = "Your score is: \(score)"
-        let alert = UIAlertController(title:"Result", message:msg, preferredStyle:.alert)
+        let title: String
+        if(offset == 0) {
+            title = "Perfect!!!"
+        }else if(offset < 5) {
+            title = "Awesome!!!"
+        } else if(offset < 10) {
+            title = "Great!!!"
+        } else {
+            title = "Keep up~~"
+        }
+        
+        let alert = UIAlertController(title:title, message:msg, preferredStyle:.alert)
         
         let action = UIAlertAction(title:"OK", style:.default, handler:nil)
         
