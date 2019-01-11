@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     var currentValue: Int = 0
     var targetValue: Int = 0
-    var roundValue: Int = 1000
+    var roundValue: Int = -1
     var scores: Int = 0
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var targetLabel: UILabel!
@@ -48,7 +48,7 @@ class ViewController: UIViewController {
         targetValue = Int.random(in: 1...100)
         currentValue = 50
         slider.value = Float(currentValue)
-        roundValue -= 1
+        roundValue += 1
         updateLabels()
     }
     
