@@ -23,7 +23,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func showAlert() {
-        let msg = "Current percentage is: \(currentValue) \nTarget percentage is: \(targetValue)"
+        let offset = abs(currentValue - targetValue)
+        let msg = "Current percentage is: \(currentValue) \nTarget percentage is: \(targetValue) \nOffset is: \(offset)"
         let alert = UIAlertController(title:"Result", message:msg, preferredStyle:.alert)
         
         let action = UIAlertAction(title:"OK", style:.default, handler:nil)
