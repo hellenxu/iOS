@@ -26,15 +26,21 @@ class ViewController: UIViewController {
 
     @IBAction func showAlert() {
         let offset = abs(currentValue - targetValue)
-        let score = 100 - offset
-        scores += score
+        let currentScore = 100 - offset
+        scores += currentScore
         
-        let msg = "Your score is: \(score)"
+        let msg = "Your score is: \(currentScore)"
         let title: String
         if(offset == 0) {
             title = "Perfect!!!"
+            //bonus
+            scores += 100
         }else if(offset < 5) {
             title = "Awesome!!!"
+            //bonus
+            if(offset == 1) {
+                scores += 50
+            }
         } else if(offset < 10) {
             title = "Great!!!"
         } else {
@@ -43,12 +49,15 @@ class ViewController: UIViewController {
         
         let alert = UIAlertController(title:title, message:msg, preferredStyle:.alert)
         
-        let action = UIAlertAction(title:"OK", style:.default, handler:nil)
+        let action = UIAlertAction(title:"OK", style:.default,
+                                   handler:{_ in
+                                        self.startNewRound()
+        })
         
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
         
-        startNewRound()
+//        startNewRound()
     }
     
     @IBAction func sliderMoved(_ slider: UISlider) {
