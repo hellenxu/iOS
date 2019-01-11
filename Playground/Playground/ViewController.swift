@@ -12,9 +12,11 @@ class ViewController: UIViewController {
     var currentValue: Int = 0
     var targetValue: Int = 0
     var roundValue: Int = 1000
+    var scores: Int = 0
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var targetLabel: UILabel!
     @IBOutlet weak var roundLabel: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +26,9 @@ class ViewController: UIViewController {
 
     @IBAction func showAlert() {
         let offset = abs(currentValue - targetValue)
-        let msg = "Current percentage is: \(currentValue) \nTarget percentage is: \(targetValue) \nOffset is: \(offset)"
+        let score = 100 - offset
+        scores += score
+        let msg = "Your score is: \(score)"
         let alert = UIAlertController(title:"Result", message:msg, preferredStyle:.alert)
         
         let action = UIAlertAction(title:"OK", style:.default, handler:nil)
@@ -51,6 +55,7 @@ class ViewController: UIViewController {
     func updateLabels() {
         targetLabel.text = String(targetValue)
         roundLabel.text = String(roundValue)
+        scoreLabel.text = String(scores)
     }
 }
 

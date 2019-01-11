@@ -106,6 +106,7 @@
                     </view>
                     <connections>
                         <outlet property="roundLabel" destination="fWb-HB-N1S" id="ybo-TW-vKd"/>
+                        <outlet property="scoreLabel" destination="Tnn-TK-ZZy" id="RxS-Pm-OXt"/>
                         <outlet property="slider" destination="nXV-24-Vet" id="453-tY-ckm"/>
                         <outlet property="targetLabel" destination="Ctx-6d-aTn" id="97v-ZW-acb"/>
                     </connections>
