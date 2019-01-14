@@ -22,6 +22,22 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         startNewGame()
+        
+        let thumbImgNormal = UIImage(named: "SliderThumb-Normal")!
+        slider.setThumbImage(thumbImgNormal, for: .normal)
+
+        let thumbImgHighlighted = UIImage(named: "SliderThumb-Highlighted")!
+        slider.setThumbImage(thumbImgHighlighted, for: .highlighted)
+
+        let insects = UIEdgeInsets(top: 0, left: 14, bottom: 0, right: 14)
+        
+        let trackLeftImage = UIImage(named: "SliderTrackLeft")!
+        let trackLeftResizable = trackLeftImage.resizableImage(withCapInsets: insects)
+        slider.setMinimumTrackImage(trackLeftResizable, for: .normal)
+
+        let trackRightImage = UIImage(named: "SliderTrackRight")!
+        let trackRightResizable = trackRightImage.resizableImage(withCapInsets: insects)
+        slider.setMaximumTrackImage(trackRightResizable, for: .normal)
     }
 
     @IBAction func showAlert() {
