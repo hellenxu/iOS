@@ -140,33 +140,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6A-Qd-lLj">
-                                <rect key="frame" x="22" y="21" width="523" height="221"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">       Failure doesn't mean you are a failure，
-　　It does mean you haven't succeeded yet.
-　　Failure doesn't mean you have accomplished nothing，
-　　It does mean you have learned something.
-　　Failure doesn't mean you have been a fool，
-　　It does mean you had a lot of faith.
-　　Failure doesn't mean you've been disgraced，
-　　It does mean you were willing to try.
-　　Failure doesn't mean you don't have it，
-　　It does mean you have to do something in a different way.
-　　Failure doesn't mean you are inferior，
-　　It does mean you are not perfect.
-　　Failure doesn't mean you've wasted your life，
-　　It does mean you have a reason to start afresh.
-　　Failure doesn't mean you should give up，
-　　It does mean you must try harder.
-　　Failure doesn't mean you'll never make it，
-　　It does mean it will take a little longer.
-　　Failure doesn't mean God has abandoned you，
-　　It does mean God has a better idea.</mutableString>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMj-Pd-EUl">
                                 <rect key="frame" x="252" y="265" width="63" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -179,10 +152,22 @@
                                     <action selector="close" destination="Ocy-TK-hmV" eventType="touchUpInside" id="LXw-9w-Tl6"/>
                                 </connections>
                             </button>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pJh-ov-Lqi">
+                                <rect key="frame" x="35" y="28" width="499" height="212"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="9nk-BK-nKk"/>
                     </view>
+                    <connections>
+                        <outlet property="webview" destination="pJh-ov-Lqi" id="VOk-Wj-II2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JdL-Dt-oKR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
