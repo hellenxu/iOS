@@ -41,6 +41,25 @@ int main(int argc, const char * argv[]) {
         NSLog(@"e / f * f = %f", e / f * f);
         NSLog(@"-a = %i", -a);
 
+        //expression basic 3
+        b = 5; c = 10; d = 7;
+        NSLog(@"a %% b = %i", a % b);
+        NSLog(@"a %% c = %i", a % c);
+        NSLog(@"a %% d = %i", a % d);
+        NSLog(@"a / d * d + a %% d = %i", a / d * d + a % d);
+
+        //expression basic 4
+        float f1 = 123.125, f2;
+        int i1, i2 = -150;
+        i1 = f1;
+        NSLog(@"%f assigned to an int produces %i", f1, i1);
+        f1 = i2;
+        NSLog(@"%i assigned to a float produces %f", i2, f1);
+        f1 = i2 / 100;
+        NSLog(@"%i divided by 100 produces %f", i2, f1);
+        f2 = i2 / 100.0;
+        NSLog(@"%i divided by 100.0 produces %f", i2, f2);
+
     }
     
     return 0;
