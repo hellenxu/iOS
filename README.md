@@ -2,10 +2,15 @@
 Playground of new toys
 
 ### iDailyProject
-Swift playground
+iOS application daily practice.
+
+### SfDaily
+macOs project && Swift playground
+
+[20190124] primitive data types and expression
 
 ### OCiDaily
-Object c playground
+macOs project && Object c playground
 
 [20190123] expression
 [20190122] primitive data types
