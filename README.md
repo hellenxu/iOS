@@ -7,7 +7,7 @@ iOS application daily practice.
 ### SfDaily
 macOs project && Swift playground
 
-[20190124] primitive data types and expression
+[20190124] primitive data types, expression, control flow and functions.
 
 ### OCiDaily
 macOs project && Object c playground
