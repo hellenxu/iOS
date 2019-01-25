@@ -80,3 +80,19 @@ case "z":
 default:
     print("Some other character")
 }
+
+//Functions with Multiple Return Values
+func minMax(array: [Int]) -> (min: Int, max: Int) {
+    var currentMin = array[0]
+    var currentMax = array[0]
+    for value in array[1..<array.count] {
+        if(value < currentMin) {
+            currentMin = value
+        } else if value > currentMax {
+            currentMax = value
+        }
+    }
+    return (currentMin, currentMax)
+}
+
+print("min and max of array is \(minMax(array: [10, 3, 9, 100, 2, -10, 100]))")
