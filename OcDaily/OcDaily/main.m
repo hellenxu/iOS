@@ -1,8 +1,8 @@
 //
 //  main.m
-//  OCiDaily
+//  OcDaily
 //
-//  Created by Hellen on 2019-01-22.
+//  Created by Hellen on 2019-01-28.
 //  Copyright © 2019 Six. All rights reserved.
 //
 
@@ -31,7 +31,7 @@ int main(int argc, const char * argv[]) {
         NSLog(@"b * c = %i", b * c);
         NSLog(@"a / b = %i", a / c);
         NSLog(@"a * b + c * d = %i", a * b + c * d);
-
+        
         //expression basic 2
         a = 25;
         float e = 25.0;
@@ -40,14 +40,14 @@ int main(int argc, const char * argv[]) {
         NSLog(@"a / b * b = %i", a / b * b);
         NSLog(@"e / f * f = %f", e / f * f);
         NSLog(@"-a = %i", -a);
-
+        
         //expression basic 3
         b = 5; c = 10; d = 7;
         NSLog(@"a %% b = %i", a % b);
         NSLog(@"a %% c = %i", a % c);
         NSLog(@"a %% d = %i", a % d);
         NSLog(@"a / d * d + a %% d = %i", a / d * d + a % d);
-
+        
         //expression basic 4
         float f1 = 123.125, f2;
         int i1, i2 = -150;
@@ -59,7 +59,7 @@ int main(int argc, const char * argv[]) {
         NSLog(@"%i divided by 100 produces %f", i2, f1);
         f2 = i2 / 100.0;
         NSLog(@"%i divided by 100.0 produces %f", i2, f2);
-
+        
         //expression basic 5
         unsigned int w1 = 0xA0A0A0A0, w2 = 0xFFFF0000, w3 = 0x00007777;
         NSLog(@"%x %x %x", w1 & w2, w1 | w2, w1 ^ w2);
@@ -67,7 +67,7 @@ int main(int argc, const char * argv[]) {
         NSLog(@"%x %x %x", w1 & ~w2, w1 | w2 | w3, w1 ^ w1);
         NSLog(@"%x %x", (w1 | w2) & w3, (w1 | w2) & ~ w3);
         NSLog(@"%x %x", ~(~w1 & ~w2), ~(~w1 | ~w2));
-
+        
     }
     
     return 0;
