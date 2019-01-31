@@ -17,6 +17,25 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    NSArray *windows = [[UIApplication sharedApplication] windows];
+    for(UIWindow *window in windows) {
+        if(window.rootViewController == nil){
+            UIViewController *vc = [[UIViewController alloc]initWithNibName:nil
+                                                                     bundle:nil];
+            window.rootViewController = vc;
+        }
+    }
+    
+    UILabel *message;
+    message = [[UILabel alloc]initWithFrame:CGRectMake(30.0, 50.0, 300.0, 500.0)];
+    message.font = [UIFont systemFontOfSize:48];
+    message.text = @"Hello Xcode";
+    message.textColor = [UIColor blueColor];
+    [self.window addSubview: message];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
