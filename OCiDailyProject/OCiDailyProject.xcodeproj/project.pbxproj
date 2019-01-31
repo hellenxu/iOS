@@ -309,16 +309,22 @@
 			children = (
 				1195720D21FFFB150096F2BA /* Base */,
 			);
+			indentWidth = 2;
 			name = Main.storyboard;
 			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
 		};
 		1195721421FFFB160096F2BA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				1195721521FFFB160096F2BA /* Base */,
 			);
+			indentWidth = 2;
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
 		};
 /* End PBXVariantGroup section */
 
