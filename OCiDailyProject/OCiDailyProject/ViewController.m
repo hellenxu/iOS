@@ -49,7 +49,7 @@
     }
     
     chosenColor.text = [[NSString alloc] initWithFormat: @"%@", color];
-    outputHtml = [[NSString alloc] initWithFormat:@"<body style='margin: 0px; padding: 0px'> <img height='1200' src='https://teachyourselfios.info/?hour=5&color=%@'></body>", colorVal];
+    outputHtml = [[NSString alloc] initWithFormat:@"<body style='margin: 0px; padding: 0px'> <img height='1200' src='https://source.unsplash.com/user/erondu/1600x900'></body>", colorVal];
     [flowerView loadHTMLString:outputHtml baseURL:nil];
 }
 
