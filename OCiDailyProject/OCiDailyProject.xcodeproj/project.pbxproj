@@ -16,6 +16,7 @@
 		1195721921FFFB160096F2BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1195721821FFFB160096F2BA /* main.m */; };
 		1195722321FFFB160096F2BA /* OCiDailyProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1195722221FFFB160096F2BA /* OCiDailyProjectTests.m */; };
 		1195722E21FFFB160096F2BA /* OCiDailyProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1195722D21FFFB160096F2BA /* OCiDailyProjectUITests.m */; };
+		1195723F22125E7A0096F2BA /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1195723E22125E7A0096F2BA /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		1195722921FFFB160096F2BA /* OCiDailyProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCiDailyProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1195722D21FFFB160096F2BA /* OCiDailyProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCiDailyProjectUITests.m; sourceTree = "<group>"; };
 		1195722F21FFFB160096F2BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1195723E22125E7A0096F2BA /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1195723F22125E7A0096F2BA /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +90,7 @@
 				1195722121FFFB160096F2BA /* OCiDailyProjectTests */,
 				1195722C21FFFB160096F2BA /* OCiDailyProjectUITests */,
 				1195720421FFFB150096F2BA /* Products */,
+				1195723D22125E7A0096F2BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +137,14 @@
 				1195722F21FFFB160096F2BA /* Info.plist */,
 			);
 			path = OCiDailyProjectUITests;
+			sourceTree = "<group>";
+		};
+		1195723D22125E7A0096F2BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1195723E22125E7A0096F2BA /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
