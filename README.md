@@ -7,6 +7,10 @@ iOS application daily practice in swift.
 ### OCiDailyProject
 iOS application daily practice in object-c
 
+[20190211] a simple ui to get the chosen color.
+
+[20190130] hello world
+
 ### SfDaily
 macOs project && Swift playground
 
