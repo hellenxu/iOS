@@ -33,6 +33,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
                                 <state key="normal" title="Get Flower"/>
+                                <connections>
+                                    <action selector="getFlower:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pyM-rp-jSh"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choosen Color: %s" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcP-y5-hSe">
                                 <rect key="frame" x="16" y="223" width="132" height="18"/>
@@ -63,6 +66,11 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="chosenColor" destination="kcP-y5-hSe" id="NBH-Ha-FkD"/>
+                        <outlet property="colorChoice" destination="oDi-UX-p9F" id="5dM-E8-eir"/>
+                        <outlet property="flowerView" destination="VQZ-YU-uP2" id="BiM-eJ-GJA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
