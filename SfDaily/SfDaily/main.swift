@@ -96,3 +96,27 @@ func minMax(array: [Int]) -> (min: Int, max: Int) {
 }
 
 print("min and max of array is \(minMax(array: [10, 3, 9, 100, 2, -10, 100]))")
+
+
+func rangeSample() {
+    let closedRange = 10 ... 20
+    let halfClosedRange = 10 ..< 20
+    
+    for value in closedRange {
+        print("closed range value: \(value)")
+    }
+    
+    for value in halfClosedRange {
+        print("half-closed range value: \(value)")
+    }
+    
+    for value in closedRange.reversed() {
+        print("reversed closed range value: \(value)")
+    }
+    
+    for value in halfClosedRange[3...] {
+        print("one-sided range value: \(value)")
+    }
+}
+
+rangeSample()
