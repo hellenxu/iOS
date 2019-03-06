@@ -120,3 +120,17 @@ func rangeSample() {
 }
 
 rangeSample()
+
+func collectionSamples() {
+    var states:[String] = []
+    states.append("ON")
+    states.append(contentsOf: ["Albert", "British Clumbia"])
+    states.insert("Manitoba", at: 0)
+    states.insert(contentsOf: ["Saskatchewan", "Quebec", "New Brunswick"], at: 2)
+    
+    for state in states {
+        print("Selected State: \(state)")
+    }
+}
+
+collectionSamples()
