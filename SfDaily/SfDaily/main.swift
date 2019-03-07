@@ -158,3 +158,24 @@ func dictionarySamples () {
 }
 
 dictionarySamples()
+
+func setSamples() {
+    var favNumbers = Set<Int>([])
+    var favMovies = Set<String>(["Red2", "Bodyguard", "Predator"])
+    
+    favNumbers.insert(10)
+    favMovies.insert("Man in Black")
+    
+    for movie in favMovies.sorted() {
+        print("movie: \(movie)")
+    }
+    
+    if (favMovies.contains("Wandering Earth")) {
+        print("found movie: Wandering Earth")
+    } else {
+        print("Sorry, Wandering Earth not found.")
+    }
+    
+}
+
+setSamples()
