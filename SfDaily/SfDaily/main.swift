@@ -134,3 +134,27 @@ func collectionSamples() {
 }
 
 collectionSamples()
+
+func dictionarySamples () {
+    var dictPizzas = ["veggie": 14.99]
+    dictPizzas["meat"] = 17.99
+    if let oldValue = dictPizzas.updateValue(15.99, forKey: "meat") {
+        print("old value: \(oldValue)")
+    }
+    
+    dictPizzas["specialty"] = 18.99
+    dictPizzas["chicken"] = 16.99
+    if let chickenPizzaPrice = dictPizzas["chicken"] {
+        print("chicken pizza: \(chickenPizzaPrice)")
+    }
+    
+    for pizzaName in dictPizzas.keys {
+        print("pizzaName: \(pizzaName)")
+    }
+    
+    for (key, value) in dictPizzas {
+        print("pizza: \(key); price: \(value)")
+    }
+}
+
+dictionarySamples()
