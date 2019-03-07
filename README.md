@@ -14,6 +14,7 @@ iOS application daily practice in object-c
 ### SfDaily
 macOs project && Swift playground
 
+[20190306] dictionary and set.
 [20190305] range and collections.
 [20190124] primitive data types, expression, control flow and functions.
 
