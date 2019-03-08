@@ -4,6 +4,8 @@ Playground of new toys
 ### iDailyProject
 iOS application daily practice in swift.
 
+[20190307] start a new demo project: import assets, organize basic storyboards and launch screen.
+
 ### OCiDailyProject
 iOS application daily practice in object-c
 
