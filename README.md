@@ -4,7 +4,9 @@ Playground of new toys
 ### iDailyProject
 iOS application daily practice in swift.
 
-[20190307] start a new demo project: import assets, organize basic storyboards and launch screen.
+[20190312] extended story board: search result view controller; new color set; connection of two places using navigation controller.
+
+[20190307] started a new demo project: import assets, organize basic storyboards and launch screen.
 
 ### OCiDailyProject
 iOS application daily practice in object-c
