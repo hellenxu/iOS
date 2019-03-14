@@ -18,7 +18,18 @@
                     <view key="view" contentMode="scaleToFill" id="ZKn-1C-eTf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Zw6-ee-VCR">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Zw6-ee-VCR" firstAttribute="top" secondItem="MGR-rw-mJ4" secondAttribute="top" id="4Tg-4x-FvT"/>
+                            <constraint firstItem="MGR-rw-mJ4" firstAttribute="bottom" secondItem="Zw6-ee-VCR" secondAttribute="bottom" id="LPI-zz-OUm"/>
+                            <constraint firstItem="Zw6-ee-VCR" firstAttribute="leading" secondItem="MGR-rw-mJ4" secondAttribute="leading" id="kce-mU-vBH"/>
+                            <constraint firstItem="MGR-rw-mJ4" firstAttribute="trailing" secondItem="Zw6-ee-VCR" secondAttribute="trailing" id="sle-8J-vIC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="MGR-rw-mJ4"/>
                     </view>
                     <navigationItem key="navigationItem" id="NGy-Jq-emB"/>
