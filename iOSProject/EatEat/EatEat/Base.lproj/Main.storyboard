@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--MapView-->
         <scene sceneID="fdF-yz-A3J">
             <objects>
-                <viewController id="IZ2-s8-KH9" sceneMemberID="viewController">
+                <viewController title="MapView" id="IZ2-s8-KH9" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZKn-1C-eTf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,10 +38,10 @@
             </objects>
             <point key="canvasLocation" x="551.20000000000005" y="-142.57871064467767"/>
         </scene>
-        <!--View Controller-->
+        <!--SearchResult-->
         <scene sceneID="jiO-cG-EoZ">
             <objects>
-                <viewController id="NVY-YV-4ex" sceneMemberID="viewController">
+                <viewController title="SearchResult" id="NVY-YV-4ex" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qu7-7B-GtF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -128,10 +128,10 @@
             </objects>
             <point key="canvasLocation" x="551" y="-1508"/>
         </scene>
-        <!--Table View Controller-->
+        <!--RestaurantDetails-->
         <scene sceneID="hNd-Jr-M8b">
             <objects>
-                <tableViewController id="lsl-Vs-u97" sceneMemberID="viewController">
+                <tableViewController title="RestaurantDetails" id="lsl-Vs-u97" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="qQN-aX-HaJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -186,10 +186,10 @@
             </objects>
             <point key="canvasLocation" x="1522" y="-1508"/>
         </scene>
-        <!--View Controller-->
+        <!--RestaurantReviews-->
         <scene sceneID="dGc-nw-jLT">
             <objects>
-                <viewController id="1br-gA-LZR" sceneMemberID="viewController">
+                <viewController title="RestaurantReviews" id="1br-gA-LZR" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y2u-v4-rgK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -283,10 +283,10 @@
             </objects>
             <point key="canvasLocation" x="550.72463768115949" y="-807.58928571428567"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Home-->
         <scene sceneID="2fF-4T-zJh">
             <objects>
-                <tabBarController id="ogS-Rz-94J" sceneMemberID="viewController">
+                <tabBarController title="Home" id="ogS-Rz-94J" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cJE-gk-UrZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -339,10 +339,10 @@
             </objects>
             <point key="canvasLocation" x="-388" y="-142.57871064467767"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--LocationNav-->
         <scene sceneID="lPN-40-Pyd">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sn7-gP-es2" sceneMemberID="viewController">
+                <navigationController title="LocationNav" automaticallyAdjustsScrollViewInsets="NO" id="sn7-gP-es2" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Vke-fF-3fn">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
