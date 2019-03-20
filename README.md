@@ -4,6 +4,8 @@ Playground of new toys
 ### iDailyProject
 iOS application daily practice in swift.
 
+[20190319] mvc and exploreViewController code reading.
+
 [20190318] classes vs structs; controller sample.
 
 [20190314] worked with table view cells collection view cells and auto layout.
