@@ -93,10 +93,10 @@
             </objects>
             <point key="canvasLocation" x="2462" y="-808"/>
         </scene>
-        <!--Restaurant View Controller-->
+        <!--Restaurant List View Controller-->
         <scene sceneID="1VM-M5-gjQ">
             <objects>
-                <viewController id="p7O-j4-s2Z" customClass="RestaurantViewController" customModule="EatEat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="p7O-j4-s2Z" customClass="RestaurantListViewController" customModule="EatEat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cEx-xp-5cQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -230,8 +230,8 @@
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
-                                    <outlet property="dataSource" destination="p7O-j4-s2Z" id="CYQ-Vw-STQ"/>
-                                    <outlet property="delegate" destination="p7O-j4-s2Z" id="1um-Ch-XWX"/>
+                                    <outlet property="dataSource" destination="p7O-j4-s2Z" id="jlU-ot-NJe"/>
+                                    <outlet property="delegate" destination="p7O-j4-s2Z" id="NXi-SG-Mtk"/>
                                 </connections>
                             </collectionView>
                         </subviews>
@@ -245,7 +245,7 @@
                         <viewLayoutGuide key="safeArea" id="nxK-t4-dMc"/>
                     </view>
                     <connections>
-                        <outlet property="collectionView" destination="Cv3-cb-Tmg" id="8qt-3p-9GY"/>
+                        <outlet property="restaurantCollection" destination="Cv3-cb-Tmg" id="Lc7-vc-Uy5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="txB-z5-5v6" userLabel="First Responder" sceneMemberID="firstResponder"/>

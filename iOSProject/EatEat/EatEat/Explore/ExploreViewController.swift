@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ExploreViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class ExploreViewController: UIViewController, UICollectionViewDataSource {
     
     @IBOutlet weak var collectionView: UICollectionView!
     let manager = ExploreDataManager()
