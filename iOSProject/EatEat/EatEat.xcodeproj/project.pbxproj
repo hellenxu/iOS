@@ -13,6 +13,10 @@
 		11094E9322320CAD001C58C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11094E9222320CAD001C58C7 /* Assets.xcassets */; };
 		11094E96223888B5001C58C7 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11094E94223888B5001C58C7 /* ExploreViewController.swift */; };
 		11094E97223888B5001C58C7 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11094E95223888B5001C58C7 /* RestaurantViewController.swift */; };
+		11DFD40B22431AC800DEFCB5 /* ExploreData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11DFD40A22431AC800DEFCB5 /* ExploreData.plist */; };
+		11DFD40D22431B2100DEFCB5 /* ExploreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DFD40C22431B2100DEFCB5 /* ExploreItem.swift */; };
+		11DFD40F22431E8900DEFCB5 /* ExploreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DFD40E22431E8900DEFCB5 /* ExploreDataManager.swift */; };
+		11DFD4132243253900DEFCB5 /* ExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DFD4122243253900DEFCB5 /* ExploreCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		11094E95223888B5001C58C7 /* RestaurantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
 		11094E9922407AC2001C58C7 /* FunctionsStructs.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FunctionsStructs.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		11094E9A22408010001C58C7 /* CollectionViewBasics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CollectionViewBasics.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		11DFD40A22431AC800DEFCB5 /* ExploreData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExploreData.plist; sourceTree = "<group>"; };
+		11DFD40C22431B2100DEFCB5 /* ExploreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreItem.swift; sourceTree = "<group>"; };
+		11DFD40E22431E8900DEFCB5 /* ExploreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreDataManager.swift; sourceTree = "<group>"; };
+		11DFD4122243253900DEFCB5 /* ExploreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +67,7 @@
 		11094E7F22320770001C58C7 /* EatEat */ = {
 			isa = PBXGroup;
 			children = (
-				11094E94223888B5001C58C7 /* ExploreViewController.swift */,
+				11DFD410224324D000DEFCB5 /* Explore */,
 				11094E95223888B5001C58C7 /* RestaurantViewController.swift */,
 				11094E9222320CAD001C58C7 /* Assets.xcassets */,
 				11094E8022320770001C58C7 /* AppDelegate.swift */,
@@ -77,6 +85,34 @@
 				11094E9A22408010001C58C7 /* CollectionViewBasics.playground */,
 			);
 			path = Playgrounds;
+			sourceTree = "<group>";
+		};
+		11DFD40922431A8F00DEFCB5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11DFD40A22431AC800DEFCB5 /* ExploreData.plist */,
+				11DFD40C22431B2100DEFCB5 /* ExploreItem.swift */,
+				11DFD40E22431E8900DEFCB5 /* ExploreDataManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		11DFD410224324D000DEFCB5 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				11094E94223888B5001C58C7 /* ExploreViewController.swift */,
+				11DFD40922431A8F00DEFCB5 /* Model */,
+				11DFD411224324F200DEFCB5 /* View */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		11DFD411224324F200DEFCB5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11DFD4122243253900DEFCB5 /* ExploreCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +173,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11DFD40B22431AC800DEFCB5 /* ExploreData.plist in Resources */,
 				11094E8B22320771001C58C7 /* LaunchScreen.storyboard in Resources */,
 				11094E9322320CAD001C58C7 /* Assets.xcassets in Resources */,
 				11094E8622320770001C58C7 /* Main.storyboard in Resources */,
@@ -150,8 +187,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11DFD4132243253900DEFCB5 /* ExploreCell.swift in Sources */,
 				11094E96223888B5001C58C7 /* ExploreViewController.swift in Sources */,
 				11094E97223888B5001C58C7 /* RestaurantViewController.swift in Sources */,
+				11DFD40D22431B2100DEFCB5 /* ExploreItem.swift in Sources */,
+				11DFD40F22431E8900DEFCB5 /* ExploreDataManager.swift in Sources */,
 				11094E8122320770001C58C7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

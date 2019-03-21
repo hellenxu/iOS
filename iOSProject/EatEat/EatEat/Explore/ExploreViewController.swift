@@ -11,9 +11,12 @@ import UIKit
 class ExploreViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     @IBOutlet weak var collectionView: UICollectionView!
-    
+    let manager = ExploreDataManager()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        manager.fetch()
     }
 
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -22,7 +25,12 @@ class ExploreViewController: UIViewController, UICollectionViewDataSource, UICol
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return collectionView.dequeueReusableCell(withReuseIdentifier: "exploreCell", for: indexPath)
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "exploreCell", for: indexPath) as! ExploreCell
+        let item = manager.getItem(at: indexPath)
+        cell.categoryName.text = item.name
+        cell.imgExplore.image = UIImage(named: item.image)
+        return cell
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -30,7 +38,7 @@ class ExploreViewController: UIViewController, UICollectionViewDataSource, UICol
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return manager.numberOfItems()
     }
     
     // Add Unwind here
