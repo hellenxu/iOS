@@ -4,6 +4,8 @@ Playground of new toys
 ### iDailyProject
 iOS application daily practice in swift.
 
+[20190321] fed data for table view in LocationViewController.
+
 [20190320] tied data fetching from a plist to explore collection view; set up restaurant cell.
 
 [20190319] mvc and exploreViewController code reading.
