@@ -38,27 +38,27 @@
             </objects>
             <point key="canvasLocation" x="551.20000000000005" y="-142.57871064467767"/>
         </scene>
-        <!--SearchResult-->
+        <!--Location View Controller-->
         <scene sceneID="jiO-cG-EoZ">
             <objects>
-                <viewController title="SearchResult" id="NVY-YV-4ex" sceneMemberID="viewController">
+                <viewController id="NVY-YV-4ex" customClass="LocationViewController" customModule="EatEat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qu7-7B-GtF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="adq-FJ-5HT">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="locationCell" textLabel="ZU1-XK-cn5" style="IBUITableViewCellStyleDefault" id="ojT-o5-FRL">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="locationCell" textLabel="ZU1-XK-cn5" style="IBUITableViewCellStyleDefault" id="ojT-o5-FRL">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ojT-o5-FRL" id="qPB-eu-NLV">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZU1-XK-cn5">
-                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <rect key="frame" x="20" y="0.0" width="356" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -68,6 +68,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="NVY-YV-4ex" id="DDQ-NA-SjZ"/>
+                                    <outlet property="delegate" destination="NVY-YV-4ex" id="Yxn-vf-xYq"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -87,11 +91,14 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="ffr-xA-k00"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="adq-FJ-5HT" id="urg-3K-lyF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2xE-TA-dee" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="TY4-En-ifd" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2462" y="-808"/>
+            <point key="canvasLocation" x="2432" y="-800"/>
         </scene>
         <!--Restaurant List View Controller-->
         <scene sceneID="1VM-M5-gjQ">
@@ -422,7 +429,7 @@
                                                     </constraints>
                                                     <state key="normal" image="btn-location"/>
                                                     <connections>
-                                                        <segue destination="sn7-gP-es2" kind="presentation" id="VHh-Kw-mYv"/>
+                                                        <segue destination="F2K-Rh-tZf" kind="show" id="2SR-Vm-ogd"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QIy-2n-b4U">
@@ -555,23 +562,23 @@
             </objects>
             <point key="canvasLocation" x="-388" y="-142.57871064467767"/>
         </scene>
-        <!--LocationNav-->
-        <scene sceneID="lPN-40-Pyd">
+        <!--Navigation Controller-->
+        <scene sceneID="rpI-xF-cw0">
             <objects>
-                <navigationController title="LocationNav" automaticallyAdjustsScrollViewInsets="NO" id="sn7-gP-es2" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="F2K-Rh-tZf" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Vke-fF-3fn">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QCZ-X1-Lb8">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="NVY-YV-4ex" kind="relationship" relationship="rootViewController" id="U2y-8v-OzW"/>
+                        <segue destination="NVY-YV-4ex" kind="relationship" relationship="rootViewController" id="Yzl-hT-D2I"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BjO-A4-tIU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zcX-BY-kK7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1522" y="-808"/>
+            <point key="canvasLocation" x="1522" y="-800"/>
         </scene>
     </scenes>
     <resources>
