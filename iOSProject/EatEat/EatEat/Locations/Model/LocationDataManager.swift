@@ -8,12 +8,12 @@
 
 import Foundation
 
-class LocationDataManager {
+class LocationDataManager: DataManager {
     
     private var locations: [String] = []
     
     func fetch() {
-        for loc in getLocations() {
+        for loc in load(file: "Locations") {
             if let city = loc["city"] as? String,
                 let state = loc["state"] as? String {
                 locations.append("\(city), \(state)")
@@ -29,11 +29,4 @@ class LocationDataManager {
         return locations[index.item]
     }
     
-    private func getLocations() -> [[String: AnyObject]] {
-        guard let path = Bundle.main.path(forResource: "Locations", ofType: "plist"),
-        let items = NSArray(contentsOfFile: path)
-            else { return [[:]] }
-    
-        return items as! [[String : AnyObject]]
-    }
 }

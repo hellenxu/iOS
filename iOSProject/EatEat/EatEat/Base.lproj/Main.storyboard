@@ -14,7 +14,7 @@
         <!--MapView-->
         <scene sceneID="fdF-yz-A3J">
             <objects>
-                <viewController title="MapView" id="IZ2-s8-KH9" sceneMemberID="viewController">
+                <viewController title="MapView" id="IZ2-s8-KH9" customClass="MapViewController" customModule="EatEat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZKn-1C-eTf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,6 +33,9 @@
                         <viewLayoutGuide key="safeArea" id="MGR-rw-mJ4"/>
                     </view>
                     <navigationItem key="navigationItem" id="NGy-Jq-emB"/>
+                    <connections>
+                        <outlet property="mapView" destination="Zw6-ee-VCR" id="N1C-m3-FId"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5a0-Cn-dSB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
