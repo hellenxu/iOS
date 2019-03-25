@@ -4,6 +4,8 @@ Playground of new toys
 ### iDailyProject
 iOS application daily practice in swift.
 
+[20190324] added custom annotations.
+
 [20190322] added annotations in map view; refactored codes of handling fetching data from plist file.
 
 [20190321] fed data for table view in LocationViewController.
