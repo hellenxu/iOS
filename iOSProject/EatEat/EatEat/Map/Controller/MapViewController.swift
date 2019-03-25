@@ -20,6 +20,8 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     }
 
     func initRequest() {
+        mapView.delegate = self
+        
         manager.getRestaurants { (annotations) in
             initMap(annotations)
         }
@@ -28,5 +30,26 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     func initMap(_ annotations: [RestaurantItem]) {
         mapView.setRegion(manager.currentRegion(lat: 0.5, lng: 0.5), animated: true)
         mapView.addAnnotations(manager.annotations)
+    }
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        let identifier = "custompin"
+        guard !annotation.isKind(of: MKUserLocation.self) else {return nil}
+        var annotationView: MKAnnotationView?
+        if let customAnnotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) {
+            annotationView = customAnnotationView
+            annotationView?.annotation = annotation
+        } else {
+            let av = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+            av.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+            annotationView = av
+        }
+        
+        if let annotationView = annotationView {
+            annotationView.canShowCallout = true
+            annotationView.image = UIImage(named: "custom-annotation")
+        }
+        
+        return annotationView
     }
 }
