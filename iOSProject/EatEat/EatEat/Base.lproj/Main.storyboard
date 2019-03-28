@@ -35,11 +35,20 @@
                     <navigationItem key="navigationItem" id="NGy-Jq-emB"/>
                     <connections>
                         <outlet property="mapView" destination="Zw6-ee-VCR" id="N1C-m3-FId"/>
+                        <segue destination="dLI-Op-YL5" kind="show" identifier="showDetail" id="8V5-o7-hl9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5a0-Cn-dSB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="551.20000000000005" y="-142.57871064467767"/>
+        </scene>
+        <!--RestaurantDetail-->
+        <scene sceneID="3RB-Jn-GbS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RestaurantDetail" id="dLI-Op-YL5" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xqo-BJ-cY4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1317" y="-277"/>
         </scene>
         <!--Location View Controller-->
         <scene sceneID="jiO-cG-EoZ">
