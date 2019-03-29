@@ -18,6 +18,7 @@
 		11856597224C6C0000180F71 /* RestaurantDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11856596224C6C0000180F71 /* RestaurantDetail.storyboard */; };
 		11856599224C72F200180F71 /* RestaurantList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11856598224C72F200180F71 /* RestaurantList.storyboard */; };
 		1185659B224C731D00180F71 /* Locations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1185659A224C731D00180F71 /* Locations.storyboard */; };
+		118FE0C3224DB3A700BFAB1D /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FE0C2224DB3A700BFAB1D /* RestaurantDetailViewController.swift */; };
 		11DFD40B22431AC800DEFCB5 /* ExploreData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11DFD40A22431AC800DEFCB5 /* ExploreData.plist */; };
 		11DFD40D22431B2100DEFCB5 /* ExploreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DFD40C22431B2100DEFCB5 /* ExploreItem.swift */; };
 		11DFD40F22431E8900DEFCB5 /* ExploreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DFD40E22431E8900DEFCB5 /* ExploreDataManager.swift */; };
@@ -49,6 +50,7 @@
 		11856596224C6C0000180F71 /* RestaurantDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RestaurantDetail.storyboard; sourceTree = "<group>"; };
 		11856598224C72F200180F71 /* RestaurantList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RestaurantList.storyboard; sourceTree = "<group>"; };
 		1185659A224C731D00180F71 /* Locations.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Locations.storyboard; sourceTree = "<group>"; };
+		118FE0C2224DB3A700BFAB1D /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		11DFD40A22431AC800DEFCB5 /* ExploreData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExploreData.plist; sourceTree = "<group>"; };
 		11DFD40C22431B2100DEFCB5 /* ExploreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreItem.swift; sourceTree = "<group>"; };
 		11DFD40E22431E8900DEFCB5 /* ExploreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreDataManager.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				11856596224C6C0000180F71 /* RestaurantDetail.storyboard */,
+				118FE0C2224DB3A700BFAB1D /* RestaurantDetailViewController.swift */,
 			);
 			path = RestaurantDetail;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				11DFD40D22431B2100DEFCB5 /* ExploreItem.swift in Sources */,
 				11EFAF8C2245DCA20077B2FA /* DataManager.swift in Sources */,
 				11DFD40F22431E8900DEFCB5 /* ExploreDataManager.swift in Sources */,
+				118FE0C3224DB3A700BFAB1D /* RestaurantDetailViewController.swift in Sources */,
 				11094E8122320770001C58C7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
