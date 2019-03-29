@@ -16,6 +16,8 @@
 		11856592224C6B8500180F71 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11856591224C6B8500180F71 /* Map.storyboard */; };
 		11856594224C6BC400180F71 /* Explore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11856593224C6BC400180F71 /* Explore.storyboard */; };
 		11856597224C6C0000180F71 /* RestaurantDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11856596224C6C0000180F71 /* RestaurantDetail.storyboard */; };
+		11856599224C72F200180F71 /* RestaurantList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11856598224C72F200180F71 /* RestaurantList.storyboard */; };
+		1185659B224C731D00180F71 /* Locations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1185659A224C731D00180F71 /* Locations.storyboard */; };
 		11DFD40B22431AC800DEFCB5 /* ExploreData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11DFD40A22431AC800DEFCB5 /* ExploreData.plist */; };
 		11DFD40D22431B2100DEFCB5 /* ExploreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DFD40C22431B2100DEFCB5 /* ExploreItem.swift */; };
 		11DFD40F22431E8900DEFCB5 /* ExploreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DFD40E22431E8900DEFCB5 /* ExploreDataManager.swift */; };
@@ -45,6 +47,8 @@
 		11856591224C6B8500180F71 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		11856593224C6BC400180F71 /* Explore.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Explore.storyboard; sourceTree = "<group>"; };
 		11856596224C6C0000180F71 /* RestaurantDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RestaurantDetail.storyboard; sourceTree = "<group>"; };
+		11856598224C72F200180F71 /* RestaurantList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RestaurantList.storyboard; sourceTree = "<group>"; };
+		1185659A224C731D00180F71 /* Locations.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Locations.storyboard; sourceTree = "<group>"; };
 		11DFD40A22431AC800DEFCB5 /* ExploreData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExploreData.plist; sourceTree = "<group>"; };
 		11DFD40C22431B2100DEFCB5 /* ExploreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreItem.swift; sourceTree = "<group>"; };
 		11DFD40E22431E8900DEFCB5 /* ExploreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreDataManager.swift; sourceTree = "<group>"; };
@@ -166,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				11DFD41722432C8F00DEFCB5 /* RestaurantListViewController.swift */,
+				11856598224C72F200180F71 /* RestaurantList.storyboard */,
 			);
 			path = Restaurants;
 			sourceTree = "<group>";
@@ -176,6 +181,7 @@
 				11DFD41D2244807700DEFCB5 /* Model */,
 				11DFD41C2244807100DEFCB5 /* View */,
 				11DFD41B2244806700DEFCB5 /* Controller */,
+				1185659A224C731D00180F71 /* Locations.storyboard */,
 			);
 			path = Locations;
 			sourceTree = "<group>";
@@ -302,12 +308,14 @@
 				11856594224C6BC400180F71 /* Explore.storyboard in Resources */,
 				11DFD40B22431AC800DEFCB5 /* ExploreData.plist in Resources */,
 				11856592224C6B8500180F71 /* Map.storyboard in Resources */,
+				1185659B224C731D00180F71 /* Locations.storyboard in Resources */,
 				11094E8B22320771001C58C7 /* LaunchScreen.storyboard in Resources */,
 				11094E9322320CAD001C58C7 /* Assets.xcassets in Resources */,
 				11EFAF7F22448AA10077B2FA /* Locations.plist in Resources */,
 				11EFAF872245D80E0077B2FA /* MapLocations.plist in Resources */,
 				11856597224C6C0000180F71 /* RestaurantDetail.storyboard in Resources */,
 				11094E8622320770001C58C7 /* Main.storyboard in Resources */,
+				11856599224C72F200180F71 /* RestaurantList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
