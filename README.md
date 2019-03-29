@@ -4,6 +4,8 @@ Playground of new toys
 ### iDailyProject
 iOS application daily practice in swift.
 
+[20190328] separated main storyboard - part two;
+
 [20190327] created storyboard references; separated main storyboard - part one.
 
 [20190324] added custom annotations.
