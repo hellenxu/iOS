@@ -8,17 +8,27 @@
 
 import UIKit
 
-class ExploreViewController: UIViewController, UICollectionViewDataSource {
-    
+class ExploreViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     let manager = ExploreDataManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        initialize()
+    }
+}
+
+private extension ExploreViewController {
+    func initialize() {
         manager.fetch()
     }
+    
+    // Add Unwind here
+    @IBAction func unwindLocationCancel(segue:UIStoryboardSegue) {}
+}
 
+extension ExploreViewController: UICollectionViewDataSource {
+    
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "header", for: indexPath)
         return headerView
@@ -41,8 +51,6 @@ class ExploreViewController: UIViewController, UICollectionViewDataSource {
         return manager.numberOfItems()
     }
     
-    // Add Unwind here
-    @IBAction func unwindLocationCancel(segue:UIStoryboardSegue) {}
 }
 
 

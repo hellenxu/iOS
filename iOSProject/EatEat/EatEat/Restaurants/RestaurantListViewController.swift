@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RestaurantListViewController: UIViewController, UICollectionViewDataSource {
+class RestaurantListViewController: UIViewController {
 
     @IBOutlet weak var restaurantCollection: UICollectionView!
     
@@ -16,6 +16,11 @@ class RestaurantListViewController: UIViewController, UICollectionViewDataSource
         super.viewDidLoad()
 
     }
+
+}
+
+//MARK: UICollectionViewDataSource
+extension RestaurantListViewController: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         return collectionView.dequeueReusableCell(withReuseIdentifier: "restaurantCell", for: indexPath)
@@ -28,5 +33,4 @@ class RestaurantListViewController: UIViewController, UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
     }
-    
 }

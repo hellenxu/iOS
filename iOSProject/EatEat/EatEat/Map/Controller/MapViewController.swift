@@ -9,15 +9,14 @@
 import UIKit
 import MapKit
 
-class MapViewController: UIViewController, MKMapViewDelegate {
+class MapViewController: UIViewController {
     @IBOutlet var mapView: MKMapView!
     let manager = MapDataManager()
     var selectedRestaurant: RestaurantItem?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        initRequest()
+        initialize()
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -29,16 +28,19 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         }
     }
     
+}
+
+//MARK: private extension
+private extension MapViewController {
     func showRestaurantDetail(inSegue: UIStoryboardSegue) {
         if let viewController = inSegue.destination as? RestaurantDetailViewController,
-        let restaurant = selectedRestaurant {
+            let restaurant = selectedRestaurant {
             viewController.selectedRestaurant = restaurant
         }
     }
     
-    func initRequest() {
+    func initialize() {
         mapView.delegate = self
-        
         manager.getRestaurants { (annotations) in
             initMap(annotations)
         }
@@ -48,7 +50,10 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         mapView.setRegion(manager.currentRegion(lat: 0.5, lng: 0.5), animated: true)
         mapView.addAnnotations(manager.annotations)
     }
-    
+}
+
+//MARK: MKMapViewDelegate
+extension MapViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         let identifier = "custompin"
         guard !annotation.isKind(of: MKUserLocation.self) else {return nil}
@@ -77,3 +82,4 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         self.performSegue(withIdentifier: Segue.showDetail.rawValue, sender: self)
     }
 }
+
