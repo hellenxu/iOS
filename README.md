@@ -4,6 +4,8 @@ Playground of new toys
 ### iDailyProject
 iOS application daily practice in swift.
 
+[20190401] added LocationItem and passed location data to explore view.
+
 [20190331] worked with json file.
 
 [20190328] separated main storyboard - part two; organized controller codes using extension.
