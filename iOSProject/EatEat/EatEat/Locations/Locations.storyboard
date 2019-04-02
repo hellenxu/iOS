@@ -58,10 +58,14 @@
                     <navigationItem key="navigationItem" id="SWC-5q-bGO">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="BFb-Ky-06d">
                             <connections>
-                                <segue destination="NDh-Xg-W27" kind="unwind" unwindAction="unwindLocationCancelWithSegue:" id="1mz-jo-XWN"/>
+                                <segue destination="NDh-Xg-W27" kind="unwind" unwindAction="unwindLocationCancelWithSegue:" id="mJb-uI-xfC"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="vWT-1p-kfB"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="vWT-1p-kfB">
+                            <connections>
+                                <segue destination="NDh-Xg-W27" kind="unwind" unwindAction="unwindLocationDoneWithSegue:" id="BXR-mW-o83"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="7NK-QY-w3H" id="tx6-gS-wUO"/>

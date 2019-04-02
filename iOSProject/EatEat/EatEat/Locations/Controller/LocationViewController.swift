@@ -30,7 +30,7 @@ private extension LocationViewController {
 }
 
 //MARK: UITableViewDataSource
-extension LocationViewController: UITableViewDataSource {
+extension LocationViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return locManager.countOfLocations()

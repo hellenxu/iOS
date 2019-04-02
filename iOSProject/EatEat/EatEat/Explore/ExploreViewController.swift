@@ -11,6 +11,8 @@ import UIKit
 class ExploreViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     let manager = ExploreDataManager()
+    var selectedCity: LocationItem?
+    var headerView: ExploreHeaderView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,12 +27,22 @@ private extension ExploreViewController {
     
     // Add Unwind here
     @IBAction func unwindLocationCancel(segue:UIStoryboardSegue) {}
+    
+    @IBAction func unwindLocationDone(segue: UIStoryboardSegue) {
+        if let viewController = segue.source as? LocationViewController {
+            selectedCity = viewController.selectedCity
+            if let location = selectedCity {
+                headerView.locationLabel.text = location.full
+            }
+        }
+    }
 }
 
 extension ExploreViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "header", for: indexPath)
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "header", for: indexPath)
+        headerView = header as? ExploreHeaderView
         return headerView
     }
     

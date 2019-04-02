@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1gM-xF-m4I">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1gM-xF-m4I">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -97,15 +97,15 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="header" id="YBa-bS-TBs">
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="header" id="YBa-bS-TBs" customClass="ExploreHeaderView" customModule="EatEat" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bKp-x3-CPP">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSW-56-uJh">
-                                                    <rect key="frame" x="310" y="50" width="96" height="25"/>
+                                                    <rect key="frame" x="271" y="50" width="96" height="25"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="25" id="QvH-gi-hPZ"/>
                                                         <constraint firstAttribute="width" constant="96" id="pCZ-ky-kwZ"/>
@@ -116,7 +116,7 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrB-ql-822">
-                                                    <rect key="frame" x="8" y="24" width="390" height="21"/>
+                                                    <rect key="frame" x="8" y="24" width="351" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="t7t-ps-fQa"/>
                                                     </constraints>
@@ -125,7 +125,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5p-nR-bkD">
-                                                    <rect key="frame" x="8" y="45" width="294" height="37"/>
+                                                    <rect key="frame" x="8" y="45" width="255" height="37"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="37" id="l1b-LP-Jpv"/>
                                                     </constraints>
@@ -134,7 +134,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3bN-tp-XqB">
-                                                    <rect key="frame" x="8" y="81" width="398" height="1"/>
+                                                    <rect key="frame" x="8" y="81" width="359" height="1"/>
                                                     <color key="backgroundColor" name="Light Grey"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="IO6-6r-Q43"/>
@@ -164,6 +164,9 @@
                                         <constraint firstItem="bKp-x3-CPP" firstAttribute="leading" secondItem="YBa-bS-TBs" secondAttribute="leading" id="fQg-AW-6G7"/>
                                         <constraint firstItem="bKp-x3-CPP" firstAttribute="top" secondItem="YBa-bS-TBs" secondAttribute="top" id="hFK-Zz-Mec"/>
                                     </constraints>
+                                    <connections>
+                                        <outlet property="locationLabel" destination="jrB-ql-822" id="he7-lQ-jqx"/>
+                                    </connections>
                                 </collectionReusableView>
                                 <connections>
                                     <outlet property="dataSource" destination="Cre-xO-dpP" id="xWK-Ec-JPX"/>
