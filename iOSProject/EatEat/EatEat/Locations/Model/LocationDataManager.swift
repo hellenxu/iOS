@@ -26,4 +26,9 @@ class LocationDataManager: DataManager {
         return locations[index.item]
     }
     
+    func searchLocation(by name: String) -> (isFound: Bool, position: Int) {
+        guard let index = locations.index(where: {$0.city == name}) else { return (isFound: false, position: 0) }
+        return (isFound:true, position: index)
+    }
+    
 }

@@ -93,7 +93,7 @@
                                         <connections>
                                             <outlet property="categoryName" destination="BGt-ic-in3" id="eiW-vc-a7I"/>
                                             <outlet property="imgExplore" destination="Nww-lr-q67" id="w4W-Az-tbS"/>
-                                            <segue destination="aCj-4P-jxy" kind="show" id="AYX-Z5-10t"/>
+                                            <segue destination="aCj-4P-jxy" kind="show" identifier="locationList" id="AYX-Z5-10t"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -112,7 +112,7 @@
                                                     </constraints>
                                                     <state key="normal" image="btn-location"/>
                                                     <connections>
-                                                        <segue destination="jjp-vm-Ifn" kind="show" id="DlP-Ej-yF9"/>
+                                                        <segue destination="jjp-vm-Ifn" kind="show" identifier="restaurantList" id="DlP-Ej-yF9"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrB-ql-822">
