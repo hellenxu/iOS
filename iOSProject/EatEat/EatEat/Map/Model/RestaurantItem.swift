@@ -29,6 +29,18 @@ class RestaurantItem: NSObject, MKAnnotation {
         guard let lat = lat, let long = long else { return CLLocationCoordinate2D() }
         return CLLocationCoordinate2D(latitude: lat, longitude: long)
     }
+    
+    enum CodingKeys: String {
+        case name
+        case cuisines
+        case lat
+        case long
+        case address
+        case postalCode = "postal_code"
+        case state
+        case imageURL = "image_url"
+    }
+    
     var name: String?
     var cuisines: [String] = []
     var lat: Double?

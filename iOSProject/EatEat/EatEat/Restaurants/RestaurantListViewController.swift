@@ -21,9 +21,9 @@ class RestaurantListViewController: UIViewController {
     }
 
     override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        print("selected city \(selectedCity as Any)")
-        print("selected type \(selectedType as Any)")
+        guard let location = selectedCity?.city, let type = selectedType else { return }
+        print("xxl-type \(type)")
+        print(RestaurantAPIManager.loadJSON(file: location))
     }
 }
 
