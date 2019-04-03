@@ -4,6 +4,8 @@ Playground of new toys
 ### iDailyProject
 iOS application daily practice in swift.
 
+[20190402] passed data to location and restaurant list.
+
 [20190401] added LocationItem and passed location data to explore view.
 
 [20190331] worked with json file.
