@@ -9,7 +9,10 @@
 import UIKit
 
 class RestaurantListViewController: UIViewController {
-
+    
+    var selectedRestaurant: RestaurantItem?
+    var selectedCity: LocationItem?
+    var selectedType: String?
     @IBOutlet weak var restaurantCollection: UICollectionView!
     
     override func viewDidLoad() {
@@ -17,6 +20,11 @@ class RestaurantListViewController: UIViewController {
 
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("selected city \(selectedCity as Any)")
+        print("selected type \(selectedType as Any)")
+    }
 }
 
 //MARK: UICollectionViewDataSource
