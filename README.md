@@ -4,7 +4,7 @@ Playground of new toys
 ### iDailyProject
 iOS application daily practice in swift.
 
-[20190403] Added data manager for restaurant list.
+[20190403] Added data manager for restaurant list; added no data view for restaurant list.
 
 [20190402] passed data to location and restaurant list; added decorable items and set up restaurant cell.
 
