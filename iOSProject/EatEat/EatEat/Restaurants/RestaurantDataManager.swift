@@ -13,7 +13,7 @@ class RestaurantDataManager {
     private var items:[RestaurantItem] = []
     
     //fetch restaurant items based on cuisines
-    func fetch(by location: String, withFilter: String = "All", completionHandler:() -> Void) {
+    func fetch(by location: String, withFilter: String = "All", completionHandler:(_ items:[RestaurantItem]) -> Void) {
         var restaurants:[RestaurantItem] = []
         
         for restaurant in RestaurantAPIManager.loadJSON(file: location) {
@@ -25,7 +25,7 @@ class RestaurantDataManager {
         } else {
             items = restaurants
         }
-        completionHandler()
+        completionHandler(items)
     }
     
     func numberOfItems() -> Int {

@@ -17,13 +17,13 @@ class MapDataManager: DataManager {
     }
     
     func getRestaurants(completion: (_ annotations: [RestaurantItem]) -> ()) {
-        if items.count > 0 { items.removeAll() }
         
-        for data in load(file: "MapLocations") {
-            items.append(RestaurantItem(dict: data))
-        }
-        
-        completion(items)
+        //TODO replace hard coded parameter "Boston"
+        let manager = RestaurantDataManager()
+        manager.fetch(by: "Boston", completionHandler: {(items) in
+            self.items = items
+            completion(items)
+        })
     }
     
     func currentRegion(lat: CLLocationDegrees, lng: CLLocationDegrees) -> MKCoordinateRegion {
