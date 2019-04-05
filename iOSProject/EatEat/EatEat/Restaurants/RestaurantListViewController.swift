@@ -22,9 +22,8 @@ class RestaurantListViewController: UIViewController {
     }
 
     override func viewDidAppear(_ animated: Bool) {
-        guard let location = selectedCity?.city, let type = selectedType else { return }
-        print("xxl-type \(type)")
-        print(RestaurantAPIManager.loadJSON(file: location))
+        createData()
+        setupTitle()
     }
 }
 
@@ -43,6 +42,15 @@ extension RestaurantListViewController {
             }
             restaurantCollection.reloadData()
         }
+    }
+    
+    func setupTitle() {
+        navigationController?.setNavigationBarHidden(false, animated: false)
+        if let city = selectedCity?.city, let state = selectedCity?.state {
+            title = "\(city.uppercased()), \(state.uppercased())"
+        }
+        
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
 }
 
