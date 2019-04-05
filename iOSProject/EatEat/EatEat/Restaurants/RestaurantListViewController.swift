@@ -61,6 +61,8 @@ extension RestaurantListViewController: UICollectionViewDataSource {
         let cell = restaurantCollection.dequeueReusableCell(withReuseIdentifier: "restaurantCell", for: indexPath) as! RestaurantCell
         let item = manager.restaurantItem(at: indexPath)
         if let name = item.name {cell.lblTitle.text = name}
+        let cuisines = item.cuisines.joined(separator: ", ")
+        cell.lblCuisine.text = cuisines
         if let image = item.imageURL {
             if let url = URL(string: image) {
                 let data = try? Data(contentsOf: url)
