@@ -10,6 +10,25 @@ import UIKit
 
 class RestaurantDetailViewController: UITableViewController {
     
+    //Nav Bar
+    @IBOutlet weak var btnHeart: UIBarButtonItem!
+    
+    //Cell one
+    @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var lblCuisines: UILabel!
+    @IBOutlet weak var lblHeaderAddress: UILabel!
+    
+    //Cell two
+    @IBOutlet weak var lblDetails: UILabel!
+    
+    //Cell three
+    @IBOutlet weak var lblOverallRating: UILabel!
+    
+    //Cell eight??
+    @IBOutlet weak var lblAddress: UILabel!
+    @IBOutlet weak var imgMap: UIImageView!
+    
+    
     var selectedRestaurant: RestaurantItem?
     
     override func viewDidLoad() {

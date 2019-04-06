@@ -27,16 +27,6 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qLI-1m-nCo" id="SlX-Sq-emF">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgx-q1-X1a">
-                                                    <rect key="frame" x="332" y="7" width="46" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Button"/>
-                                                    <connections>
-                                                        <segue destination="0OO-k5-DLN" kind="show" id="EMV-3c-HRB"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="B4d-X9-aJz">
@@ -63,6 +53,13 @@
                             <outlet property="delegate" destination="3zu-yf-dVt" id="tUq-ex-yeq"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="8rq-qs-cYx" userLabel="Navigation Item">
+                        <barButtonItem key="rightBarButtonItem" image="heart-unselected" id="dpS-pP-wVm">
+                            <connections>
+                                <segue destination="0OO-k5-DLN" kind="show" id="BFI-g4-2mj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wxj-yQ-WXj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -96,4 +93,7 @@
             <point key="canvasLocation" x="2460.8695652173915" y="-1508.0357142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="heart-unselected" width="44" height="44"/>
+    </resources>
 </document>
