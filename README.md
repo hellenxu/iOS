@@ -4,6 +4,8 @@ Playground of new toys
 ### iDailyProject
 iOS application daily practice in swift.
 
+[20190405] added missing cuisines in restaurant cell; completed restaurant details - part one.
+
 [20190404] provided data to restaurant list.
 
 [20190403] Added data manager for restaurant list; added no data view for restaurant list.
