@@ -52,7 +52,7 @@ private extension RestaurantDetailViewController {
             title = name
         }
         
-        lblCuisines.text = restaurant.cuisines.joined()
+        lblCuisines.text = restaurant.cuisines.joined(separator: ",")
         
         if let address = restaurant.address {
             lblAddress.text = address

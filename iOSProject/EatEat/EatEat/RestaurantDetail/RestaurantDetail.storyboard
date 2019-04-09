@@ -429,12 +429,17 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nRK-hM-3ze">
                                                     <rect key="frame" x="17" y="4" width="341" height="208"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ib0-Af-srx">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ib0-Af-srx">
                                                             <rect key="frame" x="0.0" y="0.0" width="341" height="208"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="ib0-Af-srx" firstAttribute="top" secondItem="nRK-hM-3ze" secondAttribute="top" id="2e3-HV-d0t"/>
+                                                        <constraint firstItem="ib0-Af-srx" firstAttribute="leading" secondItem="nRK-hM-3ze" secondAttribute="leading" id="Cqf-8V-EDt"/>
+                                                        <constraint firstAttribute="bottom" secondItem="ib0-Af-srx" secondAttribute="bottom" id="Gnx-c4-iYP"/>
+                                                        <constraint firstAttribute="trailing" secondItem="ib0-Af-srx" secondAttribute="trailing" id="IWr-ga-w3W"/>
+                                                    </constraints>
                                                 </view>
                                             </subviews>
                                             <constraints>
