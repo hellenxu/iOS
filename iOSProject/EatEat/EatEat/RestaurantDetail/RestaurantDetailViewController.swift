@@ -41,7 +41,7 @@ class RestaurantDetailViewController: UITableViewController {
 private extension RestaurantDetailViewController {
     func initialize() {
         setupLabels()
-//        createMap()
+        createMap()
     }
     
     func setupLabels() {
@@ -52,7 +52,7 @@ private extension RestaurantDetailViewController {
             title = name
         }
         
-        if let cuisine = restaurant.subtitle {lblCuisines.text = cuisine}
+        lblCuisines.text = restaurant.cuisines.joined()
         
         if let address = restaurant.address {
             lblAddress.text = address

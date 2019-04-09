@@ -146,7 +146,7 @@
                                             <outlet property="imgRestaurant" destination="gFw-Zm-eBj" id="TLv-4F-4tw"/>
                                             <outlet property="lblCuisine" destination="LNF-Bw-vDU" id="fHB-5b-61o"/>
                                             <outlet property="lblTitle" destination="rrj-tb-qxb" id="cHE-cA-oke"/>
-                                            <segue destination="CVe-07-0Ml" kind="show" id="Bu7-RJ-JAp"/>
+                                            <segue destination="CVe-07-0Ml" kind="show" identifier="showDetail" id="Bu7-RJ-JAp"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

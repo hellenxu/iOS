@@ -461,14 +461,14 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="btnHeart" destination="dpS-pP-wVm" id="8MO-w4-fkU"/>
-                        <outlet property="imgMap" destination="ib0-Af-srx" id="BSi-uo-Pnt"/>
-                        <outlet property="lblAddress" destination="E7L-pf-G68" id="XqN-gu-7FH"/>
-                        <outlet property="lblCuisines" destination="Gja-0Y-oeQ" id="zhF-Xp-o77"/>
-                        <outlet property="lblHeaderAddress" destination="ZCK-gd-0dz" id="0df-MH-mSZ"/>
-                        <outlet property="lblName" destination="IZO-br-URI" id="wX8-BE-Hzg"/>
-                        <outlet property="lblOverallRating" destination="81I-jK-2l1" id="hoH-vf-RFU"/>
-                        <outlet property="lblTableDetails" destination="gAP-3b-vEU" id="Xd4-QH-xYB"/>
+                        <outlet property="btnHeart" destination="dpS-pP-wVm" id="7He-mv-bsY"/>
+                        <outlet property="imgMap" destination="ib0-Af-srx" id="EsV-uT-wyP"/>
+                        <outlet property="lblAddress" destination="E7L-pf-G68" id="qRL-kv-zsQ"/>
+                        <outlet property="lblCuisines" destination="Gja-0Y-oeQ" id="qvv-uu-qxq"/>
+                        <outlet property="lblHeaderAddress" destination="ZCK-gd-0dz" id="uQZ-Sn-KPW"/>
+                        <outlet property="lblName" destination="IZO-br-URI" id="c0b-Up-iKq"/>
+                        <outlet property="lblOverallRating" destination="81I-jK-2l1" id="lMG-RS-1HH"/>
+                        <outlet property="lblTableDetails" destination="gAP-3b-vEU" id="ly4-s7-Igw"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wxj-yQ-WXj" userLabel="First Responder" sceneMemberID="firstResponder"/>
