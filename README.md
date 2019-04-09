@@ -4,7 +4,7 @@ Playground of new toys
 ### iDailyProject
 iOS application daily practice in swift.
 
-[20190408] fixed ui constraint warnings;
+[20190408] fixed ui constraint warnings; passed data from list to item view.
 
 [20190406] completed restaurant details - part two.
 
