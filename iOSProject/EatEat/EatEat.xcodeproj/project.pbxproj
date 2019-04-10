@@ -34,6 +34,7 @@
 		110E9FA72255A6F6003CC707 /* NoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E9FA62255A6F6003CC707 /* NoDataView.swift */; };
 		110E9FA92255A755003CC707 /* NoDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110E9FA82255A755003CC707 /* NoDataView.xib */; };
 		110E9FAC225D6C9C003CC707 /* RatingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E9FAB225D6C9C003CC707 /* RatingsView.swift */; };
+		110E9FAE225D8829003CC707 /* Reviews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 110E9FAD225D8829003CC707 /* Reviews.storyboard */; };
 		11856590224C690E00180F71 /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1185658F224C690E00180F71 /* Segue.swift */; };
 		11856592224C6B8500180F71 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11856591224C6B8500180F71 /* Map.storyboard */; };
 		11856594224C6BC400180F71 /* Explore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11856593224C6BC400180F71 /* Explore.storyboard */; };
@@ -88,6 +89,7 @@
 		110E9FA62255A6F6003CC707 /* NoDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDataView.swift; sourceTree = "<group>"; };
 		110E9FA82255A755003CC707 /* NoDataView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoDataView.xib; sourceTree = "<group>"; };
 		110E9FAB225D6C9C003CC707 /* RatingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsView.swift; sourceTree = "<group>"; };
+		110E9FAD225D8829003CC707 /* Reviews.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reviews.storyboard; sourceTree = "<group>"; };
 		1185658F224C690E00180F71 /* Segue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
 		11856591224C6B8500180F71 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		11856593224C6BC400180F71 /* Explore.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Explore.storyboard; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				110E9FAB225D6C9C003CC707 /* RatingsView.swift */,
+				110E9FAD225D8829003CC707 /* Reviews.storyboard */,
 			);
 			path = "Reviews Form";
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 				11856597224C6C0000180F71 /* RestaurantDetail.storyboard in Resources */,
 				110E9F9522515189003CC707 /* Boston.json in Resources */,
 				11094E8622320770001C58C7 /* Main.storyboard in Resources */,
+				110E9FAE225D8829003CC707 /* Reviews.storyboard in Resources */,
 				110E9F9A22515189003CC707 /* Portland.json in Resources */,
 				110E9F8F22515189003CC707 /* New Orleans.json in Resources */,
 				110E9F9922515189003CC707 /* Philadelphia.json in Resources */,

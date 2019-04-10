@@ -290,6 +290,9 @@
                                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YlB-NT-gcT">
                                                                     <rect key="frame" x="-1" y="0.0" width="120" height="62"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <connections>
+                                                                        <segue destination="21e-Uz-lhG" kind="show" id="vTW-gA-Cr2"/>
+                                                                    </connections>
                                                                 </button>
                                                             </subviews>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -459,11 +462,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="8rq-qs-cYx" userLabel="Navigation Item">
-                        <barButtonItem key="rightBarButtonItem" image="heart-unselected" id="dpS-pP-wVm">
-                            <connections>
-                                <segue destination="0OO-k5-DLN" kind="show" id="BFI-g4-2mj"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="heart-unselected" id="dpS-pP-wVm"/>
                     </navigationItem>
                     <connections>
                         <outlet property="btnHeart" destination="dpS-pP-wVm" id="7He-mv-bsY"/>
@@ -480,33 +479,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wxj-yQ-WXj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1520.8" y="-1508.095952023988"/>
-        </scene>
-        <!--RestaurantReviews-->
-        <scene sceneID="LDu-Po-bcR">
-            <objects>
-                <viewController title="RestaurantReviews" id="0OO-k5-DLN" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Bae-oh-aNK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2O-f4-FBN">
-                                <rect key="frame" x="156" y="323" width="63" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="c2O-f4-FBN" firstAttribute="centerY" secondItem="Bae-oh-aNK" secondAttribute="centerY" id="RtG-XG-h5C"/>
-                            <constraint firstItem="c2O-f4-FBN" firstAttribute="centerX" secondItem="Bae-oh-aNK" secondAttribute="centerX" id="zb3-9Q-6q1"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="ven-8s-ZZz"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bD9-BJ-T6a" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2460.8695652173915" y="-1508.0357142857142"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="arb-2M-9iP">
@@ -537,6 +509,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ugY-RQ-N78" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1521" y="-915"/>
+        </scene>
+        <!--Reviews-->
+        <scene sceneID="GVa-oo-oXL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Reviews" id="21e-Uz-lhG" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MDI-4N-F48" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2254" y="-1509"/>
         </scene>
     </scenes>
     <resources>
