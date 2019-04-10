@@ -4,7 +4,7 @@ Playground of new toys
 ### iDailyProject
 iOS application daily practice in swift.
 
-[20190409] added custom rating view;
+[20190409] added custom rating view; handled touch event of rating view; added review storyboard.
 
 [20190408] fixed ui constraint warnings; passed data from list to item view.
 
