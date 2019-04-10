@@ -47,9 +47,50 @@ class RatingsView: UIControl {
             }
         }
     }
+    
+    // similiar to View#onTouchEvent = canBecomeFirstResponder + beginTracking
+    override var canBecomeFirstResponder: Bool {
+        return shouldBecomeFirstResponder
+    }
+    
+    override func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
+        if self.isEnabled {
+            super.beginTracking(touch, with: event)
+            
+            if (shouldBecomeFirstResponder && self.isFirstResponder) {
+                becomeFirstResponder()
+            }
+            
+            handle(with: touch)
+            return true
+        } else {
+            return false
+        }
+    }
 }
 
 private extension RatingsView {
+    func handle(with touch: UITouch) {
+        let cellWidth = self.bounds.size.width / CGFloat(totalStars)
+        let location = touch.location(in: self)
+        var value = location.x / cellWidth
+        
+        if (value + 0.5 < CGFloat(ceilf(Float(value)))) {
+            value = floor(value) + 0.5
+        } else {
+            value = CGFloat(ceilf(Float(value)))
+        }
+        
+        updateRating(with: value)
+    }
+    
+    func updateRating(with value: CGFloat) {
+        if (self.rating != value && value >= 0 && value <= CGFloat(totalStars)) {
+            self.rating = value
+            setNeedsDisplay() // similiar to View#invalidate()
+        }
+    }
+    
     func drawStar(with frame: CGRect, highlighted: Bool) {
         let image = highlighted ? imgFilledStar : imgEmptyStar
         draw(with: image, and: frame)

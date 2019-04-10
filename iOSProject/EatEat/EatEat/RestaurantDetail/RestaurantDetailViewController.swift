@@ -46,8 +46,10 @@ private extension RestaurantDetailViewController {
         createRating()
     }
     
+    //TODO set rating value dynamically
     func createRating() {
-        ratingView.rating = 3.5
+//        ratingView.rating = 3.5
+        ratingView.isEnabled = false
     }
     
     func setupLabels() {
