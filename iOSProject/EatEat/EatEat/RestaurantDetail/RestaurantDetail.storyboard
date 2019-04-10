@@ -198,7 +198,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zmd-Qy-dmk">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zmd-Qy-dmk" customClass="RatingsView" customModule="EatEat" customModuleProvider="target">
                                                     <rect key="frame" x="151" y="43" width="205" height="34"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
@@ -474,6 +474,7 @@
                         <outlet property="lblName" destination="IZO-br-URI" id="c0b-Up-iKq"/>
                         <outlet property="lblOverallRating" destination="81I-jK-2l1" id="lMG-RS-1HH"/>
                         <outlet property="lblTableDetails" destination="gAP-3b-vEU" id="ly4-s7-Igw"/>
+                        <outlet property="ratingView" destination="Zmd-Qy-dmk" id="4DM-zf-0NM"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wxj-yQ-WXj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -515,6 +516,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="214"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Wfu-aU-4pu"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sx5-BD-Cda" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -529,6 +531,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="213.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="x6f-SL-4aB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ugY-RQ-N78" userLabel="First Responder" sceneMemberID="firstResponder"/>
