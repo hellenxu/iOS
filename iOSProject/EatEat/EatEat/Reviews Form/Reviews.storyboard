@@ -13,7 +13,7 @@
         <!--RestaurantReviews-->
         <scene sceneID="DSZ-aX-st0">
             <objects>
-                <tableViewController title="RestaurantReviews" id="t70-n8-qHk" sceneMemberID="viewController">
+                <tableViewController title="RestaurantReviews" id="t70-n8-qHk" customClass="ReviewFormViewController" customModule="EatEat" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="QYa-H7-eDe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -139,8 +139,18 @@
                                 <segue destination="hVX-1x-sjv" kind="unwind" unwindAction="unwindLocationCancelWithSegue:" id="oKX-xT-kvb"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="tz0-yJ-f9E"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="tz0-yJ-f9E">
+                            <connections>
+                                <action selector="onSaveTapped:" destination="t70-n8-qHk" id="Ley-6m-dim"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="ratingView" destination="8HH-Ho-kb4" id="kYS-jk-Lqm"/>
+                        <outlet property="tfName" destination="pWZ-Z2-vbS" id="mbD-1a-dpc"/>
+                        <outlet property="tfTitle" destination="6Ig-GW-jAV" id="1W5-bI-RVC"/>
+                        <outlet property="tvReview" destination="0g8-nU-R4z" id="hiu-Lr-o84"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x30-cB-pa4" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="hVX-1x-sjv" userLabel="Exit" sceneMemberID="exit"/>

@@ -35,6 +35,7 @@
 		110E9FA92255A755003CC707 /* NoDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110E9FA82255A755003CC707 /* NoDataView.xib */; };
 		110E9FAC225D6C9C003CC707 /* RatingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E9FAB225D6C9C003CC707 /* RatingsView.swift */; };
 		110E9FAE225D8829003CC707 /* Reviews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 110E9FAD225D8829003CC707 /* Reviews.storyboard */; };
+		110E9FB0225EB722003CC707 /* ReviewFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E9FAF225EB722003CC707 /* ReviewFormViewController.swift */; };
 		11856590224C690E00180F71 /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1185658F224C690E00180F71 /* Segue.swift */; };
 		11856592224C6B8500180F71 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11856591224C6B8500180F71 /* Map.storyboard */; };
 		11856594224C6BC400180F71 /* Explore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11856593224C6BC400180F71 /* Explore.storyboard */; };
@@ -90,6 +91,7 @@
 		110E9FA82255A755003CC707 /* NoDataView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoDataView.xib; sourceTree = "<group>"; };
 		110E9FAB225D6C9C003CC707 /* RatingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsView.swift; sourceTree = "<group>"; };
 		110E9FAD225D8829003CC707 /* Reviews.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reviews.storyboard; sourceTree = "<group>"; };
+		110E9FAF225EB722003CC707 /* ReviewFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewFormViewController.swift; sourceTree = "<group>"; };
 		1185658F224C690E00180F71 /* Segue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
 		11856591224C6B8500180F71 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		11856593224C6BC400180F71 /* Explore.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Explore.storyboard; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 			children = (
 				110E9FAB225D6C9C003CC707 /* RatingsView.swift */,
 				110E9FAD225D8829003CC707 /* Reviews.storyboard */,
+				110E9FAF225EB722003CC707 /* ReviewFormViewController.swift */,
 			);
 			path = "Reviews Form";
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				110E9FB0225EB722003CC707 /* ReviewFormViewController.swift in Sources */,
 				110E9FA2225459C0003CC707 /* RestaurantCell.swift in Sources */,
 				110E9FAC225D6C9C003CC707 /* RatingsView.swift in Sources */,
 				11856590224C690E00180F71 /* Segue.swift in Sources */,
