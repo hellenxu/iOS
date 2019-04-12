@@ -4,7 +4,7 @@ Playground of new toys
 ### iDailyProject
 iOS application daily practice in swift.
 
-[20190411] added image filter;
+[20190411] added image filter and photo item.
 
 [20190410] added review form view controller.
 
