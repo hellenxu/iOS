@@ -136,7 +136,7 @@
                     <navigationItem key="navigationItem" title="Navigation Item" id="eSx-Mz-2pJ">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="F6m-Av-SiY">
                             <connections>
-                                <segue destination="hVX-1x-sjv" kind="unwind" unwindAction="unwindLocationCancelWithSegue:" id="oKX-xT-kvb"/>
+                                <segue destination="hVX-1x-sjv" kind="unwind" unwindAction="unwindReviewCancelWithSegue:" id="eLY-a8-1R8"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="tz0-yJ-f9E">

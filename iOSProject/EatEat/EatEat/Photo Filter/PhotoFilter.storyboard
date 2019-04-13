@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Photo Filter View Controller-->
         <scene sceneID="Uct-LJ-ASQ">
             <objects>
-                <viewController id="Ao7-8N-Wlz" sceneMemberID="viewController">
+                <viewController id="Ao7-8N-Wlz" customClass="PhotoFilterViewController" customModule="EatEat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Bn-Ee-Huq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,7 +88,11 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="KNe-NC-D9e">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="HNs-Jy-DcJ"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="HNs-Jy-DcJ">
+                            <connections>
+                                <segue destination="NP8-3I-Avv" kind="unwind" unwindAction="unwindReviewCancelWithSegue:" id="q6g-1s-9QV"/>
+                            </connections>
+                        </barButtonItem>
                         <rightBarButtonItems>
                             <barButtonItem systemItem="save" id="vmJ-Ii-dM2"/>
                             <barButtonItem title="photo" image="icon-photo" id="Ka8-rN-lJe"/>
@@ -97,6 +101,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rba-14-fQd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="NP8-3I-Avv" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="396" y="122"/>
         </scene>

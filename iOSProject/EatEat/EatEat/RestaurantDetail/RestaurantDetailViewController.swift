@@ -37,6 +37,9 @@ class RestaurantDetailViewController: UITableViewController {
         super.viewDidLoad()
         initialize()
     }
+    
+    @IBAction func unwindReviewCancel(segue:UIStoryboardSegue) {}
+
 }
 
 private extension RestaurantDetailViewController {
