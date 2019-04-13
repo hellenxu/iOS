@@ -11,6 +11,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--PhotoFilter-->
+        <scene sceneID="3bA-0x-fRn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PhotoFilter" id="Ll3-K7-ufj" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Szn-jv-3pg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2317" y="-1437"/>
+        </scene>
         <!--RestaurantDetails-->
         <scene sceneID="ZPT-89-ihp">
             <objects>
@@ -247,6 +255,9 @@
                                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEw-vA-I3Q">
                                                                     <rect key="frame" x="-1" y="0.0" width="120" height="62"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <connections>
+                                                                        <segue destination="Ll3-K7-ufj" kind="show" id="tCU-CE-9fp"/>
+                                                                    </connections>
                                                                 </button>
                                                             </subviews>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -516,7 +527,7 @@
                 <viewControllerPlaceholder storyboardName="Reviews" id="21e-Uz-lhG" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MDI-4N-F48" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2254" y="-1509"/>
+            <point key="canvasLocation" x="2302" y="-1598"/>
         </scene>
     </scenes>
     <resources>
