@@ -4,6 +4,8 @@ Playground of new toys
 ### iDailyProject
 iOS application daily practice in swift.
 
+[20190412] added photo filter storyboard; fixed incorrect unwind segue.
+
 [20190411] added image filter and photo item.
 
 [20190410] added review form view controller.
