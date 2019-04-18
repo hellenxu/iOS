@@ -95,10 +95,18 @@
                         </barButtonItem>
                         <rightBarButtonItems>
                             <barButtonItem systemItem="save" id="vmJ-Ii-dM2"/>
-                            <barButtonItem title="photo" image="icon-photo" id="Ka8-rN-lJe"/>
+                            <barButtonItem title="photo" image="icon-photo" id="Ka8-rN-lJe">
+                                <connections>
+                                    <action selector="onPhotoTapped:" destination="Ao7-8N-Wlz" id="ujk-oY-DIn"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="4nI-PJ-DnU" id="WBa-d6-uwK"/>
+                        <outlet property="imgExample" destination="5bn-3y-2Fk" id="cxn-8r-G51"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rba-14-fQd" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="NP8-3I-Avv" userLabel="Exit" sceneMemberID="exit"/>

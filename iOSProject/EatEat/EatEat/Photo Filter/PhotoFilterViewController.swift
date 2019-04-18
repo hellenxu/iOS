@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import MobileCoreServices
 
 class PhotoFilterViewController: UIViewController {
     var image: UIImage?
@@ -75,7 +76,48 @@ private extension PhotoFilterViewController {
     }
     
     func showCameraUserInterface() {
+        let imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        #if targetEnvironment(simulator)
+            imagePicker.sourceType = UIImagePickerController.SourceType.photoLibrary
+        #else
+            imagePicker.sourceType = UIImagePickerController.SourceType.camera
+            imagePicker.showsCameraControls = true
+        #endif
         
+        imagePicker.mediaTypes = [kUTTypeImage as String]
+        imagePicker.allowsEditing = true
+        self.present(imagePicker, animated: true, completion: nil)
+    }
+    
+    func generate(image: UIImage, ratio: CGFloat) -> UIImage {
+        let size = image.size
+        var croppedSize:CGSize?
+        var offsetX:CGFloat = 0.0
+        var offsetY:CGFloat = 0.0
+        
+        if size.width > size.height {
+            offsetX = (size.height - size.width) / 2
+            croppedSize = CGSize(width: size.height, height: size.height)
+        } else {
+            offsetY = (size.width - size.height) / 2
+            croppedSize = CGSize(width: size.width, height: size.width)
+        }
+        
+        guard let cropped = croppedSize, let cgImage = image.cgImage else { return UIImage() }
+        let clippedRect = CGRect(x: offsetX * -1, y: offsetY * -1, width: cropped.width, height: cropped.height)
+        let imgRef = cgImage.cropping(to: clippedRect)
+        
+        let rect = CGRect(x: 0.0, y: 0.0, width: ratio, height: ratio)
+        UIGraphicsBeginImageContext(rect.size)
+        
+        if let ref = imgRef {
+            UIImage(cgImage: ref).draw(in: rect)
+        }
+        let thumbnail = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        guard let thumb = thumbnail else { return UIImage() }
+        return thumb
     }
     
     func showApplyFilter() {
@@ -115,6 +157,11 @@ extension PhotoFilterViewController: UICollectionViewDelegate, UICollectionViewD
         }
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let item = self.data[indexPath.row]
+        filterSelected(item: item)
+    }
 }
 
 //MARK: delegate flow layout
@@ -123,5 +170,36 @@ extension PhotoFilterViewController: UICollectionViewDelegateFlowLayout {
         let screenRect = collectionView.frame.size.height
         let screenHt = screenRect - 14
         return CGSize(width: 150, height: screenHt)
+    }
+}
+
+//MARK: image picker delegate and navigation controller delegate
+extension PhotoFilterViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage
+        if let img = image {
+            self.thumbnail = generate(image: img, ratio: CGFloat(102))
+            self.image = generate(image: img, ratio: CGFloat(752))
+        }
+        
+        picker.dismiss(animated: true, completion: {self.showApplyFilter()})
+    }
+}
+
+//MARK: ImageFiltering and ImageFilteringDelegate
+extension PhotoFilterViewController: ImageFiltering, ImageFilteringDelegate {
+    func filterSelected(item: FilterItem) {
+        let filteredImg = image
+        if let img = filteredImg {
+            if item.filter != "None" {
+                imgExample.image = self.apply(filter: item.filter, originalImage: img)
+            } else {
+                imgExample.image = img
+            }
+        }
     }
 }
