@@ -4,6 +4,8 @@ Playground of new toys
 ### iDailyProject
 iOS application daily practice in swift.
 
+[20190417] PhotoFilterViewController part two; added permission request.
+
 [20190416] PhotoFilterViewController part one.
 
 [20190412] added photo filter storyboard; fixed incorrect unwind segue.
