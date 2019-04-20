@@ -50,6 +50,7 @@
 		11856597224C6C0000180F71 /* RestaurantDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11856596224C6C0000180F71 /* RestaurantDetail.storyboard */; };
 		11856599224C72F200180F71 /* RestaurantList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11856598224C72F200180F71 /* RestaurantList.storyboard */; };
 		1185659B224C731D00180F71 /* Locations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1185659A224C731D00180F71 /* Locations.storyboard */; };
+		118CB14C226BD331005155DB /* EatModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 118CB14A226BD331005155DB /* EatModel.xcdatamodeld */; };
 		118FE0C3224DB3A700BFAB1D /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FE0C2224DB3A700BFAB1D /* RestaurantDetailViewController.swift */; };
 		11DFD40B22431AC800DEFCB5 /* ExploreData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11DFD40A22431AC800DEFCB5 /* ExploreData.plist */; };
 		11DFD40D22431B2100DEFCB5 /* ExploreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DFD40C22431B2100DEFCB5 /* ExploreItem.swift */; };
@@ -114,6 +115,7 @@
 		11856596224C6C0000180F71 /* RestaurantDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RestaurantDetail.storyboard; sourceTree = "<group>"; };
 		11856598224C72F200180F71 /* RestaurantList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RestaurantList.storyboard; sourceTree = "<group>"; };
 		1185659A224C731D00180F71 /* Locations.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Locations.storyboard; sourceTree = "<group>"; };
+		118CB14B226BD331005155DB /* EatModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EatModel.xcdatamodel; sourceTree = "<group>"; };
 		118FE0C2224DB3A700BFAB1D /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		11DFD40A22431AC800DEFCB5 /* ExploreData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExploreData.plist; sourceTree = "<group>"; };
 		11DFD40C22431B2100DEFCB5 /* ExploreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreItem.swift; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 		1185658D224C68F300180F71 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				118CB149226BD2F8005155DB /* Core Data */,
 				110E9FA52255A6C1003CC707 /* NoData */,
 				110E9F7E22515108003CC707 /* JSON */,
 				1185658F224C690E00180F71 /* Segue.swift */,
@@ -262,6 +265,14 @@
 				118FE0C2224DB3A700BFAB1D /* RestaurantDetailViewController.swift */,
 			);
 			path = RestaurantDetail;
+			sourceTree = "<group>";
+		};
+		118CB149226BD2F8005155DB /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				118CB14A226BD331005155DB /* EatModel.xcdatamodeld */,
+			);
+			path = "Core Data";
 			sourceTree = "<group>";
 		};
 		11DFD40922431A8F00DEFCB5 /* Model */ = {
@@ -484,6 +495,7 @@
 				110E9FB9225FCCE2003CC707 /* ImageFiltering.swift in Sources */,
 				11DFD4132243253900DEFCB5 /* ExploreCell.swift in Sources */,
 				11EFAF8122448B140077B2FA /* LocationDataManager.swift in Sources */,
+				118CB14C226BD331005155DB /* EatModel.xcdatamodeld in Sources */,
 				110E9FA72255A6F6003CC707 /* NoDataView.swift in Sources */,
 				11094E96223888B5001C58C7 /* ExploreViewController.swift in Sources */,
 				110E9F9E2251AAE9003CC707 /* LocationItem.swift in Sources */,
@@ -700,6 +712,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		118CB14A226BD331005155DB /* EatModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				118CB14B226BD331005155DB /* EatModel.xcdatamodel */,
+			);
+			currentVersion = 118CB14B226BD331005155DB /* EatModel.xcdatamodel */;
+			path = EatModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 11094E7522320770001C58C7 /* Project object */;
 }
