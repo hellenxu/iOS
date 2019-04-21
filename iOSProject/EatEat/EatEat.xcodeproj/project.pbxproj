@@ -54,6 +54,7 @@
 		118CB14E226BDF41005155DB /* ReviewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118CB14D226BDF41005155DB /* ReviewItem.swift */; };
 		118CB150226BFFCC005155DB /* RestaurantPhotoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118CB14F226BFFCC005155DB /* RestaurantPhotoItem.swift */; };
 		118CB152226C025F005155DB /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118CB151226C025F005155DB /* CoreDataManager.swift */; };
+		118CB156226C0EEF005155DB /* ReviewDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118CB155226C0EEF005155DB /* ReviewDataManager.swift */; };
 		118FE0C3224DB3A700BFAB1D /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FE0C2224DB3A700BFAB1D /* RestaurantDetailViewController.swift */; };
 		11DFD40B22431AC800DEFCB5 /* ExploreData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11DFD40A22431AC800DEFCB5 /* ExploreData.plist */; };
 		11DFD40D22431B2100DEFCB5 /* ExploreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DFD40C22431B2100DEFCB5 /* ExploreItem.swift */; };
@@ -122,6 +123,7 @@
 		118CB14D226BDF41005155DB /* ReviewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewItem.swift; sourceTree = "<group>"; };
 		118CB14F226BFFCC005155DB /* RestaurantPhotoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantPhotoItem.swift; sourceTree = "<group>"; };
 		118CB151226C025F005155DB /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		118CB155226C0EEF005155DB /* ReviewDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewDataManager.swift; sourceTree = "<group>"; };
 		118FE0C2224DB3A700BFAB1D /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		11DFD40A22431AC800DEFCB5 /* ExploreData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExploreData.plist; sourceTree = "<group>"; };
 		11DFD40C22431B2100DEFCB5 /* ExploreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreItem.swift; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 				110E9FBA22601531003CC707 /* PhotoItem.swift */,
 				118CB14D226BDF41005155DB /* ReviewItem.swift */,
 				118CB14F226BFFCC005155DB /* RestaurantPhotoItem.swift */,
+				118CB155226C0EEF005155DB /* ReviewDataManager.swift */,
 			);
 			path = "Reviews Form";
 			sourceTree = "<group>";
@@ -498,6 +501,7 @@
 				110E9FB0225EB722003CC707 /* ReviewFormViewController.swift in Sources */,
 				110E9FC12261940B003CC707 /* PhotoFilterViewController.swift in Sources */,
 				110E9FA2225459C0003CC707 /* RestaurantCell.swift in Sources */,
+				118CB156226C0EEF005155DB /* ReviewDataManager.swift in Sources */,
 				110E9FAC225D6C9C003CC707 /* RatingsView.swift in Sources */,
 				11856590224C690E00180F71 /* Segue.swift in Sources */,
 				11DFD41F2244814C00DEFCB5 /* LocationViewController.swift in Sources */,
