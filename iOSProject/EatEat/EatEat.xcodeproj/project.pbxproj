@@ -53,6 +53,7 @@
 		118CB14C226BD331005155DB /* EatModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 118CB14A226BD331005155DB /* EatModel.xcdatamodeld */; };
 		118CB14E226BDF41005155DB /* ReviewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118CB14D226BDF41005155DB /* ReviewItem.swift */; };
 		118CB150226BFFCC005155DB /* RestaurantPhotoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118CB14F226BFFCC005155DB /* RestaurantPhotoItem.swift */; };
+		118CB152226C025F005155DB /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118CB151226C025F005155DB /* CoreDataManager.swift */; };
 		118FE0C3224DB3A700BFAB1D /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FE0C2224DB3A700BFAB1D /* RestaurantDetailViewController.swift */; };
 		11DFD40B22431AC800DEFCB5 /* ExploreData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11DFD40A22431AC800DEFCB5 /* ExploreData.plist */; };
 		11DFD40D22431B2100DEFCB5 /* ExploreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DFD40C22431B2100DEFCB5 /* ExploreItem.swift */; };
@@ -120,6 +121,7 @@
 		118CB14B226BD331005155DB /* EatModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EatModel.xcdatamodel; sourceTree = "<group>"; };
 		118CB14D226BDF41005155DB /* ReviewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewItem.swift; sourceTree = "<group>"; };
 		118CB14F226BFFCC005155DB /* RestaurantPhotoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantPhotoItem.swift; sourceTree = "<group>"; };
+		118CB151226C025F005155DB /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		118FE0C2224DB3A700BFAB1D /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		11DFD40A22431AC800DEFCB5 /* ExploreData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExploreData.plist; sourceTree = "<group>"; };
 		11DFD40C22431B2100DEFCB5 /* ExploreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreItem.swift; sourceTree = "<group>"; };
@@ -277,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				118CB14A226BD331005155DB /* EatModel.xcdatamodeld */,
+				118CB151226C025F005155DB /* CoreDataManager.swift */,
 			);
 			path = "Core Data";
 			sourceTree = "<group>";
@@ -506,6 +509,7 @@
 				110E9FA72255A6F6003CC707 /* NoDataView.swift in Sources */,
 				11094E96223888B5001C58C7 /* ExploreViewController.swift in Sources */,
 				110E9F9E2251AAE9003CC707 /* LocationItem.swift in Sources */,
+				118CB152226C025F005155DB /* CoreDataManager.swift in Sources */,
 				11EFAF892245D8430077B2FA /* MapDataManager.swift in Sources */,
 				11EFAF85224579110077B2FA /* RestaurantItem.swift in Sources */,
 				11DFD41822432C8F00DEFCB5 /* RestaurantListViewController.swift in Sources */,

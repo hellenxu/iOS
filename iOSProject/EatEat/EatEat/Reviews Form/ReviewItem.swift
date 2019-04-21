@@ -14,7 +14,7 @@ struct ReviewItem {
     var title: String?
     var customerReview: String?
     var date: Date?
-    var restaurantID: Int
+    var restaurantID: Int?
     var uuid = UUID().uuidString
     
     var displayDate: String {
