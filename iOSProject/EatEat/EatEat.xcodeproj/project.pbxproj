@@ -51,6 +51,8 @@
 		11856599224C72F200180F71 /* RestaurantList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11856598224C72F200180F71 /* RestaurantList.storyboard */; };
 		1185659B224C731D00180F71 /* Locations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1185659A224C731D00180F71 /* Locations.storyboard */; };
 		118CB14C226BD331005155DB /* EatModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 118CB14A226BD331005155DB /* EatModel.xcdatamodeld */; };
+		118CB14E226BDF41005155DB /* ReviewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118CB14D226BDF41005155DB /* ReviewItem.swift */; };
+		118CB150226BFFCC005155DB /* RestaurantPhotoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118CB14F226BFFCC005155DB /* RestaurantPhotoItem.swift */; };
 		118FE0C3224DB3A700BFAB1D /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FE0C2224DB3A700BFAB1D /* RestaurantDetailViewController.swift */; };
 		11DFD40B22431AC800DEFCB5 /* ExploreData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11DFD40A22431AC800DEFCB5 /* ExploreData.plist */; };
 		11DFD40D22431B2100DEFCB5 /* ExploreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DFD40C22431B2100DEFCB5 /* ExploreItem.swift */; };
@@ -116,6 +118,8 @@
 		11856598224C72F200180F71 /* RestaurantList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RestaurantList.storyboard; sourceTree = "<group>"; };
 		1185659A224C731D00180F71 /* Locations.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Locations.storyboard; sourceTree = "<group>"; };
 		118CB14B226BD331005155DB /* EatModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EatModel.xcdatamodel; sourceTree = "<group>"; };
+		118CB14D226BDF41005155DB /* ReviewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewItem.swift; sourceTree = "<group>"; };
+		118CB14F226BFFCC005155DB /* RestaurantPhotoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantPhotoItem.swift; sourceTree = "<group>"; };
 		118FE0C2224DB3A700BFAB1D /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		11DFD40A22431AC800DEFCB5 /* ExploreData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExploreData.plist; sourceTree = "<group>"; };
 		11DFD40C22431B2100DEFCB5 /* ExploreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreItem.swift; sourceTree = "<group>"; };
@@ -228,6 +232,8 @@
 				110E9FAD225D8829003CC707 /* Reviews.storyboard */,
 				110E9FAF225EB722003CC707 /* ReviewFormViewController.swift */,
 				110E9FBA22601531003CC707 /* PhotoItem.swift */,
+				118CB14D226BDF41005155DB /* ReviewItem.swift */,
+				118CB14F226BFFCC005155DB /* RestaurantPhotoItem.swift */,
 			);
 			path = "Reviews Form";
 			sourceTree = "<group>";
@@ -494,6 +500,7 @@
 				11DFD41F2244814C00DEFCB5 /* LocationViewController.swift in Sources */,
 				110E9FB9225FCCE2003CC707 /* ImageFiltering.swift in Sources */,
 				11DFD4132243253900DEFCB5 /* ExploreCell.swift in Sources */,
+				118CB150226BFFCC005155DB /* RestaurantPhotoItem.swift in Sources */,
 				11EFAF8122448B140077B2FA /* LocationDataManager.swift in Sources */,
 				118CB14C226BD331005155DB /* EatModel.xcdatamodeld in Sources */,
 				110E9FA72255A6F6003CC707 /* NoDataView.swift in Sources */,
@@ -510,6 +517,7 @@
 				11DFD40D22431B2100DEFCB5 /* ExploreItem.swift in Sources */,
 				11EFAF8C2245DCA20077B2FA /* DataManager.swift in Sources */,
 				11DFD40F22431E8900DEFCB5 /* ExploreDataManager.swift in Sources */,
+				118CB14E226BDF41005155DB /* ReviewItem.swift in Sources */,
 				118FE0C3224DB3A700BFAB1D /* RestaurantDetailViewController.swift in Sources */,
 				110E9FA4225598E2003CC707 /* RestaurantDataManager.swift in Sources */,
 				11094E8122320770001C58C7 /* AppDelegate.swift in Sources */,
