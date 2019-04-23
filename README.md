@@ -4,6 +4,8 @@ Playground of new toys
 ### iDailyProject
 iOS application daily practice in swift.
 
+[20190422] Added saving restaurant review and photo item.
+
 [20190420] What is core data and how to use data from it.
 
 [20190417] PhotoFilterViewController part two; added permission request.
