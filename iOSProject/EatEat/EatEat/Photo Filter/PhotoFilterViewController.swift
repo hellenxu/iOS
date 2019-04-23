@@ -23,6 +23,8 @@ class PhotoFilterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initialize()
+        
+        print(selectedRestaurantID as Any)
     }
     
     @IBAction func onPhotoTapped(_ sender: Any) {
@@ -72,6 +74,26 @@ private extension PhotoFilterViewController {
                     self.showCameraUserInterface()
                 }
             }
+        }
+    }
+    
+    func checkSavedPhoto() {
+        if let img = self.imgExample.image {
+            var item = RestaurantPhotoItem()
+            item.photo = generate(image: img, ratio: CGFloat(102))
+            item.date = NSDate() as Date
+            item.restaurantID = selectedRestaurantID
+            
+            let manager = CoreDataManager()
+            manager.addPhoto(item)
+            
+            dismiss(animated: true, completion: nil)
+        }
+    }
+    
+    @IBAction func onSaveTapped(_ sender: AnyObject) {
+        DispatchQueue.main.async {
+            self.checkSavedPhoto()
         }
     }
     

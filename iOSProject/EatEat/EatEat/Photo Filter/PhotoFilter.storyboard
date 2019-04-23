@@ -94,7 +94,11 @@
                             </connections>
                         </barButtonItem>
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="save" id="vmJ-Ii-dM2"/>
+                            <barButtonItem systemItem="save" id="vmJ-Ii-dM2">
+                                <connections>
+                                    <action selector="onSaveTapped:" destination="Ao7-8N-Wlz" id="v4b-9p-b1d"/>
+                                </connections>
+                            </barButtonItem>
                             <barButtonItem title="photo" image="icon-photo" id="Ka8-rN-lJe">
                                 <connections>
                                     <action selector="onPhotoTapped:" destination="Ao7-8N-Wlz" id="ujk-oY-DIn"/>
