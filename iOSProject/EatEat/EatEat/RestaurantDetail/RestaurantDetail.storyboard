@@ -302,7 +302,7 @@
                                                                     <rect key="frame" x="-1" y="0.0" width="120" height="62"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <connections>
-                                                                        <segue destination="21e-Uz-lhG" kind="show" id="vTW-gA-Cr2"/>
+                                                                        <segue destination="21e-Uz-lhG" kind="show" identifier="showReview" id="vTW-gA-Cr2"/>
                                                                     </connections>
                                                                 </button>
                                                             </subviews>

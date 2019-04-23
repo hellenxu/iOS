@@ -10,6 +10,7 @@ import UIKit
 
 class ReviewFormViewController: UITableViewController {
 
+    var selectedRestaurantID: Int?
     @IBOutlet weak var ratingView: RatingsView!
     @IBOutlet weak var tfTitle: UITextField!
     @IBOutlet weak var tfName: UITextField!
@@ -18,15 +19,25 @@ class ReviewFormViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print(selectedRestaurantID as Any)
     }
 
-    //TODO
+}
+
+//MARK: private extension
+private extension ReviewFormViewController {
     @IBAction func onSaveTapped(_ sender: Any) {
-        print(ratingView.rating)
-        print(tfTitle.text as Any)
-        print(tfName.text as Any)
-        print(tvReview.text)
+        
+        var item = ReviewItem()
+        item.rating = Float(ratingView.rating)
+        item.title = tfTitle.text
+        item.name = tfName.text
+        item.customerReview = tvReview.text
+        item.restaurantID = selectedRestaurantID
+        
+        let manager = CoreDataManager()
+        manager.addReview(item)
+        
         dismiss(animated: true, completion: nil)
     }
-    
 }

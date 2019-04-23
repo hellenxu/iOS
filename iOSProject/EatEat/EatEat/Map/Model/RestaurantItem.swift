@@ -39,6 +39,7 @@ class RestaurantItem: NSObject, MKAnnotation {
         case postalCode = "postal_code"
         case state
         case imageURL = "image_url"
+        case restaurantID = "id"
     }
     
     var name: String?
@@ -49,6 +50,7 @@ class RestaurantItem: NSObject, MKAnnotation {
     var postalCode: String?
     var state: String?
     var imageURL: String?
+    var restaurantID: Int?
 
     init(dict: [String:AnyObject]) {
         if let name = dict["name"] as? String { self.name = name}
@@ -59,5 +61,6 @@ class RestaurantItem: NSObject, MKAnnotation {
         if let postalCode = dict["postal_code"] as? String { self.postalCode = postalCode}
         if let state = dict["state"] as? String { self.state = state}
         if let image = dict["image_url"] as? String { self.imageURL = image}
+        if let id = dict["id"] as? Int {self.restaurantID = id}
     }
 }
