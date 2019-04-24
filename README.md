@@ -4,6 +4,8 @@ Playground of new toys
 ### iDailyProject
 iOS application daily practice in swift.
 
+[20190423] Reviews storyboard, viewcontrollers and displaying reviews.
+
 [20190422] Added saving restaurant review and photo item.
 
 [20190420] What is core data and how to use data from it.
