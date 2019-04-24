@@ -55,6 +55,8 @@
 		118CB150226BFFCC005155DB /* RestaurantPhotoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118CB14F226BFFCC005155DB /* RestaurantPhotoItem.swift */; };
 		118CB152226C025F005155DB /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118CB151226C025F005155DB /* CoreDataManager.swift */; };
 		118CB156226C0EEF005155DB /* ReviewDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118CB155226C0EEF005155DB /* ReviewDataManager.swift */; };
+		118CB159226EAEB2005155DB /* ReviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118CB158226EAEB2005155DB /* ReviewsViewController.swift */; };
+		118CB15B227001EF005155DB /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118CB15A227001EF005155DB /* ReviewCell.swift */; };
 		118FE0C3224DB3A700BFAB1D /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FE0C2224DB3A700BFAB1D /* RestaurantDetailViewController.swift */; };
 		11DFD40B22431AC800DEFCB5 /* ExploreData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11DFD40A22431AC800DEFCB5 /* ExploreData.plist */; };
 		11DFD40D22431B2100DEFCB5 /* ExploreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DFD40C22431B2100DEFCB5 /* ExploreItem.swift */; };
@@ -124,6 +126,8 @@
 		118CB14F226BFFCC005155DB /* RestaurantPhotoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantPhotoItem.swift; sourceTree = "<group>"; };
 		118CB151226C025F005155DB /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		118CB155226C0EEF005155DB /* ReviewDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewDataManager.swift; sourceTree = "<group>"; };
+		118CB158226EAEB2005155DB /* ReviewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsViewController.swift; sourceTree = "<group>"; };
+		118CB15A227001EF005155DB /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
 		118FE0C2224DB3A700BFAB1D /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		11DFD40A22431AC800DEFCB5 /* ExploreData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExploreData.plist; sourceTree = "<group>"; };
 		11DFD40C22431B2100DEFCB5 /* ExploreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreItem.swift; sourceTree = "<group>"; };
@@ -172,6 +176,7 @@
 		11094E7F22320770001C58C7 /* EatEat */ = {
 			isa = PBXGroup;
 			children = (
+				118CB157226EAE89005155DB /* Reviews */,
 				110E9FB1225EC09F003CC707 /* Photo Filter */,
 				110E9FAA225D6C5B003CC707 /* Reviews Form */,
 				11856595224C6BE100180F71 /* RestaurantDetail */,
@@ -285,6 +290,15 @@
 				118CB151226C025F005155DB /* CoreDataManager.swift */,
 			);
 			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		118CB157226EAE89005155DB /* Reviews */ = {
+			isa = PBXGroup;
+			children = (
+				118CB158226EAEB2005155DB /* ReviewsViewController.swift */,
+				118CB15A227001EF005155DB /* ReviewCell.swift */,
+			);
+			path = Reviews;
 			sourceTree = "<group>";
 		};
 		11DFD40922431A8F00DEFCB5 /* Model */ = {
@@ -504,6 +518,7 @@
 				118CB156226C0EEF005155DB /* ReviewDataManager.swift in Sources */,
 				110E9FAC225D6C9C003CC707 /* RatingsView.swift in Sources */,
 				11856590224C690E00180F71 /* Segue.swift in Sources */,
+				118CB15B227001EF005155DB /* ReviewCell.swift in Sources */,
 				11DFD41F2244814C00DEFCB5 /* LocationViewController.swift in Sources */,
 				110E9FB9225FCCE2003CC707 /* ImageFiltering.swift in Sources */,
 				11DFD4132243253900DEFCB5 /* ExploreCell.swift in Sources */,
@@ -530,6 +545,7 @@
 				110E9FA4225598E2003CC707 /* RestaurantDataManager.swift in Sources */,
 				11094E8122320770001C58C7 /* AppDelegate.swift in Sources */,
 				110E9FBD22618B58003CC707 /* FilterCell.swift in Sources */,
+				118CB159226EAEB2005155DB /* ReviewsViewController.swift in Sources */,
 				110E9FB7225F9A46003CC707 /* FilterManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
