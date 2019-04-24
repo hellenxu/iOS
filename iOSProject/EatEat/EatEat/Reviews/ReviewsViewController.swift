@@ -62,6 +62,7 @@ private extension ReviewsViewController {
     }
 }
 
+//MARKER: dataSource
 extension ReviewsViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return data.count
@@ -70,11 +71,29 @@ extension ReviewsViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "reviewCell", for: indexPath) as! ReviewCell
         let item = data[indexPath.item]
+        cell.lblTitle.text = item.title
+        cell.lblDate.text = item.displayDate
+        cell.lblName.text = item.name
+        cell.lblReview.text = item.customerReview
+        if let rating = item.rating {cell.ratingView.rating = CGFloat(rating)}
         
         return cell
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
+    }
+}
+
+//MARKER: flow layout
+extension ReviewsViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        var width: CGFloat
+        if data.count == 1 {
+            width = collectionView.frame.size.width - 14
+        } else {
+            width = collectionView.frame.size.width - 21
+        }
+        return CGSize(width: width, height: 200)
     }
 }

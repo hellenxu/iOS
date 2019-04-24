@@ -552,7 +552,7 @@
                                                         <constraint firstAttribute="height" constant="25" id="LcB-n0-2zu"/>
                                                     </constraints>
                                                 </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQX-Pf-Wv5">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQX-Pf-Wv5">
                                                     <rect key="frame" x="8" y="62" width="334" height="137"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -586,6 +586,10 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="lAn-Ql-s5u" id="PDC-0r-vR7"/>
+                                    <outlet property="delegate" destination="lAn-Ql-s5u" id="6ay-dn-8fN"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -597,6 +601,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Wfu-aU-4pu"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="zUg-Aq-ot9" id="TXH-PD-HVk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sx5-BD-Cda" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
