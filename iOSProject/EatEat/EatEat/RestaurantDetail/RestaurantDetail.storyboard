@@ -609,16 +609,61 @@
             </objects>
             <point key="canvasLocation" x="777" y="-915"/>
         </scene>
-        <!--View Controller-->
+        <!--Photos View Controller-->
         <scene sceneID="z3i-TA-S3Z">
             <objects>
-                <viewController id="C3Q-eK-o9h" sceneMemberID="viewController">
+                <viewController id="C3Q-eK-o9h" customClass="PhotosViewController" customModule="EatEat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uCZ-dD-5yn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="213.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GTr-R3-ajb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="z07-WF-1iS">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="photoCell" id="ZyA-I0-6rq" customClass="PhotoCell" customModule="EatEat" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ig7-Gi-Rxs">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="Ig7-Gi-Rxs" firstAttribute="top" secondItem="ZyA-I0-6rq" secondAttribute="top" id="7Ti-OY-1OL"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ig7-Gi-Rxs" secondAttribute="trailing" id="Xez-m9-poX"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ig7-Gi-Rxs" secondAttribute="bottom" id="iof-Ao-PiC"/>
+                                            <constraint firstItem="Ig7-Gi-Rxs" firstAttribute="leading" secondItem="ZyA-I0-6rq" secondAttribute="leading" id="vWk-bh-jF0"/>
+                                        </constraints>
+                                        <size key="customSize" width="375" height="216"/>
+                                        <connections>
+                                            <outlet property="imgReview" destination="Ig7-Gi-Rxs" id="oWe-VO-JaI"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="C3Q-eK-o9h" id="A1Q-f1-2Ix"/>
+                                    <outlet property="delegate" destination="C3Q-eK-o9h" id="Oca-Rg-dgN"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="x6f-SL-4aB"/>
                     </view>
+                    <connections>
+                        <outlet property="photoCollection" destination="GTr-R3-ajb" id="IoS-oD-YIn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ugY-RQ-N78" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

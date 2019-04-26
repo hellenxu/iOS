@@ -82,7 +82,7 @@ class CoreDataManager: NSObject {
     
     func addPhoto(_ item: RestaurantPhotoItem) {
         let photo = RestaurantPhoto(context: container.viewContext)
-        photo.date = item.date
+        photo.date = Date()
         photo.photo = Data(item.photoData)
         photo.uuid = item.uuid
         
