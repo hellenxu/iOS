@@ -4,6 +4,8 @@ Playground of new toys
 ### iDailyProject
 iOS application daily practice in swift.
 
+[20190426] Show overall rating for restaurant, photo reviews.
+
 [20190423] Reviews storyboard, viewcontrollers and displaying reviews.
 
 [20190422] Added saving restaurant review and photo item.
