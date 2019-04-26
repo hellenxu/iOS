@@ -23,6 +23,12 @@ class CoreDataManager: NSObject {
         super.init()
     }
     
+    func fetchRestaurantRating(by identifier: Int) -> Float {
+        let reviews = fetchReviews(by: identifier)
+        let sum = reviews.reduce(0, {$0 + ($1.rating ?? 0)})
+        return sum / Float(reviews.count)
+    }
+    
     func fetchReviews(by identifier: Int) -> [ReviewItem] {
         let moc = container.viewContext
         let request: NSFetchRequest<Review> = Review.fetchRequest()

@@ -15,7 +15,7 @@ class RatingsView: UIControl {
     
     let shouldBecomeFirstResponder = true
     var rating: CGFloat = 0.0
-    var totalStars = 5
+    let totalStars = 5
     
     override init(frame: CGRect) {
         super.init(frame: frame)

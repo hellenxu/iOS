@@ -32,6 +32,7 @@ class RestaurantDetailViewController: UITableViewController {
     @IBOutlet weak var imgMap: UIImageView!
     
     var selectedRestaurant: RestaurantItem?
+    let coreManager = CoreDataManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,10 +75,25 @@ private extension RestaurantDetailViewController {
         vc.selectedRestaurantID = selectedRestaurant?.restaurantID
     }
     
-    //TODO set rating value dynamically
     func createRating() {
-//        ratingView.rating = 3.5
+        if let id = selectedRestaurant?.restaurantID {
+            let value = formatRating(raw: coreManager.fetchRestaurantRating(by: id))
+            ratingView.rating = CGFloat(value)
+            if ratingView.rating.isNaN {lblOverallRating.text = "0"}
+            else {lblOverallRating.text = "\(value)"}
+        }
         ratingView.isEnabled = false
+    }
+    
+    func formatRating(raw: Float) -> Float {
+        var value: Float
+        if (raw + 0.5 < ceilf(Float(raw))) {
+            value = floor(raw) + 0.5
+        } else {
+            value = ceilf(Float(raw))
+        }
+        
+        return min(max(value, 0), Float(ratingView.totalStars))
     }
     
     func setupLabels() {
