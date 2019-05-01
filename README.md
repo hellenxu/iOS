@@ -4,10 +4,12 @@ Playground of new toys
 ### iDailyProject
 iOS application daily practice in swift.
 
-Known issues:
+#### Known issues:
 1. cannot show photo reviews;
+
 ***
 
+#### Path
 [20190430] remove unused ReviewDataManager; clean up.
 
 [20190426] Show overall rating for restaurant, photo reviews.
