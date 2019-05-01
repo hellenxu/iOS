@@ -5,7 +5,11 @@ Playground of new toys
 iOS application daily practice in swift.
 
 #### Known issues:
-1. cannot show photo reviews;
+1. cannot show photo reviews.
+
+error log:
+
+> 2019-04-30 21:40:22.204089-0400 EatEat[69983:2445476] [error] warning: Multiple NSEntityDescriptions claim the NSManagedObject subclass 'RestaurantPhoto' so +entity is unable to disambiguate. CoreData: warning: Multiple NSEntityDescriptions claim the NSManagedObject subclass 'RestaurantPhoto' so +entity is unable to disambiguate.
 
 ***
 
