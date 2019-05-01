@@ -50,7 +50,7 @@ private extension PhotosViewController {
             } else {
                 let view = NoDataView(frame: CGRect(x: 0, y: 0, width: photoCollection.frame.width, height: photoCollection.frame.height))
                 view.set(title: "Reviews")
-                view.set(desc: "There are currently no reviews")
+                view.set(desc: "There are currently no photo reviews")
                 photoCollection.backgroundView = view
             }
             

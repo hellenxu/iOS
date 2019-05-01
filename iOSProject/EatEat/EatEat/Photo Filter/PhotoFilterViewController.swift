@@ -40,7 +40,6 @@ private extension PhotoFilterViewController {
         checkSource()
     }
     
-    //TODO
     func requestAccess() {
         AVCaptureDevice.requestAccess(for: AVMediaType.video) { granted in
             if granted {}
