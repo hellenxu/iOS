@@ -14,6 +14,9 @@ error log:
 ***
 
 #### Path
+
+[20190501] add round corner effect for explore cell; hide navigation bar on explore screen; update navigation bar and tab bar appearance; adjust spacing of explore cell.
+
 [20190430] remove unused ReviewDataManager; clean up.
 
 [20190426] Show overall rating for restaurant, photo reviews.
