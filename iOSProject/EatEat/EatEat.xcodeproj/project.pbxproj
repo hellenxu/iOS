@@ -44,6 +44,7 @@
 		110E9FBD22618B58003CC707 /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E9FBC22618B58003CC707 /* FilterCell.swift */; };
 		110E9FBF22618D19003CC707 /* PhotoFilter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 110E9FBE22618D19003CC707 /* PhotoFilter.storyboard */; };
 		110E9FC12261940B003CC707 /* PhotoFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E9FC02261940B003CC707 /* PhotoFilterViewController.swift */; };
+		112E9324227A86F000492E21 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112E9323227A86F000492E21 /* Device.swift */; };
 		11856590224C690E00180F71 /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1185658F224C690E00180F71 /* Segue.swift */; };
 		11856592224C6B8500180F71 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11856591224C6B8500180F71 /* Map.storyboard */; };
 		11856594224C6BC400180F71 /* Explore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11856593224C6BC400180F71 /* Explore.storyboard */; };
@@ -116,6 +117,7 @@
 		110E9FBC22618B58003CC707 /* FilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
 		110E9FBE22618D19003CC707 /* PhotoFilter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotoFilter.storyboard; sourceTree = "<group>"; };
 		110E9FC02261940B003CC707 /* PhotoFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFilterViewController.swift; sourceTree = "<group>"; };
+		112E9323227A86F000492E21 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		1185658F224C690E00180F71 /* Segue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
 		11856591224C6B8500180F71 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		11856593224C6BC400180F71 /* Explore.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Explore.storyboard; sourceTree = "<group>"; };
@@ -271,7 +273,9 @@
 				110E9FA52255A6C1003CC707 /* NoData */,
 				110E9F7E22515108003CC707 /* JSON */,
 				1185658F224C690E00180F71 /* Segue.swift */,
+				11EFAF8B2245DCA20077B2FA /* DataManager.swift */,
 				110E9F9B2251A695003CC707 /* RestaurantAPIManager.swift */,
+				112E9323227A86F000492E21 /* Device.swift */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -413,7 +417,6 @@
 			isa = PBXGroup;
 			children = (
 				1185658D224C68F300180F71 /* Misc */,
-				11EFAF8B2245DCA20077B2FA /* DataManager.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -530,6 +533,7 @@
 				11856590224C690E00180F71 /* Segue.swift in Sources */,
 				118CB15B227001EF005155DB /* ReviewCell.swift in Sources */,
 				11DFD41F2244814C00DEFCB5 /* LocationViewController.swift in Sources */,
+				112E9324227A86F000492E21 /* Device.swift in Sources */,
 				110E9FB9225FCCE2003CC707 /* ImageFiltering.swift in Sources */,
 				118CB1602273A963005155DB /* PhotosViewController.swift in Sources */,
 				11DFD4132243253900DEFCB5 /* ExploreCell.swift in Sources */,
