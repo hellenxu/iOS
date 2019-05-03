@@ -41,6 +41,8 @@ private extension LocationViewController {
     
     func initialize() {
         locManager.fetch()
+        title = "Select a Location"
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
 }
 
