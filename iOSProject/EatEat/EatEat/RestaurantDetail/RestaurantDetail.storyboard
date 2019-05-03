@@ -443,7 +443,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nRK-hM-3ze">
                                                     <rect key="frame" x="17" y="4" width="341" height="208"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ib0-Af-srx">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ib0-Af-srx">
                                                             <rect key="frame" x="0.0" y="0.0" width="341" height="208"/>
                                                         </imageView>
                                                     </subviews>
@@ -617,9 +617,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="213.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GTr-R3-ajb">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="214"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GTr-R3-ajb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="213.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="z07-WF-1iS">
                                     <size key="itemSize" width="50" height="50"/>
@@ -635,7 +634,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ig7-Gi-Rxs">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ig7-Gi-Rxs">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
                                                 </imageView>
                                             </subviews>
@@ -659,6 +658,12 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GTr-R3-ajb" firstAttribute="leading" secondItem="x6f-SL-4aB" secondAttribute="leading" id="OVb-sS-Keu"/>
+                            <constraint firstAttribute="bottom" secondItem="GTr-R3-ajb" secondAttribute="bottom" id="WCm-xi-Eze"/>
+                            <constraint firstItem="GTr-R3-ajb" firstAttribute="top" secondItem="x6f-SL-4aB" secondAttribute="top" id="kJ5-kX-CGY"/>
+                            <constraint firstItem="GTr-R3-ajb" firstAttribute="trailing" secondItem="x6f-SL-4aB" secondAttribute="trailing" id="uw9-nN-Pyk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="x6f-SL-4aB"/>
                     </view>
                     <connections>
@@ -686,7 +691,7 @@
         <image name="icon-review" width="26" height="25"/>
         <image name="time-bg" width="68" height="27"/>
         <namedColor name="Dark Grey">
-            <color red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.66699999570846558" green="0.66699999570846558" blue="0.66699999570846558" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
