@@ -15,6 +15,7 @@ class RestaurantListViewController: UIViewController {
     var selectedCity: LocationItem?
     var selectedType: String?
     @IBOutlet weak var restaurantCollection: UICollectionView!
+    fileprivate let minItemSpacing: CGFloat = 7
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,13 +33,27 @@ class RestaurantListViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        createData()
-        setupTitle()
+        super.viewDidAppear(animated)
+        initialize()
     }
 }
 
 //MARK: private extension
-extension RestaurantListViewController {
+private extension RestaurantListViewController {
+    func initialize() {
+        createData()
+        setupTitle()
+        if Device.isPad {setupCollectionView()}
+    }
+    
+    func setupCollectionView() {
+        let flow = UICollectionViewFlowLayout()
+        flow.sectionInset = UIEdgeInsets(top: 7, left: 7, bottom: 7, right: 7)
+        flow.minimumInteritemSpacing = 0
+        flow.minimumLineSpacing = 7
+        restaurantCollection?.collectionViewLayout = flow
+    }
+    
     func createData() {
         guard let location = selectedCity?.city, let filter = selectedType else {return}
         manager.fetch(by: location, withFilter: filter) {_ in
@@ -100,5 +115,24 @@ extension RestaurantListViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return manager.numberOfItems()
+    }
+}
+
+//MARKER: delegate flow layout
+extension RestaurantListViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if Device.isPad {
+            let factor = traitCollection.horizontalSizeClass == .compact ? 2:3
+            let screenRect = collectionView.frame.size.width
+            let screenWidth = screenRect - (CGFloat(minItemSpacing) * CGFloat(factor + 1))
+            let cellWidth = screenWidth / CGFloat(factor)
+            
+            return CGSize(width: cellWidth, height: 325)
+        } else {
+            let screenRect = collectionView.frame.size.width
+            let cellWidth = screenRect - 14
+            
+            return CGSize(width: cellWidth, height: 325)
+        }
     }
 }
