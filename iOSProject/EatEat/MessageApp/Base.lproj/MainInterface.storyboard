@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,21 +13,88 @@
         <!--Messages View Controller-->
         <scene sceneID="7MM-of-jgj">
             <objects>
-                <viewController id="ObA-dk-sSI" customClass="MessagesViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ObA-dk-sSI" customClass="MessagesViewController" customModule="MessageApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1e-fi-ked">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mHa-xX-2lr">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="T7X-DO-UEx">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="restaurantCell" id="Grk-An-sTC">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="78"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="78"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant-list-img" translatesAutoresizingMaskIntoConstraints="NO" id="hQo-wF-gqF">
+                                                    <rect key="frame" x="8" y="9" width="60" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="Fnw-sO-qNQ"/>
+                                                        <constraint firstAttribute="width" constant="60" id="rOS-eG-h2X"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lbl Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3L-Sg-CgW">
+                                                    <rect key="frame" x="76" y="10" width="236" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="Gob-tU-e7A"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lbl City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTb-j1-2E0">
+                                                    <rect key="frame" x="76" y="35" width="236" height="16"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="16" id="MaJ-9X-yRM"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lbl Cuisine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Uc-Rr-4Cs">
+                                                    <rect key="frame" x="76" y="53" width="236" height="16"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="16" id="LKm-gn-caa"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="hQo-wF-gqF" firstAttribute="leading" secondItem="Grk-An-sTC" secondAttribute="leading" constant="8" id="8ka-XF-VZJ"/>
+                                            <constraint firstItem="9Uc-Rr-4Cs" firstAttribute="leading" secondItem="hQo-wF-gqF" secondAttribute="trailing" constant="8" id="95b-r3-958"/>
+                                            <constraint firstItem="LTb-j1-2E0" firstAttribute="top" secondItem="u3L-Sg-CgW" secondAttribute="bottom" constant="4" id="CiU-t8-7Bu"/>
+                                            <constraint firstAttribute="trailing" secondItem="u3L-Sg-CgW" secondAttribute="trailing" constant="8" id="CwH-sN-Jl3"/>
+                                            <constraint firstAttribute="trailing" secondItem="9Uc-Rr-4Cs" secondAttribute="trailing" constant="8" id="Jda-Li-h4g"/>
+                                            <constraint firstItem="u3L-Sg-CgW" firstAttribute="leading" secondItem="hQo-wF-gqF" secondAttribute="trailing" constant="8" id="LWD-un-Ng9"/>
+                                            <constraint firstAttribute="trailing" secondItem="LTb-j1-2E0" secondAttribute="trailing" constant="8" id="LaO-uz-pRA"/>
+                                            <constraint firstItem="9Uc-Rr-4Cs" firstAttribute="top" secondItem="LTb-j1-2E0" secondAttribute="bottom" constant="2" id="O9q-vJ-J9u"/>
+                                            <constraint firstItem="hQo-wF-gqF" firstAttribute="top" secondItem="Grk-An-sTC" secondAttribute="top" constant="9" id="XKS-B5-tuz"/>
+                                            <constraint firstItem="LTb-j1-2E0" firstAttribute="leading" secondItem="hQo-wF-gqF" secondAttribute="trailing" constant="8" id="k6q-ur-LUB"/>
+                                            <constraint firstItem="u3L-Sg-CgW" firstAttribute="top" secondItem="Grk-An-sTC" secondAttribute="top" constant="10" id="wj6-EG-00a"/>
+                                        </constraints>
+                                        <size key="customSize" width="320" height="78"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="d1e-fi-ked" secondAttribute="centerY" id="H0s-hz-dDP"/>
-                            <constraint firstAttribute="centerX" secondItem="d1e-fi-ked" secondAttribute="centerX" id="wFy-hW-Bib"/>
+                            <constraint firstItem="mHa-xX-2lr" firstAttribute="leading" secondItem="LDy-ih-0nr" secondAttribute="leading" id="7Vc-lc-Ka2"/>
+                            <constraint firstItem="mHa-xX-2lr" firstAttribute="trailing" secondItem="LDy-ih-0nr" secondAttribute="trailing" id="Wxz-pU-crM"/>
+                            <constraint firstItem="mHa-xX-2lr" firstAttribute="top" secondItem="zMn-AG-sqS" secondAttribute="top" id="XiX-Ng-tlC"/>
+                            <constraint firstAttribute="bottom" secondItem="mHa-xX-2lr" secondAttribute="bottom" id="yrb-NA-c8e"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LDy-ih-0nr"/>
                     </view>
@@ -34,4 +105,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="restaurant-list-img" width="82" height="82"/>
+    </resources>
 </document>
