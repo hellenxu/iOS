@@ -15,6 +15,8 @@ error log:
 
 #### Path
 
+[20190509] added iMessage target.
+
 [20190503] update location list style, restaurant list and details for pad.
 
 [20190501] add round corner effect for explore cell; hide navigation bar on explore screen; update navigation bar and tab bar appearance; adjust spacing of explore cell.
