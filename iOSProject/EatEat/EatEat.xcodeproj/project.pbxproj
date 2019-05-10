@@ -45,6 +45,11 @@
 		110E9FBF22618D19003CC707 /* PhotoFilter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 110E9FBE22618D19003CC707 /* PhotoFilter.storyboard */; };
 		110E9FC12261940B003CC707 /* PhotoFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E9FC02261940B003CC707 /* PhotoFilterViewController.swift */; };
 		112E9324227A86F000492E21 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112E9323227A86F000492E21 /* Device.swift */; };
+		112E932C22852B0800492E21 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112E932B22852B0800492E21 /* Messages.framework */; };
+		112E932F22852B0800492E21 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112E932E22852B0800492E21 /* MessagesViewController.swift */; };
+		112E933222852B0800492E21 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 112E933022852B0800492E21 /* MainInterface.storyboard */; };
+		112E933822852B0A00492E21 /* MessageApp.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 112E932922852B0800492E21 /* MessageApp.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		112E933E22852B9300492E21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 112E933D22852B9300492E21 /* Assets.xcassets */; };
 		11856590224C690E00180F71 /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1185658F224C690E00180F71 /* Segue.swift */; };
 		11856592224C6B8500180F71 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11856591224C6B8500180F71 /* Map.storyboard */; };
 		11856594224C6BC400180F71 /* Explore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11856593224C6BC400180F71 /* Explore.storyboard */; };
@@ -74,6 +79,30 @@
 		11EFAF8C2245DCA20077B2FA /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EFAF8B2245DCA20077B2FA /* DataManager.swift */; };
 		11EFAF8F2245E0EC0077B2FA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EFAF8E2245E0EC0077B2FA /* MapViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		112E933622852B0A00492E21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11094E7522320770001C58C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 112E932822852B0800492E21;
+			remoteInfo = MessageApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		112E933C22852B0A00492E21 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				112E933822852B0A00492E21 /* MessageApp.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		11094E7D22320770001C58C7 /* EatEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EatEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +147,12 @@
 		110E9FBE22618D19003CC707 /* PhotoFilter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotoFilter.storyboard; sourceTree = "<group>"; };
 		110E9FC02261940B003CC707 /* PhotoFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFilterViewController.swift; sourceTree = "<group>"; };
 		112E9323227A86F000492E21 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		112E932922852B0800492E21 /* MessageApp.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MessageApp.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		112E932B22852B0800492E21 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		112E932E22852B0800492E21 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		112E933122852B0800492E21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		112E933522852B0A00492E21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		112E933D22852B9300492E21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1185658F224C690E00180F71 /* Segue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
 		11856591224C6B8500180F71 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		11856593224C6BC400180F71 /* Explore.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Explore.storyboard; sourceTree = "<group>"; };
@@ -157,6 +192,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		112E932622852B0800492E21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				112E932C22852B0800492E21 /* Messages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -165,6 +208,8 @@
 			children = (
 				11094E9822407A21001C58C7 /* Playgrounds */,
 				11094E7F22320770001C58C7 /* EatEat */,
+				112E932D22852B0800492E21 /* MessageApp */,
+				112E932A22852B0800492E21 /* Frameworks */,
 				11094E7E22320770001C58C7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -173,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				11094E7D22320770001C58C7 /* EatEat.app */,
+				112E932922852B0800492E21 /* MessageApp.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -264,6 +310,25 @@
 				110E9FC02261940B003CC707 /* PhotoFilterViewController.swift */,
 			);
 			path = "Photo Filter";
+			sourceTree = "<group>";
+		};
+		112E932A22852B0800492E21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				112E932B22852B0800492E21 /* Messages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		112E932D22852B0800492E21 /* MessageApp */ = {
+			isa = PBXGroup;
+			children = (
+				112E933D22852B9300492E21 /* Assets.xcassets */,
+				112E932E22852B0800492E21 /* MessagesViewController.swift */,
+				112E933022852B0800492E21 /* MainInterface.storyboard */,
+				112E933522852B0A00492E21 /* Info.plist */,
+			);
+			path = MessageApp;
 			sourceTree = "<group>";
 		};
 		1185658D224C68F300180F71 /* Misc */ = {
@@ -439,15 +504,34 @@
 				11094E7922320770001C58C7 /* Sources */,
 				11094E7A22320770001C58C7 /* Frameworks */,
 				11094E7B22320770001C58C7 /* Resources */,
+				112E933C22852B0A00492E21 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				112E933722852B0A00492E21 /* PBXTargetDependency */,
 			);
 			name = EatEat;
 			productName = EatEat;
 			productReference = 11094E7D22320770001C58C7 /* EatEat.app */;
 			productType = "com.apple.product-type.application";
+		};
+		112E932822852B0800492E21 /* MessageApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 112E933922852B0A00492E21 /* Build configuration list for PBXNativeTarget "MessageApp" */;
+			buildPhases = (
+				112E932522852B0800492E21 /* Sources */,
+				112E932622852B0800492E21 /* Frameworks */,
+				112E932722852B0800492E21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MessageApp;
+			productName = MessageApp;
+			productReference = 112E932922852B0800492E21 /* MessageApp.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
 		};
 /* End PBXNativeTarget section */
 
@@ -455,12 +539,15 @@
 		11094E7522320770001C58C7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Six;
 				TargetAttributes = {
 					11094E7C22320770001C58C7 = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					112E932822852B0800492E21 = {
+						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
 			};
@@ -478,6 +565,7 @@
 			projectRoot = "";
 			targets = (
 				11094E7C22320770001C58C7 /* EatEat */,
+				112E932822852B0800492E21 /* MessageApp */,
 			);
 		};
 /* End PBXProject section */
@@ -516,6 +604,15 @@
 				110E9F8F22515189003CC707 /* New Orleans.json in Resources */,
 				110E9F9922515189003CC707 /* Philadelphia.json in Resources */,
 				11856599224C72F200180F71 /* RestaurantList.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		112E932722852B0800492E21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				112E933E22852B9300492E21 /* Assets.xcassets in Resources */,
+				112E933222852B0800492E21 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,7 +663,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		112E932522852B0800492E21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				112E932F22852B0800492E21 /* MessagesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		112E933722852B0A00492E21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 112E932822852B0800492E21 /* MessageApp */;
+			targetProxy = 112E933622852B0A00492E21 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		11094E8422320770001C58C7 /* Main.storyboard */ = {
@@ -583,6 +696,14 @@
 				11094E8A22320771001C58C7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		112E933022852B0800492E21 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				112E933122852B0800492E21 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -707,6 +828,7 @@
 		11094E9022320771001C58C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = EatEat/Info.plist;
@@ -724,6 +846,7 @@
 		11094E9122320771001C58C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = EatEat/Info.plist;
@@ -734,6 +857,46 @@
 				PRODUCT_BUNDLE_IDENTIFIER = six.ca.EatEat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		112E933A22852B0A00492E21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MessageApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = six.ca.EatEat.MessageApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		112E933B22852B0A00492E21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MessageApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = six.ca.EatEat.MessageApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -755,6 +918,15 @@
 			buildConfigurations = (
 				11094E9022320771001C58C7 /* Debug */,
 				11094E9122320771001C58C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		112E933922852B0A00492E21 /* Build configuration list for PBXNativeTarget "MessageApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				112E933A22852B0A00492E21 /* Debug */,
+				112E933B22852B0A00492E21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
