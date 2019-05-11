@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import EatDataKit
 
 class MapViewController: UIViewController {
     @IBOutlet var mapView: MKMapView!

@@ -9,13 +9,13 @@
 import UIKit
 import MapKit
 
-class RestaurantItem: NSObject, MKAnnotation {
+public class RestaurantItem: NSObject, MKAnnotation {
 
-    var title: String? {
+    public var title: String? {
         return name
     }
     
-    var subtitle: String? {
+    public var subtitle: String? {
         if cuisines.isEmpty {
             return ""
         } else if cuisines.count == 1 {
@@ -25,12 +25,12 @@ class RestaurantItem: NSObject, MKAnnotation {
         }
     }
     
-    var coordinate: CLLocationCoordinate2D {
+    public var coordinate: CLLocationCoordinate2D {
         guard let lat = lat, let long = long else { return CLLocationCoordinate2D() }
         return CLLocationCoordinate2D(latitude: lat, longitude: long)
     }
     
-    enum CodingKeys: String {
+    public enum CodingKeys: String {
         case name
         case cuisines
         case lat
@@ -42,15 +42,15 @@ class RestaurantItem: NSObject, MKAnnotation {
         case restaurantID = "id"
     }
     
-    var name: String?
-    var cuisines: [String] = []
-    var lat: Double?
-    var long: Double?
-    var address: String?
-    var postalCode: String?
-    var state: String?
-    var imageURL: String?
-    var restaurantID: Int?
+    public var name: String?
+    public var cuisines: [String] = []
+    public var lat: Double?
+    public var long: Double?
+    public var address: String?
+    public var postalCode: String?
+    public var state: String?
+    public var imageURL: String?
+    public var restaurantID: Int?
 
     init(dict: [String:AnyObject]) {
         if let name = dict["name"] as? String { self.name = name}

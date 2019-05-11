@@ -8,12 +8,12 @@
 
 import Foundation
 
-class RestaurantDataManager {
+public class RestaurantDataManager {
     
     private var items:[RestaurantItem] = []
     
     //fetch restaurant items based on cuisines
-    func fetch(by location: String, withFilter: String = "All", completionHandler:(_ items:[RestaurantItem]) -> Void) {
+    public func fetch(by location: String, withFilter: String = "All", completionHandler:(_ items:[RestaurantItem]) -> Void) {
         var restaurants:[RestaurantItem] = []
         
         for restaurant in RestaurantAPIManager.loadJSON(file: location) {
@@ -28,11 +28,13 @@ class RestaurantDataManager {
         completionHandler(items)
     }
     
-    func numberOfItems() -> Int {
+    public func numberOfItems() -> Int {
         return items.count
     }
     
-    func restaurantItem(at index:IndexPath) -> RestaurantItem {
+    public func restaurantItem(at index:IndexPath) -> RestaurantItem {
         return items[index.item]
     }
+    
+    public init() {}
 }

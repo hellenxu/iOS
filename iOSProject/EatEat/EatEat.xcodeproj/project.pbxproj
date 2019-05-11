@@ -26,11 +26,9 @@
 		110E9F9822515189003CC707 /* Chicago.json in Resources */ = {isa = PBXBuildFile; fileRef = 110E9F8A22515189003CC707 /* Chicago.json */; };
 		110E9F9922515189003CC707 /* Philadelphia.json in Resources */ = {isa = PBXBuildFile; fileRef = 110E9F8B22515189003CC707 /* Philadelphia.json */; };
 		110E9F9A22515189003CC707 /* Portland.json in Resources */ = {isa = PBXBuildFile; fileRef = 110E9F8C22515189003CC707 /* Portland.json */; };
-		110E9F9C2251A695003CC707 /* RestaurantAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E9F9B2251A695003CC707 /* RestaurantAPIManager.swift */; };
 		110E9F9E2251AAE9003CC707 /* LocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E9F9D2251AAE9003CC707 /* LocationItem.swift */; };
 		110E9FA02252E86E003CC707 /* ExploreHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E9F9F2252E86E003CC707 /* ExploreHeaderView.swift */; };
 		110E9FA2225459C0003CC707 /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E9FA1225459C0003CC707 /* RestaurantCell.swift */; };
-		110E9FA4225598E2003CC707 /* RestaurantDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E9FA3225598E2003CC707 /* RestaurantDataManager.swift */; };
 		110E9FA72255A6F6003CC707 /* NoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E9FA62255A6F6003CC707 /* NoDataView.swift */; };
 		110E9FA92255A755003CC707 /* NoDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110E9FA82255A755003CC707 /* NoDataView.xib */; };
 		110E9FAC225D6C9C003CC707 /* RatingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E9FAB225D6C9C003CC707 /* RatingsView.swift */; };
@@ -50,6 +48,40 @@
 		112E933222852B0800492E21 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 112E933022852B0800492E21 /* MainInterface.storyboard */; };
 		112E933822852B0A00492E21 /* MessageApp.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 112E932922852B0800492E21 /* MessageApp.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		112E933E22852B9300492E21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 112E933D22852B9300492E21 /* Assets.xcassets */; };
+		112E93482286601300492E21 /* EatDataKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 112E93462286601300492E21 /* EatDataKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		112E934B2286601300492E21 /* EatDataKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112E93442286601300492E21 /* EatDataKit.framework */; };
+		112E934C2286601300492E21 /* EatDataKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 112E93442286601300492E21 /* EatDataKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		112E93522286614500492E21 /* Aspen.json in Resources */ = {isa = PBXBuildFile; fileRef = 110E9F8822515189003CC707 /* Aspen.json */; };
+		112E93532286614500492E21 /* Aspen.json in Resources */ = {isa = PBXBuildFile; fileRef = 110E9F8822515189003CC707 /* Aspen.json */; };
+		112E93542286616900492E21 /* Boston.json in Resources */ = {isa = PBXBuildFile; fileRef = 110E9F8722515189003CC707 /* Boston.json */; };
+		112E93552286616A00492E21 /* Boston.json in Resources */ = {isa = PBXBuildFile; fileRef = 110E9F8722515189003CC707 /* Boston.json */; };
+		112E93562286616E00492E21 /* Charleston.json in Resources */ = {isa = PBXBuildFile; fileRef = 110E9F8322515189003CC707 /* Charleston.json */; };
+		112E93572286616F00492E21 /* Charleston.json in Resources */ = {isa = PBXBuildFile; fileRef = 110E9F8322515189003CC707 /* Charleston.json */; };
+		112E93582286617200492E21 /* Chicago.json in Resources */ = {isa = PBXBuildFile; fileRef = 110E9F8A22515189003CC707 /* Chicago.json */; };
+		112E93592286617300492E21 /* Chicago.json in Resources */ = {isa = PBXBuildFile; fileRef = 110E9F8A22515189003CC707 /* Chicago.json */; };
+		112E935A2286617A00492E21 /* Houston.json in Resources */ = {isa = PBXBuildFile; fileRef = 110E9F8922515189003CC707 /* Houston.json */; };
+		112E935B2286617A00492E21 /* Houston.json in Resources */ = {isa = PBXBuildFile; fileRef = 110E9F8922515189003CC707 /* Houston.json */; };
+		112E935C2286617D00492E21 /* Las Vegas.json in Resources */ = {isa = PBXBuildFile; fileRef = 110E9F8422515189003CC707 /* Las Vegas.json */; };
+		112E935D2286617E00492E21 /* Las Vegas.json in Resources */ = {isa = PBXBuildFile; fileRef = 110E9F8422515189003CC707 /* Las Vegas.json */; };
+		112E935E2286618100492E21 /* Los Angeles.json in Resources */ = {isa = PBXBuildFile; fileRef = 110E9F8222515189003CC707 /* Los Angeles.json */; };
+		112E935F2286618100492E21 /* Los Angeles.json in Resources */ = {isa = PBXBuildFile; fileRef = 110E9F8222515189003CC707 /* Los Angeles.json */; };
+		112E93602286618C00492E21 /* Miami.json in Resources */ = {isa = PBXBuildFile; fileRef = 110E9F8022515189003CC707 /* Miami.json */; };
+		112E93612286618C00492E21 /* Miami.json in Resources */ = {isa = PBXBuildFile; fileRef = 110E9F8022515189003CC707 /* Miami.json */; };
+		112E93622286619500492E21 /* New Orleans.json in Resources */ = {isa = PBXBuildFile; fileRef = 110E9F8122515189003CC707 /* New Orleans.json */; };
+		112E93632286619500492E21 /* New Orleans.json in Resources */ = {isa = PBXBuildFile; fileRef = 110E9F8122515189003CC707 /* New Orleans.json */; };
+		112E93642286619800492E21 /* New York.json in Resources */ = {isa = PBXBuildFile; fileRef = 110E9F8522515189003CC707 /* New York.json */; };
+		112E93652286619900492E21 /* New York.json in Resources */ = {isa = PBXBuildFile; fileRef = 110E9F8522515189003CC707 /* New York.json */; };
+		112E93662286619C00492E21 /* Philadelphia.json in Resources */ = {isa = PBXBuildFile; fileRef = 110E9F8B22515189003CC707 /* Philadelphia.json */; };
+		112E93672286619D00492E21 /* Philadelphia.json in Resources */ = {isa = PBXBuildFile; fileRef = 110E9F8B22515189003CC707 /* Philadelphia.json */; };
+		112E93682286619F00492E21 /* Portland.json in Resources */ = {isa = PBXBuildFile; fileRef = 110E9F8C22515189003CC707 /* Portland.json */; };
+		112E9369228661A000492E21 /* Portland.json in Resources */ = {isa = PBXBuildFile; fileRef = 110E9F8C22515189003CC707 /* Portland.json */; };
+		112E936A228661A300492E21 /* San Antonio.json in Resources */ = {isa = PBXBuildFile; fileRef = 110E9F8622515189003CC707 /* San Antonio.json */; };
+		112E936B228661A300492E21 /* San Antonio.json in Resources */ = {isa = PBXBuildFile; fileRef = 110E9F8622515189003CC707 /* San Antonio.json */; };
+		112E936C228661A600492E21 /* San Francisco.json in Resources */ = {isa = PBXBuildFile; fileRef = 110E9F7F22515188003CC707 /* San Francisco.json */; };
+		112E936D228661A700492E21 /* San Francisco.json in Resources */ = {isa = PBXBuildFile; fileRef = 110E9F7F22515188003CC707 /* San Francisco.json */; };
+		112E936E228661BD00492E21 /* RestaurantAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E9F9B2251A695003CC707 /* RestaurantAPIManager.swift */; };
+		112E936F228661C300492E21 /* RestaurantItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EFAF84224579110077B2FA /* RestaurantItem.swift */; };
+		112E9370228661C700492E21 /* RestaurantDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E9FA3225598E2003CC707 /* RestaurantDataManager.swift */; };
 		11856590224C690E00180F71 /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1185658F224C690E00180F71 /* Segue.swift */; };
 		11856592224C6B8500180F71 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11856591224C6B8500180F71 /* Map.storyboard */; };
 		11856594224C6BC400180F71 /* Explore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11856593224C6BC400180F71 /* Explore.storyboard */; };
@@ -73,7 +105,6 @@
 		11DFD41F2244814C00DEFCB5 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DFD41E2244814C00DEFCB5 /* LocationViewController.swift */; };
 		11EFAF7F22448AA10077B2FA /* Locations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11EFAF7E22448AA10077B2FA /* Locations.plist */; };
 		11EFAF8122448B140077B2FA /* LocationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EFAF8022448B140077B2FA /* LocationDataManager.swift */; };
-		11EFAF85224579110077B2FA /* RestaurantItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EFAF84224579110077B2FA /* RestaurantItem.swift */; };
 		11EFAF872245D80E0077B2FA /* MapLocations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11EFAF862245D80E0077B2FA /* MapLocations.plist */; };
 		11EFAF892245D8430077B2FA /* MapDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EFAF882245D8430077B2FA /* MapDataManager.swift */; };
 		11EFAF8C2245DCA20077B2FA /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EFAF8B2245DCA20077B2FA /* DataManager.swift */; };
@@ -88,6 +119,13 @@
 			remoteGlobalIDString = 112E932822852B0800492E21;
 			remoteInfo = MessageApp;
 		};
+		112E93492286601300492E21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11094E7522320770001C58C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 112E93432286601300492E21;
+			remoteInfo = EatDataKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -100,6 +138,17 @@
 				112E933822852B0A00492E21 /* MessageApp.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		112E93502286601300492E21 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				112E934C2286601300492E21 /* EatDataKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -153,6 +202,9 @@
 		112E933122852B0800492E21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		112E933522852B0A00492E21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		112E933D22852B9300492E21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		112E93442286601300492E21 /* EatDataKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EatDataKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		112E93462286601300492E21 /* EatDataKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EatDataKit.h; sourceTree = "<group>"; };
+		112E93472286601300492E21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1185658F224C690E00180F71 /* Segue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
 		11856591224C6B8500180F71 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		11856593224C6BC400180F71 /* Explore.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Explore.storyboard; sourceTree = "<group>"; };
@@ -189,6 +241,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				112E934B2286601300492E21 /* EatDataKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +250,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				112E932C22852B0800492E21 /* Messages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		112E93412286601300492E21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +269,7 @@
 				11094E9822407A21001C58C7 /* Playgrounds */,
 				11094E7F22320770001C58C7 /* EatEat */,
 				112E932D22852B0800492E21 /* MessageApp */,
+				112E93452286601300492E21 /* EatDataKit */,
 				112E932A22852B0800492E21 /* Frameworks */,
 				11094E7E22320770001C58C7 /* Products */,
 			);
@@ -219,6 +280,7 @@
 			children = (
 				11094E7D22320770001C58C7 /* EatEat.app */,
 				112E932922852B0800492E21 /* MessageApp.appex */,
+				112E93442286601300492E21 /* EatDataKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -331,15 +393,34 @@
 			path = MessageApp;
 			sourceTree = "<group>";
 		};
+		112E93452286601300492E21 /* EatDataKit */ = {
+			isa = PBXGroup;
+			children = (
+				112E93512286607300492E21 /* Restaurants */,
+				112E93462286601300492E21 /* EatDataKit.h */,
+				112E93472286601300492E21 /* Info.plist */,
+			);
+			path = EatDataKit;
+			sourceTree = "<group>";
+		};
+		112E93512286607300492E21 /* Restaurants */ = {
+			isa = PBXGroup;
+			children = (
+				110E9F7E22515108003CC707 /* JSON */,
+				110E9F9B2251A695003CC707 /* RestaurantAPIManager.swift */,
+				11EFAF84224579110077B2FA /* RestaurantItem.swift */,
+				110E9FA3225598E2003CC707 /* RestaurantDataManager.swift */,
+			);
+			path = Restaurants;
+			sourceTree = "<group>";
+		};
 		1185658D224C68F300180F71 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
 				118CB149226BD2F8005155DB /* Core Data */,
 				110E9FA52255A6C1003CC707 /* NoData */,
-				110E9F7E22515108003CC707 /* JSON */,
 				1185658F224C690E00180F71 /* Segue.swift */,
 				11EFAF8B2245DCA20077B2FA /* DataManager.swift */,
-				110E9F9B2251A695003CC707 /* RestaurantAPIManager.swift */,
 				112E9323227A86F000492E21 /* Device.swift */,
 			);
 			path = Misc;
@@ -417,7 +498,6 @@
 				11DFD41722432C8F00DEFCB5 /* RestaurantListViewController.swift */,
 				11856598224C72F200180F71 /* RestaurantList.storyboard */,
 				110E9FA1225459C0003CC707 /* RestaurantCell.swift */,
-				110E9FA3225598E2003CC707 /* RestaurantDataManager.swift */,
 			);
 			path = Restaurants;
 			sourceTree = "<group>";
@@ -472,7 +552,6 @@
 			isa = PBXGroup;
 			children = (
 				11EFAF862245D80E0077B2FA /* MapLocations.plist */,
-				11EFAF84224579110077B2FA /* RestaurantItem.swift */,
 				11EFAF882245D8430077B2FA /* MapDataManager.swift */,
 			);
 			path = Model;
@@ -496,6 +575,17 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		112E933F2286601300492E21 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				112E93482286601300492E21 /* EatDataKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		11094E7C22320770001C58C7 /* EatEat */ = {
 			isa = PBXNativeTarget;
@@ -505,11 +595,13 @@
 				11094E7A22320770001C58C7 /* Frameworks */,
 				11094E7B22320770001C58C7 /* Resources */,
 				112E933C22852B0A00492E21 /* Embed App Extensions */,
+				112E93502286601300492E21 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				112E933722852B0A00492E21 /* PBXTargetDependency */,
+				112E934A2286601300492E21 /* PBXTargetDependency */,
 			);
 			name = EatEat;
 			productName = EatEat;
@@ -533,6 +625,24 @@
 			productReference = 112E932922852B0800492E21 /* MessageApp.appex */;
 			productType = "com.apple.product-type.app-extension.messages";
 		};
+		112E93432286601300492E21 /* EatDataKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 112E934D2286601300492E21 /* Build configuration list for PBXNativeTarget "EatDataKit" */;
+			buildPhases = (
+				112E933F2286601300492E21 /* Headers */,
+				112E93402286601300492E21 /* Sources */,
+				112E93412286601300492E21 /* Frameworks */,
+				112E93422286601300492E21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EatDataKit;
+			productName = EatDataKit;
+			productReference = 112E93442286601300492E21 /* EatDataKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -547,6 +657,9 @@
 						CreatedOnToolsVersion = 10.1;
 					};
 					112E932822852B0800492E21 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					112E93432286601300492E21 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
@@ -566,6 +679,7 @@
 			targets = (
 				11094E7C22320770001C58C7 /* EatEat */,
 				112E932822852B0800492E21 /* MessageApp */,
+				112E93432286601300492E21 /* EatDataKit */,
 			);
 		};
 /* End PBXProject section */
@@ -611,8 +725,43 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				112E93642286619800492E21 /* New York.json in Resources */,
+				112E93622286619500492E21 /* New Orleans.json in Resources */,
+				112E93562286616E00492E21 /* Charleston.json in Resources */,
+				112E9369228661A000492E21 /* Portland.json in Resources */,
+				112E936D228661A700492E21 /* San Francisco.json in Resources */,
+				112E93542286616900492E21 /* Boston.json in Resources */,
+				112E93582286617200492E21 /* Chicago.json in Resources */,
+				112E93672286619D00492E21 /* Philadelphia.json in Resources */,
+				112E936B228661A300492E21 /* San Antonio.json in Resources */,
+				112E935E2286618100492E21 /* Los Angeles.json in Resources */,
+				112E935A2286617A00492E21 /* Houston.json in Resources */,
+				112E935C2286617D00492E21 /* Las Vegas.json in Resources */,
 				112E933E22852B9300492E21 /* Assets.xcassets in Resources */,
+				112E93522286614500492E21 /* Aspen.json in Resources */,
 				112E933222852B0800492E21 /* MainInterface.storyboard in Resources */,
+				112E93602286618C00492E21 /* Miami.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		112E93422286601300492E21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				112E935D2286617E00492E21 /* Las Vegas.json in Resources */,
+				112E935F2286618100492E21 /* Los Angeles.json in Resources */,
+				112E93662286619C00492E21 /* Philadelphia.json in Resources */,
+				112E93572286616F00492E21 /* Charleston.json in Resources */,
+				112E93552286616A00492E21 /* Boston.json in Resources */,
+				112E93652286619900492E21 /* New York.json in Resources */,
+				112E936C228661A600492E21 /* San Francisco.json in Resources */,
+				112E93592286617300492E21 /* Chicago.json in Resources */,
+				112E936A228661A300492E21 /* San Antonio.json in Resources */,
+				112E93632286619500492E21 /* New Orleans.json in Resources */,
+				112E93532286614500492E21 /* Aspen.json in Resources */,
+				112E93682286619F00492E21 /* Portland.json in Resources */,
+				112E935B2286617A00492E21 /* Houston.json in Resources */,
+				112E93612286618C00492E21 /* Miami.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,10 +791,8 @@
 				110E9F9E2251AAE9003CC707 /* LocationItem.swift in Sources */,
 				118CB152226C025F005155DB /* CoreDataManager.swift in Sources */,
 				11EFAF892245D8430077B2FA /* MapDataManager.swift in Sources */,
-				11EFAF85224579110077B2FA /* RestaurantItem.swift in Sources */,
 				11DFD41822432C8F00DEFCB5 /* RestaurantListViewController.swift in Sources */,
 				110E9FA02252E86E003CC707 /* ExploreHeaderView.swift in Sources */,
-				110E9F9C2251A695003CC707 /* RestaurantAPIManager.swift in Sources */,
 				110E9FB5225F9943003CC707 /* FilterItem.swift in Sources */,
 				110E9FBB22601531003CC707 /* PhotoItem.swift in Sources */,
 				11EFAF8F2245E0EC0077B2FA /* MapViewController.swift in Sources */,
@@ -655,7 +802,6 @@
 				118CB14E226BDF41005155DB /* ReviewItem.swift in Sources */,
 				118CB1642273B699005155DB /* PhotoCell.swift in Sources */,
 				118FE0C3224DB3A700BFAB1D /* RestaurantDetailViewController.swift in Sources */,
-				110E9FA4225598E2003CC707 /* RestaurantDataManager.swift in Sources */,
 				11094E8122320770001C58C7 /* AppDelegate.swift in Sources */,
 				110E9FBD22618B58003CC707 /* FilterCell.swift in Sources */,
 				118CB159226EAEB2005155DB /* ReviewsViewController.swift in Sources */,
@@ -671,6 +817,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		112E93402286601300492E21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				112E936E228661BD00492E21 /* RestaurantAPIManager.swift in Sources */,
+				112E936F228661C300492E21 /* RestaurantItem.swift in Sources */,
+				112E9370228661C700492E21 /* RestaurantDataManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -678,6 +834,11 @@
 			isa = PBXTargetDependency;
 			target = 112E932822852B0800492E21 /* MessageApp */;
 			targetProxy = 112E933622852B0A00492E21 /* PBXContainerItemProxy */;
+		};
+		112E934A2286601300492E21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 112E93432286601300492E21 /* EatDataKit */;
+			targetProxy = 112E93492286601300492E21 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -901,6 +1062,64 @@
 			};
 			name = Release;
 		};
+		112E934E2286601300492E21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = EatDataKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = six.ca.EatDataKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		112E934F2286601300492E21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = EatDataKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = six.ca.EatDataKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -927,6 +1146,15 @@
 			buildConfigurations = (
 				112E933A22852B0A00492E21 /* Debug */,
 				112E933B22852B0A00492E21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		112E934D2286601300492E21 /* Build configuration list for PBXNativeTarget "EatDataKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				112E934E2286601300492E21 /* Debug */,
+				112E934F2286601300492E21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

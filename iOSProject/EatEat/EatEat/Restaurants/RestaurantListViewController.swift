@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import EatDataKit
 
 class RestaurantListViewController: UIViewController {
     
