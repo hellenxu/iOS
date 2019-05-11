@@ -13,6 +13,7 @@ import EatDataKit
 class MessagesViewController: MSMessagesAppViewController {
     @IBOutlet var collectionView: UICollectionView!
     let manager = RestaurantDataManager()
+    var selectedRestaurant: RestaurantItem?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,8 +41,26 @@ private extension MessagesViewController {
         collectionView.dataSource = self
     }
     
-    func createMessage() {
-        
+    func createMessage(with restaurant: RestaurantItem) {
+        if let conversation = activeConversation {
+            let layout = MSMessageTemplateLayout()
+            layout.image = UIImage(named: "restaurant-detail")
+            layout.caption = "Table for 7, tonight at 10:00 PM"
+            layout.imageTitle = restaurant.name
+            layout.imageSubtitle = restaurant.subtitle
+            
+            let message = MSMessage()
+            message.layout = layout
+            message.url = URL(string: "emptyURL")
+            
+            conversation.insert(message, completionHandler: { (error: Error?) in
+                if error != nil {
+                    print("there was an error (error)")
+                } else {
+                    self.requestPresentationStyle(.compact)
+                }
+            })
+        }
     }
 }
 
@@ -67,5 +86,11 @@ extension MessagesViewController: UICollectionViewDelegate, UICollectionViewData
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let cellWidth = self.collectionView.frame.size.width - 14
         return CGSize(width: cellWidth, height: 78)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        selectedRestaurant = manager.restaurantItem(at: indexPath)
+        guard let restaurant = selectedRestaurant else {return }
+        createMessage(with: restaurant)
     }
 }
