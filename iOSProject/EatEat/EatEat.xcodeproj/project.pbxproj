@@ -82,6 +82,7 @@
 		112E936E228661BD00492E21 /* RestaurantAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E9F9B2251A695003CC707 /* RestaurantAPIManager.swift */; };
 		112E936F228661C300492E21 /* RestaurantItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EFAF84224579110077B2FA /* RestaurantItem.swift */; };
 		112E9370228661C700492E21 /* RestaurantDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E9FA3225598E2003CC707 /* RestaurantDataManager.swift */; };
+		112E937222866A0200492E21 /* RestaurantMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112E937122866A0200492E21 /* RestaurantMessageCell.swift */; };
 		11856590224C690E00180F71 /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1185658F224C690E00180F71 /* Segue.swift */; };
 		11856592224C6B8500180F71 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11856591224C6B8500180F71 /* Map.storyboard */; };
 		11856594224C6BC400180F71 /* Explore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11856593224C6BC400180F71 /* Explore.storyboard */; };
@@ -205,6 +206,7 @@
 		112E93442286601300492E21 /* EatDataKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EatDataKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		112E93462286601300492E21 /* EatDataKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EatDataKit.h; sourceTree = "<group>"; };
 		112E93472286601300492E21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		112E937122866A0200492E21 /* RestaurantMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMessageCell.swift; sourceTree = "<group>"; };
 		1185658F224C690E00180F71 /* Segue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
 		11856591224C6B8500180F71 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		11856593224C6BC400180F71 /* Explore.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Explore.storyboard; sourceTree = "<group>"; };
@@ -389,6 +391,7 @@
 				112E932E22852B0800492E21 /* MessagesViewController.swift */,
 				112E933022852B0800492E21 /* MainInterface.storyboard */,
 				112E933522852B0A00492E21 /* Info.plist */,
+				112E937122866A0200492E21 /* RestaurantMessageCell.swift */,
 			);
 			path = MessageApp;
 			sourceTree = "<group>";
@@ -813,6 +816,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				112E937222866A0200492E21 /* RestaurantMessageCell.swift in Sources */,
 				112E932F22852B0800492E21 /* MessagesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
