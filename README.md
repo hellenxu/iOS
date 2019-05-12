@@ -15,6 +15,8 @@ error log:
 
 #### Path
 
+[20190511] notification.
+
 [20190510] displayed restaurant list through iMessage; sent messages of restaurant details.
 
 [20190509] added iMessage target.
