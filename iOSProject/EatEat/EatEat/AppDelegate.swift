@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -50,6 +51,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 private extension AppDelegate {
     func initialize() {
         setupDefaultColors()
+        checkNotifications()
     }
     
     func setupDefaultColors() {
@@ -66,5 +68,15 @@ private extension AppDelegate {
         UINavigationBar.appearance().tintColor = red
         UINavigationBar.appearance().barTintColor = .white
         UINavigationBar.appearance().isTranslucent = false
+    }
+    
+    func checkNotifications() {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) {(isGranted, error) in
+            if isGranted {
+                print("Notifications permissions granted.")
+            } else {
+                print("Notifications permissions denied.")
+            }
+        }
     }
 }
