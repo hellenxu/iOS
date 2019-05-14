@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 import CoreLocation
 import MapKit
 import EatDataKit
@@ -55,6 +56,9 @@ class RestaurantDetailViewController: UITableViewController {
     
     @IBAction func unwindReviewCancel(segue:UIStoryboardSegue) {}
 
+    @IBAction func onTimeTapped(sender: UIButton) {
+        showNotification(sender: sender.titleLabel?.text)
+    }
 }
 
 private extension RestaurantDetailViewController {
@@ -62,6 +66,28 @@ private extension RestaurantDetailViewController {
         setupLabels()
         createMap()
         createRating()
+        setupNotificationDefaults()
+    }
+    
+    func setupNotificationDefaults() {
+        UNUserNotificationCenter.current().delegate = self
+    }
+    
+    func showNotification(sender: String?) {
+        let content = UNMutableNotificationContent()
+        if let name = selectedRestaurant?.name {
+            content.title = name
+        }
+        if let time = sender {
+            content.body = "Table for 2, tonight at \(time)"
+        }
+        content.subtitle = "Restaurant Reservation"
+        content.badge = 1
+
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        let identifier = "EatEatReservation"
+        let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
     }
     
     func showReview(segue: UIStoryboardSegue) {
@@ -167,5 +193,12 @@ private extension RestaurantDetailViewController {
             }
         }
         
+    }
+}
+
+//MARKER: notification delegate
+extension RestaurantDetailViewController: UNUserNotificationCenterDelegate {
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.alert, .sound])
     }
 }
