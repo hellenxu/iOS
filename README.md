@@ -15,7 +15,9 @@ error log:
 
 #### Path
 
-[20190511] notification.
+[20190513] checked notification permission; created basic notification.
+
+[20190511] notification reading.
 
 [20190510] displayed restaurant list through iMessage; sent messages of restaurant details.
 
