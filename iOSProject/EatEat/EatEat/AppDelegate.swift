@@ -71,7 +71,7 @@ private extension AppDelegate {
     }
     
     func checkNotifications() {
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge, .provisional]) {(isGranted, error) in
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) {(isGranted, error) in
             if isGranted {
                 print("Notifications permissions granted.")
             } else {
