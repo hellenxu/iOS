@@ -74,9 +74,18 @@ private extension AppDelegate {
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) {(isGranted, error) in
             if isGranted {
                 print("Notifications permissions granted.")
+                self.permissionGranted()
             } else {
                 print("Notifications permissions denied.")
             }
         }
+    }
+    
+    func permissionGranted() {
+        let optionOne = UNNotificationAction(identifier: Option.one.rawValue, title: "Yes", options: [.foreground])
+        let optionTwo = UNNotificationAction(identifier: Option.two.rawValue
+            , title: "No", options: [.foreground])
+        let category = UNNotificationCategory(identifier: Identifier.reservationCategory.rawValue, actions: [optionOne, optionTwo], intentIdentifiers: [], options: [])
+        UNUserNotificationCenter.current().setNotificationCategories([category])
     }
 }

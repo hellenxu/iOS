@@ -86,6 +86,7 @@
 		112E9377228FA0A400492E21 /* sample-restaurant-img@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 112E9374228FA0A400492E21 /* sample-restaurant-img@3x.png */; };
 		112E9378228FA0A400492E21 /* sample-restaurant-img@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 112E9375228FA0A400492E21 /* sample-restaurant-img@2x.png */; };
 		112E9379228FA0A400492E21 /* sample-restaurant-img.png in Resources */ = {isa = PBXBuildFile; fileRef = 112E9376228FA0A400492E21 /* sample-restaurant-img.png */; };
+		112E937B228FA0A400492E21 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112E937A228FA0A400492E21 /* Identifier.swift */; };
 		11856590224C690E00180F71 /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1185658F224C690E00180F71 /* Segue.swift */; };
 		11856592224C6B8500180F71 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11856591224C6B8500180F71 /* Map.storyboard */; };
 		11856594224C6BC400180F71 /* Explore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11856593224C6BC400180F71 /* Explore.storyboard */; };
@@ -213,6 +214,7 @@
 		112E9374228FA0A400492E21 /* sample-restaurant-img@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sample-restaurant-img@3x.png"; sourceTree = "<group>"; };
 		112E9375228FA0A400492E21 /* sample-restaurant-img@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sample-restaurant-img@2x.png"; sourceTree = "<group>"; };
 		112E9376228FA0A400492E21 /* sample-restaurant-img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sample-restaurant-img.png"; sourceTree = "<group>"; };
+		112E937A228FA0A400492E21 /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
 		1185658F224C690E00180F71 /* Segue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
 		11856591224C6B8500180F71 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		11856593224C6BC400180F71 /* Explore.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Explore.storyboard; sourceTree = "<group>"; };
@@ -442,6 +444,7 @@
 				1185658F224C690E00180F71 /* Segue.swift */,
 				11EFAF8B2245DCA20077B2FA /* DataManager.swift */,
 				112E9323227A86F000492E21 /* Device.swift */,
+				112E937A228FA0A400492E21 /* Identifier.swift */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -826,6 +829,7 @@
 				118CB1642273B699005155DB /* PhotoCell.swift in Sources */,
 				118FE0C3224DB3A700BFAB1D /* RestaurantDetailViewController.swift in Sources */,
 				11094E8122320770001C58C7 /* AppDelegate.swift in Sources */,
+				112E937B228FA0A400492E21 /* Identifier.swift in Sources */,
 				110E9FBD22618B58003CC707 /* FilterCell.swift in Sources */,
 				118CB159226EAEB2005155DB /* ReviewsViewController.swift in Sources */,
 				110E9FB7225F9A46003CC707 /* FilterManager.swift in Sources */,

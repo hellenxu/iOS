@@ -83,6 +83,7 @@ private extension RestaurantDetailViewController {
         }
         content.subtitle = "Restaurant Reservation"
         content.badge = 1
+        content.categoryIdentifier = Identifier.reservationCategory.rawValue
         guard let imgURL = Bundle.main.url(forResource: "sample-restaurant-img@3x", withExtension: "png") else {return }
         let attachment = try! UNNotificationAttachment(identifier: "EatEatReservation", url: imgURL, options: nil)
         content.attachments = [attachment]
@@ -91,7 +92,7 @@ private extension RestaurantDetailViewController {
     
     func sendNotification(with content: UNNotificationContent) {
         let uuid = UUID().uuidString
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 2, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
         let request = UNNotificationRequest(identifier: uuid, content: content, trigger: trigger)
         UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
     }
@@ -206,5 +207,17 @@ private extension RestaurantDetailViewController {
 extension RestaurantDetailViewController: UNUserNotificationCenterDelegate {
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         completionHandler([.alert, .sound])
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        if let identifier = Option(rawValue: response.actionIdentifier) {
+            switch identifier {
+            case .one:
+                print("User selected yes")
+            case .two:
+                print("User selected no")
+            }
+        }
+        completionHandler()
     }
 }
