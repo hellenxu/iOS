@@ -83,10 +83,16 @@ private extension RestaurantDetailViewController {
         }
         content.subtitle = "Restaurant Reservation"
         content.badge = 1
-
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
-        let identifier = "EatEatReservation"
-        let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
+        guard let imgURL = Bundle.main.url(forResource: "sample-restaurant-img@3x", withExtension: "png") else {return }
+        let attachment = try! UNNotificationAttachment(identifier: "EatEatReservation", url: imgURL, options: nil)
+        content.attachments = [attachment]
+        sendNotification(with: content)
+    }
+    
+    func sendNotification(with content: UNNotificationContent) {
+        let uuid = UUID().uuidString
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 2, repeats: false)
+        let request = UNNotificationRequest(identifier: uuid, content: content, trigger: trigger)
         UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
     }
     

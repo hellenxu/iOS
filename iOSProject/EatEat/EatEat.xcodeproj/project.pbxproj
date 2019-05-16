@@ -83,6 +83,9 @@
 		112E936F228661C300492E21 /* RestaurantItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EFAF84224579110077B2FA /* RestaurantItem.swift */; };
 		112E9370228661C700492E21 /* RestaurantDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E9FA3225598E2003CC707 /* RestaurantDataManager.swift */; };
 		112E937222866A0200492E21 /* RestaurantMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112E937122866A0200492E21 /* RestaurantMessageCell.swift */; };
+		112E9377228FA0A400492E21 /* sample-restaurant-img@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 112E9374228FA0A400492E21 /* sample-restaurant-img@3x.png */; };
+		112E9378228FA0A400492E21 /* sample-restaurant-img@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 112E9375228FA0A400492E21 /* sample-restaurant-img@2x.png */; };
+		112E9379228FA0A400492E21 /* sample-restaurant-img.png in Resources */ = {isa = PBXBuildFile; fileRef = 112E9376228FA0A400492E21 /* sample-restaurant-img.png */; };
 		11856590224C690E00180F71 /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1185658F224C690E00180F71 /* Segue.swift */; };
 		11856592224C6B8500180F71 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11856591224C6B8500180F71 /* Map.storyboard */; };
 		11856594224C6BC400180F71 /* Explore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11856593224C6BC400180F71 /* Explore.storyboard */; };
@@ -207,6 +210,9 @@
 		112E93462286601300492E21 /* EatDataKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EatDataKit.h; sourceTree = "<group>"; };
 		112E93472286601300492E21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		112E937122866A0200492E21 /* RestaurantMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMessageCell.swift; sourceTree = "<group>"; };
+		112E9374228FA0A400492E21 /* sample-restaurant-img@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sample-restaurant-img@3x.png"; sourceTree = "<group>"; };
+		112E9375228FA0A400492E21 /* sample-restaurant-img@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sample-restaurant-img@2x.png"; sourceTree = "<group>"; };
+		112E9376228FA0A400492E21 /* sample-restaurant-img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sample-restaurant-img.png"; sourceTree = "<group>"; };
 		1185658F224C690E00180F71 /* Segue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
 		11856591224C6B8500180F71 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		11856593224C6BC400180F71 /* Explore.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Explore.storyboard; sourceTree = "<group>"; };
@@ -417,9 +423,20 @@
 			path = Restaurants;
 			sourceTree = "<group>";
 		};
+		112E9373228FA06A00492E21 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				112E9376228FA0A400492E21 /* sample-restaurant-img.png */,
+				112E9375228FA0A400492E21 /* sample-restaurant-img@2x.png */,
+				112E9374228FA0A400492E21 /* sample-restaurant-img@3x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		1185658D224C68F300180F71 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				112E9373228FA06A00492E21 /* images */,
 				118CB149226BD2F8005155DB /* Core Data */,
 				110E9FA52255A6C1003CC707 /* NoData */,
 				1185658F224C690E00180F71 /* Segue.swift */,
@@ -698,6 +715,7 @@
 				110E9FA92255A755003CC707 /* NoDataView.xib in Resources */,
 				11856592224C6B8500180F71 /* Map.storyboard in Resources */,
 				1185659B224C731D00180F71 /* Locations.storyboard in Resources */,
+				112E9377228FA0A400492E21 /* sample-restaurant-img@3x.png in Resources */,
 				11094E8B22320771001C58C7 /* LaunchScreen.storyboard in Resources */,
 				110E9F9322515189003CC707 /* New York.json in Resources */,
 				110E9F9022515189003CC707 /* Los Angeles.json in Resources */,
@@ -705,6 +723,7 @@
 				11094E9322320CAD001C58C7 /* Assets.xcassets in Resources */,
 				110E9F9822515189003CC707 /* Chicago.json in Resources */,
 				11EFAF7F22448AA10077B2FA /* Locations.plist in Resources */,
+				112E9379228FA0A400492E21 /* sample-restaurant-img.png in Resources */,
 				11EFAF872245D80E0077B2FA /* MapLocations.plist in Resources */,
 				110E9FB3225EC0BB003CC707 /* FilterData.plist in Resources */,
 				110E9F9122515189003CC707 /* Charleston.json in Resources */,
@@ -714,6 +733,7 @@
 				110E9F9222515189003CC707 /* Las Vegas.json in Resources */,
 				110E9F8D22515189003CC707 /* San Francisco.json in Resources */,
 				11856597224C6C0000180F71 /* RestaurantDetail.storyboard in Resources */,
+				112E9378228FA0A400492E21 /* sample-restaurant-img@2x.png in Resources */,
 				110E9F9522515189003CC707 /* Boston.json in Resources */,
 				11094E8622320770001C58C7 /* Main.storyboard in Resources */,
 				110E9FAE225D8829003CC707 /* Reviews.storyboard in Resources */,
