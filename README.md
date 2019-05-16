@@ -15,6 +15,8 @@ error log:
 
 #### Path
 
+[20190515] show custom notification; add notification category with actions.
+
 [20190514] deliver notification quietly.
 
 [20190513] checked notification permission; created basic notification.
