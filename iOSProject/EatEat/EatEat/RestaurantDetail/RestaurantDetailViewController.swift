@@ -84,6 +84,9 @@ private extension RestaurantDetailViewController {
         content.subtitle = "Restaurant Reservation"
         content.badge = 1
         content.categoryIdentifier = Identifier.reservationCategory.rawValue
+        if let id = selectedRestaurant?.restaurantID {
+            content.threadIdentifier = "\(id)"
+        }
         guard let imgURL = Bundle.main.url(forResource: "sample-restaurant-img@3x", withExtension: "png") else {return }
         let attachment = try! UNNotificationAttachment(identifier: "EatEatReservation", url: imgURL, options: nil)
         content.attachments = [attachment]
