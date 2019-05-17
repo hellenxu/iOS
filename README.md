@@ -15,6 +15,8 @@ error log:
 
 #### Path
 
+[20190516] group notifications; hidden and summary text of notifications.
+
 [20190515] show custom notification; add notification category with actions.
 
 [20190514] deliver notification quietly.
