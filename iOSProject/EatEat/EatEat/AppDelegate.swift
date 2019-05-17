@@ -71,7 +71,7 @@ private extension AppDelegate {
     }
     
     func checkNotifications() {
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) {(isGranted, error) in
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge, .provisional]) {(isGranted, error) in
             if isGranted {
                 print("Notifications permissions granted.")
                 self.permissionGranted()
@@ -85,7 +85,9 @@ private extension AppDelegate {
         let optionOne = UNNotificationAction(identifier: Option.one.rawValue, title: "Yes", options: [.foreground])
         let optionTwo = UNNotificationAction(identifier: Option.two.rawValue
             , title: "No", options: [.foreground])
-        let category = UNNotificationCategory(identifier: Identifier.reservationCategory.rawValue, actions: [optionOne, optionTwo], intentIdentifiers: [], options: [])
+        let hiddenRestaurantPlaceholder = "%u new restaurant invites."
+        let summaryFormat = "%u more restaurant invites for %@"
+        let category = UNNotificationCategory(identifier: Identifier.reservationCategory.rawValue, actions: [optionOne, optionTwo], intentIdentifiers: [], hiddenPreviewsBodyPlaceholder: hiddenRestaurantPlaceholder, categorySummaryFormat: summaryFormat, options: [])
         UNUserNotificationCenter.current().setNotificationCategories([category])
     }
 }
