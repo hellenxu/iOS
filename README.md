@@ -15,6 +15,8 @@ error log:
 
 #### Path
 
+[20190517] custom notification - part one: notification extension.
+
 [20190516] group notifications; hidden and summary text of notifications.
 
 [20190515] embed image in notification; add notification category with actions.
