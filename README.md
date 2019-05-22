@@ -11,9 +11,14 @@ error log:
 
 > 2019-04-30 21:40:22.204089-0400 EatEat[69983:2445476] [error] warning: Multiple NSEntityDescriptions claim the NSManagedObject subclass 'RestaurantPhoto' so +entity is unable to disambiguate. CoreData: warning: Multiple NSEntityDescriptions claim the NSManagedObject subclass 'RestaurantPhoto' so +entity is unable to disambiguate.
 
+2. Done button doesn't show on custom notification setting page.
+
+
 ***
 
 #### Path
+
+[20190522] custom notification settings; siri reading.
 
 [20190517] custom notification - part one: notification extension.
 
