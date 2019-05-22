@@ -113,6 +113,8 @@
 		11E58AEF228FB44900FA0600 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E58AEE228FB44900FA0600 /* NotificationViewController.swift */; };
 		11E58AF2228FB44900FA0600 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E58AF0228FB44900FA0600 /* MainInterface.storyboard */; };
 		11E58AF6228FB44900FA0600 /* EatNotificationExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 11E58AE8228FB44900FA0600 /* EatNotificationExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		11E58AFE2295B88300FA0600 /* NotificationSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E58AFC2295B88300FA0600 /* NotificationSettingsViewController.swift */; };
+		11E58AFF2295B88300FA0600 /* NotificationSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E58AFD2295B88300FA0600 /* NotificationSettings.storyboard */; };
 		11EFAF7F22448AA10077B2FA /* Locations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11EFAF7E22448AA10077B2FA /* Locations.plist */; };
 		11EFAF8122448B140077B2FA /* LocationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EFAF8022448B140077B2FA /* LocationDataManager.swift */; };
 		11EFAF872245D80E0077B2FA /* MapLocations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11EFAF862245D80E0077B2FA /* MapLocations.plist */; };
@@ -256,6 +258,8 @@
 		11E58AEE228FB44900FA0600 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		11E58AF1228FB44900FA0600 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		11E58AF3228FB44900FA0600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11E58AFC2295B88300FA0600 /* NotificationSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSettingsViewController.swift; sourceTree = "<group>"; };
+		11E58AFD2295B88300FA0600 /* NotificationSettings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NotificationSettings.storyboard; sourceTree = "<group>"; };
 		11EFAF7E22448AA10077B2FA /* Locations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Locations.plist; sourceTree = "<group>"; };
 		11EFAF8022448B140077B2FA /* LocationDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataManager.swift; sourceTree = "<group>"; };
 		11EFAF84224579110077B2FA /* RestaurantItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantItem.swift; sourceTree = "<group>"; };
@@ -328,6 +332,7 @@
 		11094E7F22320770001C58C7 /* EatEat */ = {
 			isa = PBXGroup;
 			children = (
+				11E58AFB2295B88300FA0600 /* Settings */,
 				118CB15C2273A907005155DB /* Photo Reviews */,
 				118CB157226EAE89005155DB /* Reviews */,
 				110E9FB1225EC09F003CC707 /* Photo Filter */,
@@ -603,6 +608,15 @@
 			path = EatNotificationExtension;
 			sourceTree = "<group>";
 		};
+		11E58AFB2295B88300FA0600 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				11E58AFC2295B88300FA0600 /* NotificationSettingsViewController.swift */,
+				11E58AFD2295B88300FA0600 /* NotificationSettings.storyboard */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		11EFAF822245715F0077B2FA /* Map */ = {
 			isa = PBXGroup;
 			children = (
@@ -797,6 +811,7 @@
 				110E9FBF22618D19003CC707 /* PhotoFilter.storyboard in Resources */,
 				110E9F9622515189003CC707 /* Aspen.json in Resources */,
 				110E9F9722515189003CC707 /* Houston.json in Resources */,
+				11E58AFF2295B88300FA0600 /* NotificationSettings.storyboard in Resources */,
 				110E9F9222515189003CC707 /* Las Vegas.json in Resources */,
 				110E9F8D22515189003CC707 /* San Francisco.json in Resources */,
 				11856597224C6C0000180F71 /* RestaurantDetail.storyboard in Resources */,
@@ -896,6 +911,7 @@
 				11EFAF8F2245E0EC0077B2FA /* MapViewController.swift in Sources */,
 				11DFD40D22431B2100DEFCB5 /* ExploreItem.swift in Sources */,
 				11EFAF8C2245DCA20077B2FA /* DataManager.swift in Sources */,
+				11E58AFE2295B88300FA0600 /* NotificationSettingsViewController.swift in Sources */,
 				11DFD40F22431E8900DEFCB5 /* ExploreDataManager.swift in Sources */,
 				118CB14E226BDF41005155DB /* ReviewItem.swift in Sources */,
 				118CB1642273B699005155DB /* PhotoCell.swift in Sources */,

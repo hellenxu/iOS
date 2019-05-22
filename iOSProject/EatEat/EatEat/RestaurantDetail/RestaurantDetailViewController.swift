@@ -228,4 +228,10 @@ extension RestaurantDetailViewController: UNUserNotificationCenterDelegate {
         }
         completionHandler()
     }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, openSettingsFor notification: UNNotification?) {
+        let storyboard = UIStoryboard(name: "NotificationSettings", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "NotificationSettingsViewController")
+        self.present(vc, animated: true, completion: nil)
+    }
 }
