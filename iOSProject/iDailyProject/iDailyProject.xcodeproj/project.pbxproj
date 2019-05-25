@@ -13,6 +13,7 @@
 		1155B22821F01B6D00D08EAF /* iDailyProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1155B22621F01B6D00D08EAF /* iDailyProject.xcdatamodeld */; };
 		1155B22A21F01B6E00D08EAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1155B22921F01B6E00D08EAF /* Assets.xcassets */; };
 		1155B22D21F01B6E00D08EAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1155B22B21F01B6E00D08EAF /* LaunchScreen.storyboard */; };
+		11E58B0422984E1800FA0600 /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E58B0322984E1800FA0600 /* ContactCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1155B22921F01B6E00D08EAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1155B22C21F01B6E00D08EAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1155B22E21F01B6E00D08EAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11E58B0322984E1800FA0600 /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				1155B22B21F01B6E00D08EAF /* LaunchScreen.storyboard */,
 				1155B22E21F01B6E00D08EAF /* Info.plist */,
 				1155B22621F01B6D00D08EAF /* iDailyProject.xcdatamodeld */,
+				11E58B0322984E1800FA0600 /* ContactCell.swift */,
 			);
 			path = iDailyProject;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11E58B0422984E1800FA0600 /* ContactCell.swift in Sources */,
 				1155B22221F01B6D00D08EAF /* ViewController.swift in Sources */,
 				1155B22021F01B6D00D08EAF /* AppDelegate.swift in Sources */,
 				1155B22821F01B6D00D08EAF /* iDailyProject.xcdatamodeld in Sources */,

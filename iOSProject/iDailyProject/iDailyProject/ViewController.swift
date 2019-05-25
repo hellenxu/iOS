@@ -10,18 +10,21 @@ import UIKit
 import Contacts
 
 class ViewController: UIViewController {
-
+    @IBOutlet var tableView: UITableView!
+    var contacts = [CNContact]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        tableView.delegate = self
+        tableView.dataSource = self
         requestContactPermission()
     }
-
-
 }
 
-//MARKER: ask for contact permission
+//MARKER: private extension
 private extension ViewController {
+    //ask for contact permission
     func requestContactPermission() {
         let store = CNContactStore()
         let authorizationStatus = CNContactStore.authorizationStatus(for: .contacts)
@@ -45,8 +48,32 @@ private extension ViewController {
                            CNContactFamilyNameKey as CNKeyDescriptor,
                            CNContactImageDataAvailableKey as CNKeyDescriptor,
                            CNContactImageDataKey as CNKeyDescriptor]
-        let contacts = try! store.unifiedContacts(matching: predicate, keysToFetch: keysToFetch)
-        
-        print("xxl-\(contacts)")
+        contacts = try! store.unifiedContacts(matching: predicate, keysToFetch: keysToFetch)
+
+        DispatchQueue.main.async { [weak self] in
+            self?.tableView.reloadData()
+        }
     }
+}
+
+//MARKER: table view data source
+extension ViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return contacts.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "contactCell", for: indexPath) as! ContactCell
+        let contact = contacts[indexPath.row]
+        cell.nameLabel.text = "\(contact.givenName) \(contact.familyName)"
+        if contact.imageDataAvailable, let imageData = contact.imageData {
+            cell.contactImage.image = UIImage(data: imageData)
+        }
+        return cell
+    }
+}
+
+//MARKER: table view delegate
+extension ViewController: UITableViewDelegate {
+    
 }
