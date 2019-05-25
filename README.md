@@ -14,10 +14,20 @@ error log:
 2. Done button doesn't show on custom notification setting page.
 
 
+3. Warning - ambiguous constraints
+
+> [Warning] Warning once only: Detected a case where constraints ambiguously suggest a height of zero for a tableview cell's content view. We're considering the collapse unintentional and using standard height instead.
+
 ***
 
 #### Path
 
+Advanced
+****
+[20190524] common protocols of tableview; under-the-hood performance of tableView.
+
+Basics
+****
 [20190522] custom notification settings; siri reading.
 
 [20190517] custom notification - part one: notification extension.
