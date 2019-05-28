@@ -12,5 +12,9 @@ class ContactCell: UITableViewCell {
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var contactImage: UIImageView!
     
-    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        print("xxl-prepare for reuse")
+        contactImage.image = nil
+    }
 }
