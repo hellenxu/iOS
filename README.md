@@ -18,12 +18,27 @@ error log:
 
 > [Warning] Warning once only: Detected a case where constraints ambiguously suggest a height of zero for a tableview cell's content view. We're considering the collapse unintentional and using standard height instead.
 
+Fixed:
+```swift 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.rowHeight = 60
+        requestContactPermission()
+    }
+```
+why use interface builder to set cell height doesn't work???
+
 ***
 
 #### Path
 
 Advanced
 ****
+[20190527] handle images within a tableview cell;
+
 [20190524] common protocols of tableview; under-the-hood performance of tableView.
 
 Basics
