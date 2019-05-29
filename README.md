@@ -37,7 +37,9 @@ why use interface builder to set cell height doesn't work???
 
 Advanced
 ****
-[20190527] handle images within a tableview cell;
+[20190528] table view prefetching.
+
+[20190527] handle images within a tableview cell.
 
 [20190524] common protocols of tableview; under-the-hood performance of tableView.
 
