@@ -16,15 +16,27 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.rowHeight = 60
+        setupViews()
         requestContactPermission()
+    }
+    
+    override func setEditing(_ editing: Bool, animated: Bool) {
+        super.setEditing(editing, animated: animated)
+        
+        tableView.setEditing(editing, animated: animated)
     }
 }
 
 //MARKER: private extension
 private extension ViewController {
+    //setup views
+    func setupViews() {
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.rowHeight = 60
+        navigationItem.rightBarButtonItem = editButtonItem
+    }
+    
     //ask for contact permission
     func requestContactPermission() {
         let store = CNContactStore()
@@ -97,6 +109,11 @@ extension ViewController: UITableViewDelegate {
         let deleteAction = UIContextualAction(style: .destructive, title: "Delete", handler: deleteHandler)
         
         return UISwipeActionsConfiguration(actions: [deleteAction])
+    }
+    
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        let contact = contacts.remove(at: sourceIndexPath.row)
+        contacts.insert(contact, at: destinationIndexPath.row)
     }
 }
 
