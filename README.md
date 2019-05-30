@@ -37,6 +37,8 @@ why use interface builder to set cell height doesn't work???
 
 Advanced
 ****
+[20190529] table view delegate: didSelectRowAt.
+
 [20190528] table view prefetching.
 
 [20190527] handle images within a tableview cell.
