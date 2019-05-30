@@ -37,6 +37,8 @@ why use interface builder to set cell height doesn't work???
 
 Advanced
 ****
+[20190530] table view delegate: trailingSwipeActionsConfigurationForRowAt; moveRowAt.
+
 [20190529] table view delegate: didSelectRowAt.
 
 [20190528] table view prefetching.
