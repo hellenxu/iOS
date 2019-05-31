@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ContactCell: UITableViewCell {
+class ContactCell: UICollectionViewCell {
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var contactImage: UIImageView!
     
@@ -16,5 +16,11 @@ class ContactCell: UITableViewCell {
         super.prepareForReuse()
         print("xxl-prepare for reuse")
         contactImage.image = nil
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        contactImage.layer.cornerRadius = 15
     }
 }

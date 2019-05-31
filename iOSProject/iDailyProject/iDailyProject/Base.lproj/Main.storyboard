@@ -19,32 +19,59 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vsQ-VW-0oI">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="10" y="98" width="394" height="754"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Uuq-hR-4Vn">
-                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="itemSize" width="110" height="120"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="contactCell" id="xgt-dq-kbW">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="contactCell" id="xgt-dq-kbW" customClass="ContactCell" customModule="iDailyProject" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="120"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="110" height="120"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uoM-39-ApO">
+                                                    <rect key="frame" x="10" y="0.0" width="90" height="95.5"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qT-jg-YPf">
+                                                    <rect key="frame" x="41" y="105.5" width="28.5" height="14.5"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="uoM-39-ApO" firstAttribute="centerX" secondItem="xgt-dq-kbW" secondAttribute="centerX" id="5QZ-uZ-ZEE"/>
+                                            <constraint firstAttribute="trailing" secondItem="uoM-39-ApO" secondAttribute="trailing" constant="10" id="DA9-X2-SuX"/>
+                                            <constraint firstItem="uoM-39-ApO" firstAttribute="top" secondItem="xgt-dq-kbW" secondAttribute="top" id="JRr-dX-syT"/>
+                                            <constraint firstItem="0qT-jg-YPf" firstAttribute="centerX" secondItem="xgt-dq-kbW" secondAttribute="centerX" id="RUt-dC-sUF"/>
+                                            <constraint firstItem="uoM-39-ApO" firstAttribute="leading" secondItem="xgt-dq-kbW" secondAttribute="leading" constant="10" id="noX-vZ-LKK"/>
+                                            <constraint firstItem="uoM-39-ApO" firstAttribute="top" secondItem="xgt-dq-kbW" secondAttribute="top" id="sIH-YK-bod"/>
+                                            <constraint firstAttribute="bottom" secondItem="0qT-jg-YPf" secondAttribute="bottom" id="yQz-fx-TCl"/>
+                                            <constraint firstItem="0qT-jg-YPf" firstAttribute="top" secondItem="uoM-39-ApO" secondAttribute="bottom" constant="10" id="ybX-f5-TPx"/>
+                                        </constraints>
+                                        <size key="customSize" width="110" height="120"/>
+                                        <connections>
+                                            <outlet property="contactImage" destination="uoM-39-ApO" id="LSX-2M-BZT"/>
+                                            <outlet property="nameLabel" destination="0qT-jg-YPf" id="RoV-8X-hHx"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vsQ-VW-0oI" secondAttribute="bottom" id="Hmk-Dw-Als"/>
-                            <constraint firstItem="vsQ-VW-0oI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="JlB-ZX-aQY"/>
-                            <constraint firstItem="vsQ-VW-0oI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Rkh-DI-48I"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vsQ-VW-0oI" secondAttribute="trailing" id="pB5-sG-vRw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vsQ-VW-0oI" secondAttribute="bottom" constant="10" id="Hmk-Dw-Als"/>
+                            <constraint firstItem="vsQ-VW-0oI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="JlB-ZX-aQY"/>
+                            <constraint firstItem="vsQ-VW-0oI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Rkh-DI-48I"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vsQ-VW-0oI" secondAttribute="trailing" constant="10" id="pB5-sG-vRw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

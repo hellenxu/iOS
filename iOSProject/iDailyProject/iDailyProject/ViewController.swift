@@ -29,6 +29,8 @@ private extension ViewController {
 //        tableView.dataSource = self
 //        tableView.rowHeight = 60
 //        navigationItem.leftBarButtonItem = editButtonItem
+        collectionView.delegate = self
+        collectionView.dataSource = self
     }
     
     //ask for contact permission
@@ -56,7 +58,33 @@ private extension ViewController {
                            CNContactImageDataAvailableKey as CNKeyDescriptor,
                            CNContactImageDataKey as CNKeyDescriptor]
         contacts = try! store.unifiedContacts(matching: predicate, keysToFetch: keysToFetch).map {Contact(contact: $0)}
+        
+        DispatchQueue.main.async {[weak self] in
+            self?.collectionView.reloadData()
+        }
     }
+}
+
+//MARKER: CollectionView data source
+extension ViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return contacts.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "contactCell", for: indexPath) as! ContactCell
+        let contact = contacts[indexPath.row]
+        cell.nameLabel.text = "\(contact.givenName) \(contact.familyName)"
+        contact.fetchImageIfNeeded {image in
+            cell.contactImage.image = image
+        }
+        return cell
+    }
+}
+
+//MARKER: CollectionView delegate
+extension ViewController: UICollectionViewDelegate {
+    
 }
 
 //MARKER: table view data source
