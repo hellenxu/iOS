@@ -37,6 +37,8 @@ why use interface builder to set cell height doesn't work???
 
 Advanced
 ****
+[20190531] replace with collection view; image round corner in awakeFromNib (a bit like init in android view).
+
 [20190530] table view delegate: trailingSwipeActionsConfigurationForRowAt; moveRowAt.
 
 [20190529] table view delegate: didSelectRowAt.
