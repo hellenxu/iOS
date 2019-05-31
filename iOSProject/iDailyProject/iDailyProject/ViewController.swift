@@ -10,6 +10,7 @@ import UIKit
 import Contacts
 
 class ViewController: UIViewController {
+    @IBOutlet var collectionView: UICollectionView!
     var contacts = [Contact]()
     
     override func viewDidLoad() {
