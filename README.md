@@ -37,6 +37,8 @@ why use interface builder to set cell height doesn't work???
 
 Advanced
 ****
+[20190603] standard way to conform UICollectionViewDelegateFlowLayout; custom UICollectionViewLayout. 
+
 [20190531] replace with collection view; image round corner in awakeFromNib (a bit like init in android view).
 
 [20190530] table view delegate: trailingSwipeActionsConfigurationForRowAt; moveRowAt.
