@@ -28,7 +28,7 @@ class ContactCollectionViewLayout: UICollectionViewLayout {
         layoutAttributes.removeAll()
         layoutAttributes = (0..<numberOfItems).map{index in
             let row = index % numberOfRows
-            let column = index / numberOfRows
+            let column = index % numberOfColums
             
             var xPos = column * Int(itemSize.width + itemSpacing)
             if row % 2 == 1 {
