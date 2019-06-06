@@ -7,14 +7,17 @@
 //
 
 import UIKit
-
 class ContactCollectionViewLayout: UICollectionViewLayout {
     private let itemSize = CGSize(width: 100, height: 90)
     private let itemSpacing: CGFloat = 10
     private var layoutAttributes = [UICollectionViewLayoutAttributes]()
+    private var numberOfRows: Int = 0
+    private var numberOfColumns: Int = 0
     
     override var collectionViewContentSize: CGSize {
-        return .zero
+        let width = CGFloat(numberOfColumns) * itemSize.width + CGFloat(numberOfColumns - 1) * itemSpacing
+        let height = CGFloat(numberOfRows) * itemSize.height + CGFloat(numberOfRows - 1) * itemSpacing
+        return CGSize(width: width, height: height)
     }
     
     override func prepare() {
@@ -22,13 +25,13 @@ class ContactCollectionViewLayout: UICollectionViewLayout {
         let availableHeight = Int(collectionView.bounds.height + itemSpacing)
         let itemHeight = Int(itemSize.height + itemSpacing)
         let numberOfItems = collectionView.numberOfItems(inSection: 0)
-        let numberOfRows = availableHeight / itemHeight
-        let numberOfColums = Int(ceil(CGFloat(numberOfItems) / CGFloat(numberOfRows)))
+        numberOfRows = availableHeight / itemHeight
+        numberOfColumns = Int(ceil(CGFloat(numberOfItems) / CGFloat(numberOfRows)))
         
         layoutAttributes.removeAll()
         layoutAttributes = (0..<numberOfItems).map{index in
             let row = index % numberOfRows
-            let column = index % numberOfColums
+            let column = index % numberOfColumns
             
             var xPos = column * Int(itemSize.width + itemSpacing)
             if row % 2 == 1 {
