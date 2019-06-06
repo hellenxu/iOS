@@ -37,6 +37,8 @@ why use interface builder to set cell height doesn't work???
 
 Advanced
 ****
+[20190605] custom UICollectionViewLayout - calculate content size and set layout attributes for cells.
+
 [20190604] custom UICollectionViewLayout - precalculation.
 
 [20190603] standard way to conform UICollectionViewDelegateFlowLayout; custom UICollectionViewLayout - introduction. 
