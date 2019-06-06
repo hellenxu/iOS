@@ -50,8 +50,11 @@ class ContactCollectionViewLayout: UICollectionViewLayout {
         return false
     }
     
+    //could be a better way to provide attributes
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
-        return nil
+        return layoutAttributes.filter { attributes in
+            return attributes.frame.intersects(rect)
+        }
     }
     
     override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
