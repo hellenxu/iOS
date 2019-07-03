@@ -37,6 +37,8 @@ why use interface builder to set cell height doesn't work???
 
 Advanced
 ****
+[20190702] custom UICollectionViewLayout - how to implement shouldInvalideLayout() in terms of performance; fix incorrect numbers of row and columns.
+
 [20190605] custom UICollectionViewLayout - calculate content size and set layout attributes for cells.
 
 [20190604] custom UICollectionViewLayout - precalculation.
