@@ -31,6 +31,7 @@ private extension ViewController {
 //        navigationItem.leftBarButtonItem = editButtonItem
         collectionView.delegate = self
         collectionView.dataSource = self
+        collectionView.collectionViewLayout = ContactCollectionViewLayout()
     }
     
     //ask for contact permission
@@ -88,19 +89,19 @@ extension ViewController: UICollectionViewDelegate {
 }
 
 //MARKER: CollectionView delegate flow layout
-extension ViewController: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = floor((collectionView.bounds.width - 2) / 4)
-        return CGSize(width: width, height: 90)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        let availableWidthForCells = collectionView.bounds.width - 2
-        let totalGutterSpace = availableWidthForCells.truncatingRemainder(dividingBy: 4)
-        let cellSpacing = totalGutterSpace / 2
-        return 1 + cellSpacing
-    }
-}
+//extension ViewController: UICollectionViewDelegateFlowLayout {
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        let width = floor((collectionView.bounds.width - 2) / 4)
+//        return CGSize(width: width, height: 90)
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+//        let availableWidthForCells = collectionView.bounds.width - 2
+//        let totalGutterSpace = availableWidthForCells.truncatingRemainder(dividingBy: 4)
+//        let cellSpacing = totalGutterSpace / 2
+//        return 1 + cellSpacing
+//    }
+//}
 
 //MARKER: table view data source
 //extension ViewController: UITableViewDataSource {
