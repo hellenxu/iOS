@@ -160,3 +160,13 @@ extension ViewController: UICollectionViewDelegate {
 //        }
 //    }
 //}
+
+//MARKER: collection view prefetching
+extension ViewController: UICollectionViewDataSourcePrefetching {
+    func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath]) {
+        for indexPath in indexPaths {
+            let contact = contacts[indexPath.count]
+            contact.fetchImageIfNeeded()
+        }
+    }
+}
