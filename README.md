@@ -4,35 +4,6 @@ Playground of new toys
 ### iDailyProject
 iOS application daily practice in swift.
 
-#### Known issues:
-1. cannot show photo reviews.
-
-error log:
-
-> 2019-04-30 21:40:22.204089-0400 EatEat[69983:2445476] [error] warning: Multiple NSEntityDescriptions claim the NSManagedObject subclass 'RestaurantPhoto' so +entity is unable to disambiguate. CoreData: warning: Multiple NSEntityDescriptions claim the NSManagedObject subclass 'RestaurantPhoto' so +entity is unable to disambiguate.
-
-2. Done button doesn't show on custom notification setting page.
-
-
-3. Warning - ambiguous constraints
-
-> [Warning] Warning once only: Detected a case where constraints ambiguously suggest a height of zero for a tableview cell's content view. We're considering the collapse unintentional and using standard height instead.
-
-Fixed:
-```swift 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.rowHeight = 60
-        requestContactPermission()
-    }
-```
-why use interface builder to set cell height doesn't work???
-
-***
-
 #### Path
 
 Advanced
