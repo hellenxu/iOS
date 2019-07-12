@@ -32,6 +32,34 @@ private extension ViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.collectionViewLayout = ContactCollectionViewLayout()
+        let longPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(self.userDidLongPress(_:)))
+        collectionView.addGestureRecognizer(longPressGestureRecognizer)
+    }
+    
+    //selector for long press
+    @objc func userDidLongPress(_ gestureRecognizer: UILongPressGestureRecognizer) {
+        let tappePoint = gestureRecognizer.location(in: collectionView)
+        guard let indexPath = collectionView.indexPathForItem(at: tappePoint), let tappedCell = collectionView.cellForItem(at: indexPath) else {
+            return
+        }
+        
+        let confirmationDialog = UIAlertController(title: "Delete contact?", message: "Are you sure you want to delete this contact?", preferredStyle: .actionSheet)
+        
+        let deleteAction = UIAlertAction(title: "Yes", style: .destructive, handler: {[weak self] _ in
+            self?.contacts.remove(at: indexPath.row)
+            self?.collectionView.deleteItems(at: [indexPath])
+        })
+        
+        let cancelAction = UIAlertAction(title: "No", style: .default, handler: nil)
+        
+        confirmationDialog.addAction(deleteAction)
+        confirmationDialog.addAction(cancelAction)
+        
+        if let popOver = confirmationDialog.popoverPresentationController {
+            popOver.sourceView = tappedCell
+        }
+        
+        present(confirmationDialog, animated: true, completion: nil)
     }
     
     //ask for contact permission
