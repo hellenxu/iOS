@@ -85,7 +85,18 @@ extension ViewController: UICollectionViewDataSource {
 
 //MARKER: CollectionView delegate
 extension ViewController: UICollectionViewDelegate {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let cell = collectionView.cellForItem(at: indexPath) as? ContactCell
+            else {return }
+        
+        UIView.animate(withDuration: 0.1, delay: 0, options: [.curveEaseOut], animations: {
+            cell.contactImage.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+        }, completion: {_ in
+            UIView.animate(withDuration: 0.1, delay: 0, options: [.curveEaseIn], animations: {
+                cell.contactImage.transform = .identity
+            }, completion: nil)
+        })
+    }
 }
 
 //MARKER: CollectionView delegate flow layout
