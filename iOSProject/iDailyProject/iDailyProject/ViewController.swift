@@ -51,6 +51,20 @@ private extension ViewController {
     }
     
     func reorderContact(_ cell: UICollectionViewCell, atIndexPath indexPath: IndexPath, gestureRecognizer: UILongPressGestureRecognizer) {
+        switch gestureRecognizer.state {
+        case .began:
+            collectionView.beginInteractiveMovementForItem(at: indexPath)
+            UIView.animate(withDuration: 0.2, delay: 0, options: [.curveEaseOut], animations: {
+                cell.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
+            }, completion: nil)
+        case .changed:
+            let pos = gestureRecognizer.location(in: collectionView)
+            collectionView.updateInteractiveMovementTargetPosition(pos)
+        case .ended:
+            collectionView.endInteractiveMovement()
+        default:
+            collectionView.endInteractiveMovement()
+        }
         
     }
     
@@ -120,6 +134,15 @@ extension ViewController: UICollectionViewDataSource {
             cell.contactImage.image = image
         }
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, canMoveItemAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, moveItemAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        let movedContact = contacts.remove(at: sourceIndexPath.row)
+        contacts.insert(movedContact, at: destinationIndexPath.row)
     }
 }
 
