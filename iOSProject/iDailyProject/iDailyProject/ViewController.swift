@@ -19,6 +19,20 @@ class ViewController: UIViewController {
         setupViews()
         requestContactPermission()
     }
+    
+    override func setEditing(_ editing: Bool, animated: Bool) {
+        super.setEditing(editing, animated: animated)
+        
+        for cell in collectionView.visibleCells {
+            UIView.animate(withDuration: 0.2, delay: 0, options: [.curveEaseOut], animations:  {
+                if editing {
+                    cell.backgroundColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1)
+                } else {
+                    cell.backgroundColor = .clear
+                }
+            }, completion: nil)
+        }
+    }
 }
 
 //MARKER: private extension
@@ -34,6 +48,7 @@ private extension ViewController {
         collectionView.collectionViewLayout = ContactCollectionViewLayout()
         let longPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(self.userDidLongPress(_:)))
         collectionView.addGestureRecognizer(longPressGestureRecognizer)
+        navigationItem.rightBarButtonItem = editButtonItem
     }
     
     //selector for long press
@@ -51,6 +66,8 @@ private extension ViewController {
     }
     
     func reorderContact(_ cell: UICollectionViewCell, atIndexPath indexPath: IndexPath, gestureRecognizer: UILongPressGestureRecognizer) {
+        print("xxl-indexPath: \(indexPath)")
+        
         switch gestureRecognizer.state {
         case .began:
             collectionView.beginInteractiveMovementForItem(at: indexPath)
@@ -59,6 +76,7 @@ private extension ViewController {
             }, completion: nil)
         case .changed:
             let pos = gestureRecognizer.location(in: collectionView)
+            print("xxl-pos: \(pos)")
             collectionView.updateInteractiveMovementTargetPosition(pos)
         case .ended:
             collectionView.endInteractiveMovement()
