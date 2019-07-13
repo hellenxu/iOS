@@ -70,6 +70,7 @@ private extension ViewController {
         
         switch gestureRecognizer.state {
         case .began:
+            collectionView.endInteractiveMovement()
             collectionView.beginInteractiveMovementForItem(at: indexPath)
             UIView.animate(withDuration: 0.2, delay: 0, options: [.curveEaseOut], animations: {
                 cell.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
