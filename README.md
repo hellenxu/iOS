@@ -8,6 +8,8 @@ iOS application daily practice in swift.
 
 Advanced
 ****
+[20190712] reordering cells of collection view in editing mode.
+
 [20190711] enable collection view cell selection; handle collection view cell deletion.
 
 [20190703] collection view prefetching; (has one unfixed issue: size of no pic cell isn't the same as cells with pics)
