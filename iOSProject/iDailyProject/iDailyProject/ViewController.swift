@@ -43,6 +43,18 @@ private extension ViewController {
             return
         }
         
+        if isEditing {
+            reorderContact(tappedCell, atIndexPath: indexPath, gestureRecognizer: gestureRecognizer)
+        } else {
+            deleteContact(tappedCell, atIndexPath: indexPath)
+        }
+    }
+    
+    func reorderContact(_ cell: UICollectionViewCell, atIndexPath indexPath: IndexPath, gestureRecognizer: UILongPressGestureRecognizer) {
+        
+    }
+    
+    func deleteContact(_ tappedCell: UICollectionViewCell, atIndexPath indexPath: IndexPath) {
         let confirmationDialog = UIAlertController(title: "Delete contact?", message: "Are you sure you want to delete this contact?", preferredStyle: .actionSheet)
         
         let deleteAction = UIAlertAction(title: "Yes", style: .destructive, handler: {[weak self] _ in
