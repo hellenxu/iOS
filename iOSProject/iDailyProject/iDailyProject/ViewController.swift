@@ -77,7 +77,6 @@ private extension ViewController {
             }, completion: nil)
         case .changed:
             let pos = gestureRecognizer.location(in: collectionView)
-            print("xxl-pos: \(pos)")
             collectionView.updateInteractiveMovementTargetPosition(pos)
         case .ended:
             collectionView.endInteractiveMovement()
@@ -102,6 +101,11 @@ private extension ViewController {
         
         if let popOver = confirmationDialog.popoverPresentationController {
             popOver.sourceView = tappedCell
+            
+            if let cell = tappedCell as? ContactCell {
+                let imageCenter = cell.contactImage.center
+                popOver.sourceRect = CGRect(x: imageCenter.x, y: imageCenter.y, width: 0, height: 0)
+            }
         }
         
         present(confirmationDialog, animated: true, completion: nil)
