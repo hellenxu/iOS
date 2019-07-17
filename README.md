@@ -8,6 +8,8 @@ iOS application daily practice in swift.
 
 Advanced
 ****
+[20190716] adjust confirmation dialog for pads.
+
 [20190712] reordering cells of collection view in editing mode.
 
 [20190711] enable collection view cell selection; handle collection view cell deletion.
