@@ -61,7 +61,6 @@
                                         <connections>
                                             <outlet property="contactImage" destination="uoM-39-ApO" id="LSX-2M-BZT"/>
                                             <outlet property="nameLabel" destination="0qT-jg-YPf" id="RoV-8X-hHx"/>
-                                            <segue destination="jJb-Rn-7nr" kind="show" id="TRh-0g-DJK"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -79,6 +78,7 @@
                     <navigationItem key="navigationItem" id="LdB-Sm-HKC"/>
                     <connections>
                         <outlet property="collectionView" destination="vsQ-VW-0oI" id="iZx-TA-zFR"/>
+                        <segue destination="jJb-Rn-7nr" kind="show" identifier="detailViewSegue" id="yhs-uG-Yld"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
