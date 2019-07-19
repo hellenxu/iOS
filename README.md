@@ -8,6 +8,8 @@ iOS application daily practice in swift.
 
 Advanced
 ****
+[20190718] contact detail page ui.
+
 [20190717] action segues vs manual segues.
 
 [20190716] adjust confirmation dialog for pads.
