@@ -1,0 +1,16 @@
+platform :ios, '11.0'
+
+project 'iDailyProject.xcodeproj'
+
+def testing_pods
+    pod 'Nimble'
+end
+
+def common_pods
+    pod 'NVActivityIndicatorView', '~> 4.4.0'
+end
+
+target 'iDailyProject' do
+    common_pods
+    testing_pods
+end

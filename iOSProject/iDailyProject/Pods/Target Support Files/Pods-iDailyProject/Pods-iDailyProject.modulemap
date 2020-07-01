@@ -1,0 +1,6 @@
+module Pods_iDailyProject {
+  umbrella header "Pods-iDailyProject-umbrella.h"
+
+  export *
+  module * { export * }
+}

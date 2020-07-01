@@ -16,6 +16,7 @@
 		11639E1E22A75D9100BED97A /* ContactCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11639E1D22A75D9100BED97A /* ContactCollectionViewLayout.swift */; };
 		11E58B0422984E1800FA0600 /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E58B0322984E1800FA0600 /* ContactCell.swift */; };
 		11E58B06229E20F100FA0600 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E58B05229E20F100FA0600 /* Contact.swift */; };
+		D8A00E384AC917F5F3E4AC50 /* libPods-iDailyProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56D6E80CAB97683BC93E4058 /* libPods-iDailyProject.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,9 @@
 		11639E1D22A75D9100BED97A /* ContactCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCollectionViewLayout.swift; sourceTree = "<group>"; };
 		11E58B0322984E1800FA0600 /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
 		11E58B05229E20F100FA0600 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		56D6E80CAB97683BC93E4058 /* libPods-iDailyProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iDailyProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8372DB909D965E8EE2A8B000 /* Pods-iDailyProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDailyProject.release.xcconfig"; path = "Target Support Files/Pods-iDailyProject/Pods-iDailyProject.release.xcconfig"; sourceTree = "<group>"; };
+		F6279910DAC6F2EF52FC964F /* Pods-iDailyProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDailyProject.debug.xcconfig"; path = "Target Support Files/Pods-iDailyProject/Pods-iDailyProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8A00E384AC917F5F3E4AC50 /* libPods-iDailyProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +53,8 @@
 			children = (
 				1155B21E21F01B6D00D08EAF /* iDailyProject */,
 				1155B21D21F01B6D00D08EAF /* Products */,
+				9EA337CE850396D53AE6B5FA /* Pods */,
+				7ACE28B91CB7E1F173CE4D6E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +83,24 @@
 			path = iDailyProject;
 			sourceTree = "<group>";
 		};
+		7ACE28B91CB7E1F173CE4D6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56D6E80CAB97683BC93E4058 /* libPods-iDailyProject.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9EA337CE850396D53AE6B5FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6279910DAC6F2EF52FC964F /* Pods-iDailyProject.debug.xcconfig */,
+				8372DB909D965E8EE2A8B000 /* Pods-iDailyProject.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +108,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1155B24721F01B6E00D08EAF /* Build configuration list for PBXNativeTarget "iDailyProject" */;
 			buildPhases = (
+				2296240F94C7B7F8B4E1FEF9 /* [CP] Check Pods Manifest.lock */,
 				1155B21821F01B6D00D08EAF /* Sources */,
 				1155B21921F01B6D00D08EAF /* Frameworks */,
 				1155B21A21F01B6D00D08EAF /* Resources */,
@@ -141,6 +167,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2296240F94C7B7F8B4E1FEF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iDailyProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1155B21821F01B6D00D08EAF /* Sources */ = {
@@ -296,6 +347,7 @@
 		};
 		1155B24821F01B6E00D08EAF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6279910DAC6F2EF52FC964F /* Pods-iDailyProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -313,6 +365,7 @@
 		};
 		1155B24921F01B6E00D08EAF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8372DB909D965E8EE2A8B000 /* Pods-iDailyProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
