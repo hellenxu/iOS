@@ -2,6 +2,11 @@ platform :ios, '11.0'
 source 'https://github.com/CocoaPods/Specs.git'
 project 'iDailyProject.xcodeproj'
 use_frameworks!
+post_install do |installer|
+    require 'fileutils'
+    FileUtils.touch('test.txt')
+end
+
 def testing_pods
     pod 'Nimble'
 end
