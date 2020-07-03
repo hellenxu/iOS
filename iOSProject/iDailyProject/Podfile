@@ -7,7 +7,7 @@ def testing_pods
 end
 
 def common_pods
-    pod 'NVActivityIndicatorView', '~> 4.4.0'
+  pod 'NVActivityIndicatorView', '~> 4.4.0', :inhibit_warnings => true
 end
 
 target 'iDailyProject' do
