@@ -9,14 +9,15 @@ DEPENDENCIES:
   - NVActivityIndicatorView (~> 4.4.0)
 
 SPEC REPOS:
-  trunk:
+  https://github.com/CocoaPods/Specs.git:
     - Nimble
+  trunk:
     - NVActivityIndicatorView
 
 SPEC CHECKSUMS:
   Nimble: 5f8a2fb6fa343a7242dfdd9d42f7267419d464b2
   NVActivityIndicatorView: f0a6b0ed2973d9544da268f4eb76696f0a9577b0
 
-PODFILE CHECKSUM: c49be1fc76080d200c612985e04ec4e164014d18
+PODFILE CHECKSUM: 62efe8894fa915dd2eee7adabf50758aee383e9e
 
 COCOAPODS: 1.9.3

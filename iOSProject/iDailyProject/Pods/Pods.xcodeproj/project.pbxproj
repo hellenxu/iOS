@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		00A995EF2557B33FE483EE1025BB31CB /* NVActivityIndicatorAnimationCircleStrokeSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4C424109C7DF89D92013B162ECE83B /* NVActivityIndicatorAnimationCircleStrokeSpin.swift */; };
+		0510F0B30B895E0655E3505B88903A41 /* Pods-iDailyProjectUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 249B5924903933D4D0DF35B1E0B99BF6 /* Pods-iDailyProjectUITests-dummy.m */; };
 		0892D14FE7A3452423E9129D7917664B /* MatchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3096E5A14A64835BBA4A86F10BCE209C /* MatchError.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		092256E303520E50ADEFF25EEB4E73EE /* CwlCatchException.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F6EA1633C57C17D1F3C9AAD798D4463 /* CwlCatchException.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A9A60954308CD651961C0685058A6E3 /* NVActivityIndicatorAnimationBallBeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50EECE0C8F8488FDEFE64B7665C331F /* NVActivityIndicatorAnimationBallBeat.swift */; };
@@ -24,6 +25,7 @@
 		27F0EF203DFA692F6E9E139528C5D741 /* NVActivityIndicatorAnimationBallZigZagDeflect.swift in Sources */ = {isa = PBXBuildFile; fileRef = B924BDA80540B554C04FFC59589A4B1B /* NVActivityIndicatorAnimationBallZigZagDeflect.swift */; };
 		290E11D9EC196FE4C419FD4548B2256F /* NVActivityIndicatorAnimationBallScaleMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE838E48207D21E4BABE80D819CDDD /* NVActivityIndicatorAnimationBallScaleMultiple.swift */; };
 		2B350015B9F7546D0769649EE12D7D1A /* NimbleXCTestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DF82AD89BF4997BF0792BDEBE9A409 /* NimbleXCTestHandler.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
+		31086F7FDB27198FDA8F1C0C7FA1A816 /* Pods-iDailyProject-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BEEC5B5643F731D195C0F62E46391B7 /* Pods-iDailyProject-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3262B230B938C8D6522790093FEAF69D /* EndWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F19225AEE6794185780C2D6F4DD3AF0 /* EndWith.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		330E8E4A6596ED625E9B34C94CC4136E /* Await.swift in Sources */ = {isa = PBXBuildFile; fileRef = A896A1D1928E0B2A9C5F28DDFE5B2B89 /* Await.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		3421A12814AF2D4E45C9CB492A2E29EB /* NVActivityIndicatorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C816D241603EBCA5280D5103392F3CAB /* NVActivityIndicatorPresenter.swift */; };
@@ -31,8 +33,10 @@
 		3616A03497159F85D155A6C49AEB592D /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F92B175FE31B5809FA2D3C4C4B2384A /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift */; };
 		36B52B2E00C5B4254B612189E8AB7846 /* NVActivityIndicatorAnimationBallPulseRise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25BB1ECF6C0C2B540C4693336B28BCC /* NVActivityIndicatorAnimationBallPulseRise.swift */; };
 		39133A7716CEDEB690A7DA9D12C45C4D /* CwlDarwinDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD62E56E712056D619FF70A045C54C2 /* CwlDarwinDefinitions.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
+		3BC9F3AFCA54FC6736DF7E2AACC169F0 /* Pods-iDailyProject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1579680B82208993CAF03BFC485DCDE0 /* Pods-iDailyProject-dummy.m */; };
 		3BD0C370BBCEBDEA68B8EDBD969370EB /* mach_excServer.h in Headers */ = {isa = PBXBuildFile; fileRef = BF4109F1E8FC22B69AC62BF99A137974 /* mach_excServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D3F0011B7216630D33548B7D630DC1E /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFD488DEBFD795D01ADEBA66D9DCE09 /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift */; };
+		3DD6F4F000A3EEB932CCF1493451E770 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950B64BEB39CC506B65115EE95302D64 /* Foundation.framework */; };
 		4203EF96811AE514D64AE069311B1575 /* AllPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E07B8DD39C0319AAB022EA33857FD85 /* AllPass.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		425A26A94449D10BE486AF3C68BC09FE /* NVActivityIndicatorAnimationAudioEqualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5CD5F692396FC1BCA11915E2E65FE3 /* NVActivityIndicatorAnimationAudioEqualizer.swift */; };
 		42F76698690916E0407F51610D829412 /* BeGreaterThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E283A636889FC22A43AE68423B9FC05 /* BeGreaterThan.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -78,17 +82,15 @@
 		A6E691E823DA1A8D8CC8DC6F1A931261 /* NVActivityIndicatorAnimationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D9C4FB3121DB3F8B1057547FE4D825 /* NVActivityIndicatorAnimationDelegate.swift */; };
 		A9996A6303084D17B9C439CB132A1F69 /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A801D4AE83D52D1D86C1D7D0D8EA495B /* DSL.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		AD69407E2FA1D39A9E09248052F2D81B /* ExpectationMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4605D75A016E30D5D7CEF54640760614 /* ExpectationMessage.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
-		AFCFED4CB31E9AE5195F1EA3C99C639B /* Pods-iDailyProject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F46B43003AFC7C4E19879C6249CD1783 /* Pods-iDailyProject-dummy.m */; };
 		B2A65EEDB5D5EC246EA68E10964FF7B3 /* ThrowError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9780C8B90242078D4FB3D76101FDC2 /* ThrowError.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		B4058A2AA8486E9879F113E6F67B9679 /* AdapterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6DB9F6E01220C64A7521DB76763D55 /* AdapterProtocols.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
-		B5CE7605B6933EEAB1CB8205F545CABA /* Pods-iDailyProject-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BA7CB7F1DFB24B5893D9D8426951A582 /* Pods-iDailyProject-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B6CC23C6C288F4EB9EDD3A06F1F5F094 /* Predicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F71CE171CF471A5304E64B33EF75232 /* Predicate.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		B71070160CF07EFA99ED0445B0D191E7 /* Nimble-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 371F019AE8C649BA1AD417EE740557C6 /* Nimble-dummy.m */; };
 		B7662703AF8D3FFFCB0070C50FEDCC58 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4649E1CFA8A0956E4E369A69C3D10AC /* Errors.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		B79FC6E46F642C3FC74B3E6D9175B1AB /* SatisfyAllOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B815C9D7C1B544227A707D658FF088 /* SatisfyAllOf.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		C051C0411627BD5FCDA031782EB1F716 /* DSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 990EB8B9F0D226D7336E16009DF67CC7 /* DSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0C98C8C7D07E1598F20EE2F0539197D /* NMBExpectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241C588D5446C90E8127712240319A3F /* NMBExpectation.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
-		C8101F1D3DA70310DF15F62C9EDAF96D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950B64BEB39CC506B65115EE95302D64 /* Foundation.framework */; };
+		C7652BD90E057C2548B07E24ACA73E82 /* Pods-iDailyProjectUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 72260369B2DED82D63EBFF7957FF87B4 /* Pods-iDailyProjectUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C903AEFEEB4E73644A03FB8285543107 /* BeEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932B1B971A8A758C28E9471CEAFFD9B2 /* BeEmpty.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		C979EEB0159A65246F6BD2C906A8ADB7 /* BeVoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9E784F1F8B4494409803F3EB0E2625 /* BeVoid.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		C99BBC3F70E056CB6A3CC0516318939D /* AssertionDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEF095739A0EBBECB76961C5C160F5B /* AssertionDispatcher.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -107,6 +109,7 @@
 		D9D6150D329A87CBB415FD349F0C50FD /* SourceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF23C3A5C6523B4A04EC679FC07BD7F /* SourceLocation.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		DB84342A0C0DEABBF7F729DE55225D82 /* XCTestObservationCenter+Register.m in Sources */ = {isa = PBXBuildFile; fileRef = DB95B256836C6FFCCA585A1034384675 /* XCTestObservationCenter+Register.m */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		DCD198D49C0A198A09525B7688EE3BC9 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62315FF29E33C29A3017A8E4A3AF8040 /* Async.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
+		DE3D661EAE0880C51EF7137903C8262A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950B64BEB39CC506B65115EE95302D64 /* Foundation.framework */; };
 		E0EAC85F7ACFAD998B14FCE66144000E /* NMBStringify.h in Headers */ = {isa = PBXBuildFile; fileRef = DA532F334625ABACAE948518D81AD3A6 /* NMBStringify.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2CC6A11DE930AFE21A0E1B3CE2839FB /* NVActivityIndicatorAnimationBallZigZag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EC7F6601AEA593CED312D48C6DAB2A /* NVActivityIndicatorAnimationBallZigZag.swift */; };
 		E32FC1B394DEBA96624360372DD4FC42 /* NVActivityIndicatorAnimationBlank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681385D02D933A95FEDD94520AD497E6 /* NVActivityIndicatorAnimationBlank.swift */; };
@@ -129,14 +132,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		41BC5C18B2AA5A31FBEE6C9A4106BAAF /* PBXContainerItemProxy */ = {
+		6E745672B76E8EBF31DC19F7C826110E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6F13695E06195A78EA8A95F8C7ED0D2F;
 			remoteInfo = Nimble;
 		};
-		5C7B4EDF5DF7E4F5414AE196F141A1D5 /* PBXContainerItemProxy */ = {
+		F0081E04416FB38A3373731B444531C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -147,14 +150,17 @@
 
 /* Begin PBXFileReference section */
 		0046945E25A546E873ACE78F5DDC09AA /* CwlMachBadInstructionHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CwlMachBadInstructionHandler.h; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlMachBadInstructionHandler/include/CwlMachBadInstructionHandler.h; sourceTree = "<group>"; };
+		0183AAA0F372D6749F55D7124E436EAE /* Pods-iDailyProjectUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iDailyProjectUITests-Info.plist"; sourceTree = "<group>"; };
 		0185802F40C2420448C907ACCE691CBF /* DSL+Wait.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DSL+Wait.swift"; path = "Sources/Nimble/DSL+Wait.swift"; sourceTree = "<group>"; };
 		03870A7E649A9A5A36ED85AEEA50D9FE /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallSpinFadeLoader.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallSpinFadeLoader.swift; sourceTree = "<group>"; };
 		0754523944F6D96F0D116C00E4944F62 /* PostNotification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PostNotification.swift; path = Sources/Nimble/Matchers/PostNotification.swift; sourceTree = "<group>"; };
+		094F0E7A0319DDEF82CBE6003CE3AC86 /* Pods-iDailyProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iDailyProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		0B2E6F3F896CB6FD121FFF4BFDBE1EAB /* NMBObjCMatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NMBObjCMatcher.swift; path = Sources/Nimble/Adapters/NMBObjCMatcher.swift; sourceTree = "<group>"; };
 		0B5CD5F692396FC1BCA11915E2E65FE3 /* NVActivityIndicatorAnimationAudioEqualizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationAudioEqualizer.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationAudioEqualizer.swift; sourceTree = "<group>"; };
 		0F19225AEE6794185780C2D6F4DD3AF0 /* EndWith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EndWith.swift; path = Sources/Nimble/Matchers/EndWith.swift; sourceTree = "<group>"; };
 		0F3076FA608B1ADE33C5537FB3DF4D38 /* FailureMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FailureMessage.swift; path = Sources/Nimble/FailureMessage.swift; sourceTree = "<group>"; };
 		13296036B47F94D83F870550E6F8D1C0 /* DSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSL.m; path = Sources/NimbleObjectiveC/DSL.m; sourceTree = "<group>"; };
+		1579680B82208993CAF03BFC485DCDE0 /* Pods-iDailyProject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iDailyProject-dummy.m"; sourceTree = "<group>"; };
 		15868872023114271B4F97AC29D6D05A /* NVActivityIndicatorAnimationBallRotateChase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallRotateChase.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallRotateChase.swift; sourceTree = "<group>"; };
 		15A61D3CE315FEF9C3441260F5804F43 /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Sources/Nimble/Expression.swift; sourceTree = "<group>"; };
 		16C777DF9673075BE58AA7A0DC8A4F1B /* NVActivityIndicatorView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NVActivityIndicatorView-Info.plist"; sourceTree = "<group>"; };
@@ -165,17 +171,24 @@
 		1C057C91C8D0638DBDD5F6A24B27E72D /* Nimble.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Nimble.modulemap; sourceTree = "<group>"; };
 		1C530BF745ED3C6C5A714DFBA8396720 /* CwlCatchException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CwlCatchException.m; path = Carthage/Checkouts/CwlPreconditionTesting/Dependencies/CwlCatchException/Sources/CwlCatchExceptionSupport/CwlCatchException.m; sourceTree = "<group>"; };
 		1C69E83325376A2486A349497093DDDF /* ToSucceed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToSucceed.swift; path = Sources/Nimble/Matchers/ToSucceed.swift; sourceTree = "<group>"; };
+		1D9FBC852F6B7A853714D43A524113F4 /* Pods_iDailyProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_iDailyProjectUITests.framework; path = "Pods-iDailyProjectUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FFE979E174D601CF8DE9EC738355BFF /* Pods-iDailyProject-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iDailyProject-frameworks.sh"; sourceTree = "<group>"; };
 		209EBCD867D8A74490D21EEF8784C1DB /* NVActivityIndicatorAnimationBallPulseSync.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallPulseSync.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallPulseSync.swift; sourceTree = "<group>"; };
+		241C4C9FF965034B728B8D222F71E802 /* Pods-iDailyProjectUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iDailyProjectUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		241C588D5446C90E8127712240319A3F /* NMBExpectation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NMBExpectation.swift; path = Sources/Nimble/Adapters/NMBExpectation.swift; sourceTree = "<group>"; };
+		249B5924903933D4D0DF35B1E0B99BF6 /* Pods-iDailyProjectUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iDailyProjectUITests-dummy.m"; sourceTree = "<group>"; };
 		28F0E01B295A4CDE09E2A85891E2A9DA /* BeCloseTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeCloseTo.swift; path = Sources/Nimble/Matchers/BeCloseTo.swift; sourceTree = "<group>"; };
 		2947390471D8D7AA6396237A562BA879 /* Expectation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expectation.swift; path = Sources/Nimble/Expectation.swift; sourceTree = "<group>"; };
 		29D63A39F93B47727327FB199E0CED5D /* NVActivityIndicatorAnimationCubeTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationCubeTransition.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationCubeTransition.swift; sourceTree = "<group>"; };
+		2BEEC5B5643F731D195C0F62E46391B7 /* Pods-iDailyProject-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iDailyProject-umbrella.h"; sourceTree = "<group>"; };
 		2DF5D1EA7012078F0FF64D39B077AAE6 /* NVActivityIndicatorView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NVActivityIndicatorView.modulemap; sourceTree = "<group>"; };
 		2E2DEC74BF9E4CC51BAFD434B1F7E947 /* NimbleEnvironment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NimbleEnvironment.swift; path = Sources/Nimble/Adapters/NimbleEnvironment.swift; sourceTree = "<group>"; };
 		2F71CE171CF471A5304E64B33EF75232 /* Predicate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Predicate.swift; path = Sources/Nimble/Matchers/Predicate.swift; sourceTree = "<group>"; };
 		2FBE838E48207D21E4BABE80D819CDDD /* NVActivityIndicatorAnimationBallScaleMultiple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallScaleMultiple.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScaleMultiple.swift; sourceTree = "<group>"; };
 		3096E5A14A64835BBA4A86F10BCE209C /* MatchError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatchError.swift; path = Sources/Nimble/Matchers/MatchError.swift; sourceTree = "<group>"; };
+		32CAF44C6C9634042FC4C05B7D387B44 /* Pods-iDailyProject-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iDailyProject-acknowledgements.plist"; sourceTree = "<group>"; };
 		334056646E5D66939D50D78404087371 /* HaveCount.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HaveCount.swift; path = Sources/Nimble/Matchers/HaveCount.swift; sourceTree = "<group>"; };
+		342F29B8073CE8EC438A696A367FA5DA /* Pods-iDailyProject.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iDailyProject.modulemap"; sourceTree = "<group>"; };
 		371F019AE8C649BA1AD417EE740557C6 /* Nimble-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Nimble-dummy.m"; sourceTree = "<group>"; };
 		3858B6D99F3CED733573AF483F444138 /* NVActivityIndicatorAnimationSquareSpin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationSquareSpin.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationSquareSpin.swift; sourceTree = "<group>"; };
 		38DF37432AD6661A011D7742C1466F99 /* MatcherProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatcherProtocols.swift; path = Sources/Nimble/Matchers/MatcherProtocols.swift; sourceTree = "<group>"; };
@@ -183,7 +196,6 @@
 		3EAA29656562185385125034DB3CD444 /* NVActivityIndicatorAnimationBallRotate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallRotate.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallRotate.swift; sourceTree = "<group>"; };
 		4129DDE6344AADBD4E2936BECDF50F9B /* NMBExceptionCapture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMBExceptionCapture.m; path = Sources/NimbleObjectiveC/NMBExceptionCapture.m; sourceTree = "<group>"; };
 		413150A5E1AD032847569BF2ED2E8312 /* Functional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Functional.swift; path = Sources/Nimble/Utils/Functional.swift; sourceTree = "<group>"; };
-		41930A7CBEABC2AB77390D924D58DE8B /* Pods-iDailyProject-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iDailyProject-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4605D75A016E30D5D7CEF54640760614 /* ExpectationMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpectationMessage.swift; path = Sources/Nimble/ExpectationMessage.swift; sourceTree = "<group>"; };
 		49199917BE8F8D9E54910D789D5EAAF0 /* NVActivityIndicatorAnimationLineScale.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineScale.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScale.swift; sourceTree = "<group>"; };
 		4964DC4C9E2074D1E6CB1D01A150025B /* NVActivityIndicatorAnimationBallGridBeat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallGridBeat.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallGridBeat.swift; sourceTree = "<group>"; };
@@ -191,13 +203,14 @@
 		49F545AB76C9016ECAD7D83A1129E704 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		4B199464D73735F0F8C7A290AE8BCECD /* NVActivityIndicatorAnimationSemiCircleSpin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationSemiCircleSpin.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationSemiCircleSpin.swift; sourceTree = "<group>"; };
 		4EEBFFD93F49D47F9E9BD47B538950EA /* BeginWith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeginWith.swift; path = Sources/Nimble/Matchers/BeginWith.swift; sourceTree = "<group>"; };
-		5280FB17AF9354B81585A9EA5159E42E /* Pods-iDailyProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iDailyProject.release.xcconfig"; sourceTree = "<group>"; };
 		549AA4B39648783D6817E6E214789F46 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineSpinFadeLoader.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineSpinFadeLoader.swift; sourceTree = "<group>"; };
+		5731228A06BDFB359CAB60B6F3BA0FD6 /* Pods-iDailyProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iDailyProject.release.xcconfig"; sourceTree = "<group>"; };
 		5AAE4B78ECA24B3D49748F578CEC9F6F /* NVActivityIndicatorAnimationTriangleSkewSpin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationTriangleSkewSpin.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationTriangleSkewSpin.swift; sourceTree = "<group>"; };
 		5B0F080873D6AD4156A59EDB10694129 /* Nimble.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Nimble.debug.xcconfig; sourceTree = "<group>"; };
 		5F6EA1633C57C17D1F3C9AAD798D4463 /* CwlCatchException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CwlCatchException.h; path = Carthage/Checkouts/CwlPreconditionTesting/Dependencies/CwlCatchException/Sources/CwlCatchExceptionSupport/include/CwlCatchException.h; sourceTree = "<group>"; };
 		5FFAC14FF519DCC52B67B8F92ABC9264 /* BeNil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeNil.swift; path = Sources/Nimble/Matchers/BeNil.swift; sourceTree = "<group>"; };
 		62315FF29E33C29A3017A8E4A3AF8040 /* Async.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Async.swift; path = Sources/Nimble/Matchers/Async.swift; sourceTree = "<group>"; };
+		6232D1C7D8BDF3583E5B96D441A85601 /* Pods-iDailyProjectUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iDailyProjectUITests-frameworks.sh"; sourceTree = "<group>"; };
 		64974FD9D9AC4ADA1AD0C274D128A5C3 /* Nimble-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nimble-umbrella.h"; sourceTree = "<group>"; };
 		6792E756880910AE0228BCEC9DD3CB19 /* BeAnInstanceOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeAnInstanceOf.swift; path = Sources/Nimble/Matchers/BeAnInstanceOf.swift; sourceTree = "<group>"; };
 		681385D02D933A95FEDD94520AD497E6 /* NVActivityIndicatorAnimationBlank.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBlank.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBlank.swift; sourceTree = "<group>"; };
@@ -206,7 +219,10 @@
 		6E9227601106FB5A57F64D97B259F817 /* NVActivityIndicatorAnimationBallScale.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallScale.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScale.swift; sourceTree = "<group>"; };
 		6F714F48DE796B635D8ECFD3E10340F3 /* Nimble.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Nimble.h; path = Sources/Nimble/Nimble.h; sourceTree = "<group>"; };
 		71D9C4FB3121DB3F8B1057547FE4D825 /* NVActivityIndicatorAnimationDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationDelegate.swift; path = Source/NVActivityIndicatorView/NVActivityIndicatorAnimationDelegate.swift; sourceTree = "<group>"; };
+		72260369B2DED82D63EBFF7957FF87B4 /* Pods-iDailyProjectUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iDailyProjectUITests-umbrella.h"; sourceTree = "<group>"; };
 		74B12CE57EC8B91388EC577A0FB826D1 /* NMBStringify.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMBStringify.m; path = Sources/NimbleObjectiveC/NMBStringify.m; sourceTree = "<group>"; };
+		7C431264CE9EAF5AFF064F60AA19308D /* Pods-iDailyProjectUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iDailyProjectUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		837E4BBA71331D33AA30751D550CCC2C /* Pods-iDailyProjectUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iDailyProjectUITests.modulemap"; sourceTree = "<group>"; };
 		83DF82AD89BF4997BF0792BDEBE9A409 /* NimbleXCTestHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NimbleXCTestHandler.swift; path = Sources/Nimble/Adapters/NimbleXCTestHandler.swift; sourceTree = "<group>"; };
 		841449368DF352B67B03BE02B1BCF0D8 /* CwlBadInstructionException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CwlBadInstructionException.swift; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlPreconditionTesting/CwlBadInstructionException.swift; sourceTree = "<group>"; };
 		872F71E04015A248662F7395944EF8AC /* NVActivityIndicatorView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NVActivityIndicatorView-prefix.pch"; sourceTree = "<group>"; };
@@ -232,27 +248,27 @@
 		A41C9573A8656030B19A704BC665D849 /* BeLessThan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLessThan.swift; path = Sources/Nimble/Matchers/BeLessThan.swift; sourceTree = "<group>"; };
 		A4CDF82DE845B15CA9B17DB66B0010E8 /* Nimble.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Nimble.release.xcconfig; sourceTree = "<group>"; };
 		A5C738C5B615238E58020D62A6ECEF6E /* NVActivityIndicatorAnimationBallClipRotate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallClipRotate.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallClipRotate.swift; sourceTree = "<group>"; };
-		A683376E51EFCB0744FA23A05343C07F /* Pods-iDailyProject-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iDailyProject-acknowledgements.plist"; sourceTree = "<group>"; };
 		A7B04A1DE768286D3D0E52D74D474297 /* NVActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorView.swift; path = Source/NVActivityIndicatorView/NVActivityIndicatorView.swift; sourceTree = "<group>"; };
 		A801D4AE83D52D1D86C1D7D0D8EA495B /* DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DSL.swift; path = Sources/Nimble/DSL.swift; sourceTree = "<group>"; };
 		A823B4EF8653D5A8FDE7100ECF7B9F48 /* NVActivityIndicatorView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NVActivityIndicatorView.release.xcconfig; sourceTree = "<group>"; };
 		A82642D4D40F66A61913DF4C4675EA33 /* Match.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Match.swift; path = Sources/Nimble/Matchers/Match.swift; sourceTree = "<group>"; };
 		A82D81321EB198DC08B0BB27583FEB07 /* NVActivityIndicatorViewable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorViewable.swift; path = Source/NVActivityIndicatorView/Presenter/NVActivityIndicatorViewable.swift; sourceTree = "<group>"; };
 		A896A1D1928E0B2A9C5F28DDFE5B2B89 /* Await.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Await.swift; path = Sources/Nimble/Utils/Await.swift; sourceTree = "<group>"; };
-		A9623EAA4E734F92C46DD736F3303235 /* Pods-iDailyProject-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iDailyProject-Info.plist"; sourceTree = "<group>"; };
 		B50EECE0C8F8488FDEFE64B7665C331F /* NVActivityIndicatorAnimationBallBeat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallBeat.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallBeat.swift; sourceTree = "<group>"; };
 		B924BDA80540B554C04FFC59589A4B1B /* NVActivityIndicatorAnimationBallZigZagDeflect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallZigZagDeflect.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallZigZagDeflect.swift; sourceTree = "<group>"; };
 		B95A3399B11D78A2F5127736055CAB87 /* CwlMachBadInstructionHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CwlMachBadInstructionHandler.m; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlMachBadInstructionHandler/CwlMachBadInstructionHandler.m; sourceTree = "<group>"; };
-		BA7CB7F1DFB24B5893D9D8426951A582 /* Pods-iDailyProject-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iDailyProject-umbrella.h"; sourceTree = "<group>"; };
 		BA9780C8B90242078D4FB3D76101FDC2 /* ThrowError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThrowError.swift; path = Sources/Nimble/Matchers/ThrowError.swift; sourceTree = "<group>"; };
 		BAE263041362D074978BB3B577DF0A05 /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Nimble.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAEDFB05694A377943EF82067247B9F6 /* Pods-iDailyProject-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iDailyProject-Info.plist"; sourceTree = "<group>"; };
 		BE02A5311BEF4A304B26558151EAB05A /* ThrowAssertion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThrowAssertion.swift; path = Sources/Nimble/Matchers/ThrowAssertion.swift; sourceTree = "<group>"; };
 		BF313E0AAC4AC956F318828E48AFDD65 /* ContainElementSatisfying.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContainElementSatisfying.swift; path = Sources/Nimble/Matchers/ContainElementSatisfying.swift; sourceTree = "<group>"; };
 		BF4109F1E8FC22B69AC62BF99A137974 /* mach_excServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mach_excServer.h; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlMachBadInstructionHandler/mach_excServer.h; sourceTree = "<group>"; };
 		C37B2C8AFD5F412228DA7CCD6F9DB0C7 /* NVActivityIndicatorAnimationBallTrianglePath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallTrianglePath.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallTrianglePath.swift; sourceTree = "<group>"; };
 		C4649E1CFA8A0956E4E369A69C3D10AC /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = Sources/Nimble/Utils/Errors.swift; sourceTree = "<group>"; };
+		C7682383A216BEF9473BD6C77D5B8EEE /* Pods-iDailyProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iDailyProject.debug.xcconfig"; sourceTree = "<group>"; };
 		C816D241603EBCA5280D5103392F3CAB /* NVActivityIndicatorPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorPresenter.swift; path = Source/NVActivityIndicatorView/Presenter/NVActivityIndicatorPresenter.swift; sourceTree = "<group>"; };
 		CA37B6A437C859BB92AF09FB58E1B01A /* BeGreaterThanOrEqualTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeGreaterThanOrEqualTo.swift; path = Sources/Nimble/Matchers/BeGreaterThanOrEqualTo.swift; sourceTree = "<group>"; };
+		CBC3F99E3EE7A8C16F8C9EE2D41E471B /* Pods-iDailyProject-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iDailyProject-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CBCD5169B524477639A9A41855A47F99 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		CC282069DE01007113AE0FF42068F667 /* Equal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Equal.swift; path = Sources/Nimble/Matchers/Equal.swift; sourceTree = "<group>"; };
 		CEF23C3A5C6523B4A04EC679FC07BD7F /* SourceLocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SourceLocation.swift; path = Sources/Nimble/Utils/SourceLocation.swift; sourceTree = "<group>"; };
@@ -270,15 +286,12 @@
 		DCF964339A2D7AAE3F3FEE0D1ACC4410 /* BeLogical.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLogical.swift; path = Sources/Nimble/Matchers/BeLogical.swift; sourceTree = "<group>"; };
 		DDCCA7A143574EABC6110D20483FCBEE /* NVActivityIndicatorShape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorShape.swift; path = Source/NVActivityIndicatorView/NVActivityIndicatorShape.swift; sourceTree = "<group>"; };
 		DDFD488DEBFD795D01ADEBA66D9DCE09 /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallScaleRippleMultiple.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScaleRippleMultiple.swift; sourceTree = "<group>"; };
-		E01AE542D1607EDA4D77A5B0F8C496FE /* Pods-iDailyProject-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iDailyProject-frameworks.sh"; sourceTree = "<group>"; };
-		E7A6609BDDC7F778394EB6C12AB59D02 /* Pods-iDailyProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iDailyProject.debug.xcconfig"; sourceTree = "<group>"; };
 		E84840F8D749556EFA14DFE59356C0FE /* NVActivityIndicatorAnimationLineScalePulseOut.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineScalePulseOut.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScalePulseOut.swift; sourceTree = "<group>"; };
 		EAC790B4708462B68287BF207B7B782C /* NVActivityIndicatorAnimationPacman.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationPacman.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationPacman.swift; sourceTree = "<group>"; };
-		EEA051CE34F303112D1B067FFC2A9E04 /* Pods-iDailyProject.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iDailyProject.modulemap"; sourceTree = "<group>"; };
 		EF9935D0A38717D30E63A6F7F4092286 /* ElementsEqual.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ElementsEqual.swift; path = Sources/Nimble/Matchers/ElementsEqual.swift; sourceTree = "<group>"; };
 		EF9E784F1F8B4494409803F3EB0E2625 /* BeVoid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeVoid.swift; path = Sources/Nimble/Matchers/BeVoid.swift; sourceTree = "<group>"; };
 		F09B4D07458B63E87077A2FEE2147341 /* Stringers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stringers.swift; path = Sources/Nimble/Utils/Stringers.swift; sourceTree = "<group>"; };
-		F46B43003AFC7C4E19879C6249CD1783 /* Pods-iDailyProject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iDailyProject-dummy.m"; sourceTree = "<group>"; };
+		F23D0C615179D690575BA302F8DA18EB /* Pods-iDailyProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iDailyProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FC0089D318D9825D050BDD521D0033D6 /* Contain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Contain.swift; path = Sources/Nimble/Matchers/Contain.swift; sourceTree = "<group>"; };
 		FC4C424109C7DF89D92013B162ECE83B /* NVActivityIndicatorAnimationCircleStrokeSpin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationCircleStrokeSpin.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationCircleStrokeSpin.swift; sourceTree = "<group>"; };
 		FC6DB9F6E01220C64A7521DB76763D55 /* AdapterProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdapterProtocols.swift; path = Sources/Nimble/Adapters/AdapterProtocols.swift; sourceTree = "<group>"; };
@@ -287,6 +300,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0A80F51E64C88AEEC529E8AEB3A80EAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DD6F4F000A3EEB932CCF1493451E770 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55C81EE76C6A69F1F69792A679310C68 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -305,11 +326,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C48793989A381864F17715221EA0DCC6 /* Frameworks */ = {
+		C9D197B965CBECA5F37BDD8932009A9B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8101F1D3DA70310DF15F62C9EDAF96D /* Foundation.framework in Frameworks */,
+				DE3D661EAE0880C51EF7137903C8262A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,12 +345,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		05A7FF668F10590C8A85F1CD7DA6CC9A /* Targets Support Files */ = {
+		091C4757B0290B663C1ECCC508C194FC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E04E95583E1967E69D8197D6B533908A /* Pods-iDailyProject */,
+				BAE263041362D074978BB3B577DF0A05 /* Nimble.framework */,
+				A1B9F27862201CD82B398E0B35B14128 /* NVActivityIndicatorView.framework */,
+				8FD0AF14D1281BCCB92D5594D71E8F82 /* Pods_iDailyProject.framework */,
+				1D9FBC852F6B7A853714D43A524113F4 /* Pods_iDailyProjectUITests.framework */,
 			);
-			name = "Targets Support Files";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		248EC64CA19AC4BE8AF57AF7C0864FEC /* NVActivityIndicatorView */ = {
@@ -340,6 +364,23 @@
 			);
 			name = NVActivityIndicatorView;
 			path = NVActivityIndicatorView;
+			sourceTree = "<group>";
+		};
+		3A474DC76684D1FACDD0C5196E6F34A8 /* Pods-iDailyProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				837E4BBA71331D33AA30751D550CCC2C /* Pods-iDailyProjectUITests.modulemap */,
+				241C4C9FF965034B728B8D222F71E802 /* Pods-iDailyProjectUITests-acknowledgements.markdown */,
+				7C431264CE9EAF5AFF064F60AA19308D /* Pods-iDailyProjectUITests-acknowledgements.plist */,
+				249B5924903933D4D0DF35B1E0B99BF6 /* Pods-iDailyProjectUITests-dummy.m */,
+				6232D1C7D8BDF3583E5B96D441A85601 /* Pods-iDailyProjectUITests-frameworks.sh */,
+				0183AAA0F372D6749F55D7124E436EAE /* Pods-iDailyProjectUITests-Info.plist */,
+				72260369B2DED82D63EBFF7957FF87B4 /* Pods-iDailyProjectUITests-umbrella.h */,
+				F23D0C615179D690575BA302F8DA18EB /* Pods-iDailyProjectUITests.debug.xcconfig */,
+				094F0E7A0319DDEF82CBE6003CE3AC86 /* Pods-iDailyProjectUITests.release.xcconfig */,
+			);
+			name = "Pods-iDailyProjectUITests";
+			path = "Target Support Files/Pods-iDailyProjectUITests";
 			sourceTree = "<group>";
 		};
 		4FC62CEAABFE7A566FD251ADD06B4785 /* Presenter */ = {
@@ -387,6 +428,23 @@
 			name = Presenter;
 			sourceTree = "<group>";
 		};
+		519A0F7B6C9D1E3D07A21214EE620497 /* Pods-iDailyProject */ = {
+			isa = PBXGroup;
+			children = (
+				342F29B8073CE8EC438A696A367FA5DA /* Pods-iDailyProject.modulemap */,
+				CBC3F99E3EE7A8C16F8C9EE2D41E471B /* Pods-iDailyProject-acknowledgements.markdown */,
+				32CAF44C6C9634042FC4C05B7D387B44 /* Pods-iDailyProject-acknowledgements.plist */,
+				1579680B82208993CAF03BFC485DCDE0 /* Pods-iDailyProject-dummy.m */,
+				1FFE979E174D601CF8DE9EC738355BFF /* Pods-iDailyProject-frameworks.sh */,
+				BAEDFB05694A377943EF82067247B9F6 /* Pods-iDailyProject-Info.plist */,
+				2BEEC5B5643F731D195C0F62E46391B7 /* Pods-iDailyProject-umbrella.h */,
+				C7682383A216BEF9473BD6C77D5B8EEE /* Pods-iDailyProject.debug.xcconfig */,
+				5731228A06BDFB359CAB60B6F3BA0FD6 /* Pods-iDailyProject.release.xcconfig */,
+			);
+			name = "Pods-iDailyProject";
+			path = "Target Support Files/Pods-iDailyProject";
+			sourceTree = "<group>";
+		};
 		954DDBD0F5BAA171E2EFAEDCA9F805CA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -402,14 +460,13 @@
 			path = "../Target Support Files/NVActivityIndicatorView";
 			sourceTree = "<group>";
 		};
-		9C848B3D1F203A6FA550C593C790D6C5 /* Products */ = {
+		B9686028383193615F2B01DBF4B8E9B2 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BAE263041362D074978BB3B577DF0A05 /* Nimble.framework */,
-				A1B9F27862201CD82B398E0B35B14128 /* NVActivityIndicatorView.framework */,
-				8FD0AF14D1281BCCB92D5594D71E8F82 /* Pods_iDailyProject.framework */,
+				519A0F7B6C9D1E3D07A21214EE620497 /* Pods-iDailyProject */,
+				3A474DC76684D1FACDD0C5196E6F34A8 /* Pods-iDailyProjectUITests */,
 			);
-			name = Products;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		C18BABFF9523A33465B5A91496FF0C3D /* iOS */ = {
@@ -428,8 +485,8 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
 				DFCE239A9A770DC871B5C432ED07B6B8 /* Pods */,
-				9C848B3D1F203A6FA550C593C790D6C5 /* Products */,
-				05A7FF668F10590C8A85F1CD7DA6CC9A /* Targets Support Files */,
+				091C4757B0290B663C1ECCC508C194FC /* Products */,
+				B9686028383193615F2B01DBF4B8E9B2 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -440,23 +497,6 @@
 				248EC64CA19AC4BE8AF57AF7C0864FEC /* NVActivityIndicatorView */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		E04E95583E1967E69D8197D6B533908A /* Pods-iDailyProject */ = {
-			isa = PBXGroup;
-			children = (
-				EEA051CE34F303112D1B067FFC2A9E04 /* Pods-iDailyProject.modulemap */,
-				41930A7CBEABC2AB77390D924D58DE8B /* Pods-iDailyProject-acknowledgements.markdown */,
-				A683376E51EFCB0744FA23A05343C07F /* Pods-iDailyProject-acknowledgements.plist */,
-				F46B43003AFC7C4E19879C6249CD1783 /* Pods-iDailyProject-dummy.m */,
-				E01AE542D1607EDA4D77A5B0F8C496FE /* Pods-iDailyProject-frameworks.sh */,
-				A9623EAA4E734F92C46DD736F3303235 /* Pods-iDailyProject-Info.plist */,
-				BA7CB7F1DFB24B5893D9D8426951A582 /* Pods-iDailyProject-umbrella.h */,
-				E7A6609BDDC7F778394EB6C12AB59D02 /* Pods-iDailyProject.debug.xcconfig */,
-				5280FB17AF9354B81585A9EA5159E42E /* Pods-iDailyProject.release.xcconfig */,
-			);
-			name = "Pods-iDailyProject";
-			path = "Target Support Files/Pods-iDailyProject";
 			sourceTree = "<group>";
 		};
 		E1DA81E48A40898C33AFDB49EA66BEC0 /* Nimble */ = {
@@ -572,6 +612,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6AEFF743DE74CBB7ADC3B2142EF2CAEF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7652BD90E057C2548B07E24ACA73E82 /* Pods-iDailyProjectUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A7356FD499DC623E1492853D68B3C428 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -580,11 +628,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DDDC9CE25E74ECA0630C874AADB6C2D8 /* Headers */ = {
+		DE179A65384DCC6902E591D77F1CC1E9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5CE7605B6933EEAB1CB8205F545CABA /* Pods-iDailyProject-umbrella.h in Headers */,
+				31086F7FDB27198FDA8F1C0C7FA1A816 /* Pods-iDailyProject-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,18 +641,17 @@
 /* Begin PBXNativeTarget section */
 		20129DB98D75989B4103EC718E4CC771 /* Pods-iDailyProject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A08CCF25FB35C19B1A314E9CA058F2FE /* Build configuration list for PBXNativeTarget "Pods-iDailyProject" */;
+			buildConfigurationList = 1A3D0BD1E33348CC9B5B444EED4DAC96 /* Build configuration list for PBXNativeTarget "Pods-iDailyProject" */;
 			buildPhases = (
-				DDDC9CE25E74ECA0630C874AADB6C2D8 /* Headers */,
-				A2C78F604C2F6ADB061CFD19EDF51964 /* Sources */,
-				C48793989A381864F17715221EA0DCC6 /* Frameworks */,
-				06D7ECB2635D9BD39525BF08845BA65D /* Resources */,
+				DE179A65384DCC6902E591D77F1CC1E9 /* Headers */,
+				A766E6013898AD2A2AFA70670839C01E /* Sources */,
+				0A80F51E64C88AEEC529E8AEB3A80EAE /* Frameworks */,
+				C0337769A41E238F713B6D91079A2363 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BD2FE49B57A04C9CB1CA7DFA04D51670 /* PBXTargetDependency */,
-				EBB7CFFF170BDEFD974B7843DCD932A8 /* PBXTargetDependency */,
+				86D1AB47AE0BE81107923115EB5FF235 /* PBXTargetDependency */,
 			);
 			name = "Pods-iDailyProject";
 			productName = "Pods-iDailyProject";
@@ -647,6 +694,25 @@
 			productReference = A1B9F27862201CD82B398E0B35B14128 /* NVActivityIndicatorView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		C549454512A08EB76EF89008227E6B80 /* Pods-iDailyProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B315C12553CBB6B48354D88ECD127F91 /* Build configuration list for PBXNativeTarget "Pods-iDailyProjectUITests" */;
+			buildPhases = (
+				6AEFF743DE74CBB7ADC3B2142EF2CAEF /* Headers */,
+				59EF111422F436C0800BAE3D9E347FD6 /* Sources */,
+				C9D197B965CBECA5F37BDD8932009A9B /* Frameworks */,
+				CDF64073BCD23ED4E7B2E77242C1239B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B31B86AD5186559E9AD0A88191F3772D /* PBXTargetDependency */,
+			);
+			name = "Pods-iDailyProjectUITests";
+			productName = "Pods-iDailyProjectUITests";
+			productReference = 1D9FBC852F6B7A853714D43A524113F4 /* Pods_iDailyProjectUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -657,7 +723,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -665,26 +731,34 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 9C848B3D1F203A6FA550C593C790D6C5 /* Products */;
+			productRefGroup = 091C4757B0290B663C1ECCC508C194FC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				6F13695E06195A78EA8A95F8C7ED0D2F /* Nimble */,
 				AF8A82876C43F4DFD625D1823E680EAC /* NVActivityIndicatorView */,
 				20129DB98D75989B4103EC718E4CC771 /* Pods-iDailyProject */,
+				C549454512A08EB76EF89008227E6B80 /* Pods-iDailyProjectUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		06D7ECB2635D9BD39525BF08845BA65D /* Resources */ = {
+		3CFD35C9DCD0856C63EA7E65F2E28528 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3CFD35C9DCD0856C63EA7E65F2E28528 /* Resources */ = {
+		C0337769A41E238F713B6D91079A2363 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDF64073BCD23ED4E7B2E77242C1239B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -747,11 +821,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A2C78F604C2F6ADB061CFD19EDF51964 /* Sources */ = {
+		59EF111422F436C0800BAE3D9E347FD6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFCFED4CB31E9AE5195F1EA3C99C639B /* Pods-iDailyProject-dummy.m in Sources */,
+				0510F0B30B895E0655E3505B88903A41 /* Pods-iDailyProjectUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A766E6013898AD2A2AFA70670839C01E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BC9F3AFCA54FC6736DF7E2AACC169F0 /* Pods-iDailyProject-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -828,17 +910,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BD2FE49B57A04C9CB1CA7DFA04D51670 /* PBXTargetDependency */ = {
+		86D1AB47AE0BE81107923115EB5FF235 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = NVActivityIndicatorView;
 			target = AF8A82876C43F4DFD625D1823E680EAC /* NVActivityIndicatorView */;
-			targetProxy = 5C7B4EDF5DF7E4F5414AE196F141A1D5 /* PBXContainerItemProxy */;
+			targetProxy = F0081E04416FB38A3373731B444531C7 /* PBXContainerItemProxy */;
 		};
-		EBB7CFFF170BDEFD974B7843DCD932A8 /* PBXTargetDependency */ = {
+		B31B86AD5186559E9AD0A88191F3772D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Nimble;
 			target = 6F13695E06195A78EA8A95F8C7ED0D2F /* Nimble */;
-			targetProxy = 41BC5C18B2AA5A31FBEE6C9A4106BAAF /* PBXContainerItemProxy */;
+			targetProxy = 6E745672B76E8EBF31DC19F7C826110E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -973,6 +1055,45 @@
 			};
 			name = Release;
 		};
+		67B6531BED7EFBE367B88360AD29701A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5731228A06BDFB359CAB60B6F3BA0FD6 /* Pods-iDailyProject.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iDailyProject/Pods-iDailyProject-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iDailyProject/Pods-iDailyProject.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		6A27F75AE3B53D1378738904AB66EC84 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A823B4EF8653D5A8FDE7100ECF7B9F48 /* NVActivityIndicatorView.release.xcconfig */;
@@ -1002,6 +1123,83 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		745F015196C116BC8CDC6C36980F10A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7682383A216BEF9473BD6C77D5B8EEE /* Pods-iDailyProject.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iDailyProject/Pods-iDailyProject-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iDailyProject/Pods-iDailyProject.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AB92F178E1D99665D7E9622EA919FE68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 094F0E7A0319DDEF82CBE6003CE3AC86 /* Pods-iDailyProjectUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iDailyProjectUITests/Pods-iDailyProjectUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iDailyProjectUITests/Pods-iDailyProjectUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1107,9 +1305,9 @@
 			};
 			name = Debug;
 		};
-		FB0C497FF50D5CA255673D7098D0143C /* Debug */ = {
+		F27C2DE46749180128F63202430293C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7A6609BDDC7F778394EB6C12AB59D02 /* Pods-iDailyProject.debug.xcconfig */;
+			baseConfigurationReference = F23D0C615179D690575BA302F8DA18EB /* Pods-iDailyProjectUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1122,7 +1320,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-iDailyProject/Pods-iDailyProject-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-iDailyProjectUITests/Pods-iDailyProjectUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1131,7 +1329,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-iDailyProject/Pods-iDailyProject.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-iDailyProjectUITests/Pods-iDailyProjectUITests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1145,48 +1343,18 @@
 			};
 			name = Debug;
 		};
-		FD530A297F686445A7160404AD81F063 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5280FB17AF9354B81585A9EA5159E42E /* Pods-iDailyProject.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-iDailyProject/Pods-iDailyProject-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-iDailyProject/Pods-iDailyProject.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1A3D0BD1E33348CC9B5B444EED4DAC96 /* Build configuration list for PBXNativeTarget "Pods-iDailyProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				745F015196C116BC8CDC6C36980F10A3 /* Debug */,
+				67B6531BED7EFBE367B88360AD29701A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1214,11 +1382,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A08CCF25FB35C19B1A314E9CA058F2FE /* Build configuration list for PBXNativeTarget "Pods-iDailyProject" */ = {
+		B315C12553CBB6B48354D88ECD127F91 /* Build configuration list for PBXNativeTarget "Pods-iDailyProjectUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FB0C497FF50D5CA255673D7098D0143C /* Debug */,
-				FD530A297F686445A7160404AD81F063 /* Release */,
+				F27C2DE46749180128F63202430293C1 /* Debug */,
+				AB92F178E1D99665D7E9622EA919FE68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

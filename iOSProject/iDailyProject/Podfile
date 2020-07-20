@@ -17,5 +17,8 @@ end
 
 target 'iDailyProject' do
     common_pods
-    testing_pods
+end
+
+target 'iDailyProjectUITests' do
+  testing_pods
 end
