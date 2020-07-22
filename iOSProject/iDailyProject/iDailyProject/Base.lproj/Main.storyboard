@@ -113,7 +113,7 @@
                                 <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ez-MX-Dt5">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="109"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="102.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RP5-OC-0V8">
                                                 <rect key="frame" x="157.5" y="10" width="60" height="60"/>
@@ -121,13 +121,32 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="60" id="UMT-9D-5m5"/>
                                                     <constraint firstAttribute="height" constant="60" id="bHa-Kr-vyG"/>
+                                                    <constraint firstAttribute="width" constant="120" id="mEE-hW-XJV"/>
+                                                    <constraint firstAttribute="height" constant="120" id="tcU-Ma-spa"/>
                                                 </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="mEE-hW-XJV"/>
+                                                        <exclude reference="tcU-Ma-spa"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <exclude reference="UMT-9D-5m5"/>
+                                                        <exclude reference="bHa-Kr-vyG"/>
+                                                        <include reference="mEE-hW-XJV"/>
+                                                        <include reference="tcU-Ma-spa"/>
+                                                    </mask>
+                                                </variation>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LfI-3Z-Of5">
-                                                <rect key="frame" x="166.5" y="80" width="42" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="172.5" y="80" width="30.5" height="14.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                </variation>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
