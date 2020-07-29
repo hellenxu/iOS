@@ -15,6 +15,8 @@ class ContactDetailViewController: UIViewController {
     
     var compactWidthConstraint: NSLayoutConstraint!
     var compactHeightConstraint: NSLayoutConstraint!
+    var regularWidthConstraint: NSLayoutConstraint!
+    var regularHeightConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,16 +31,39 @@ class ContactDetailViewController: UIViewController {
         // constraints for ContactImage
         compactWidthConstraint = contactImage.widthAnchor.constraint(equalToConstant: 60)
         compactHeightConstraint = contactImage.heightAnchor.constraint(equalToConstant: 60)
+        regularWidthConstraint = contactImage.widthAnchor.constraint(equalToConstant: 120)
+        regularHeightConstraint = contactImage.heightAnchor.constraint(equalToConstant: 120)
         let centerXConstraint = contactImage.centerXAnchor.constraint(equalTo: self.view.centerXAnchor)
         
         let verticalPositionConstraints = NSLayoutConstraint.constraints(withVisualFormat: "V:|-[ContactImage]-[ContactName]", options: [.alignAllCenterX], metrics: nil, views: views)
         allConstraints += verticalPositionConstraints
         
         allConstraints.append(centerXConstraint)
-        allConstraints.append(compactWidthConstraint)
-        allConstraints.append(compactHeightConstraint)
+        if traitCollection.horizontalSizeClass == .regular && traitCollection.verticalSizeClass == .regular {
+            allConstraints.append(regularWidthConstraint)
+            allConstraints.append(regularHeightConstraint)
+        } else {
+            allConstraints.append(compactWidthConstraint)
+            allConstraints.append(compactHeightConstraint)
+        }
         
         NSLayoutConstraint.activate(allConstraints)
+    }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        
+        guard let previousTrait = previousTraitCollection,
+            (previousTrait.horizontalSizeClass != traitCollection.horizontalSizeClass || previousTrait.verticalSizeClass != traitCollection.verticalSizeClass)
+        else { return }
+        
+        if traitCollection.horizontalSizeClass == .regular && traitCollection.verticalSizeClass == .regular {
+            NSLayoutConstraint.deactivate([compactWidthConstraint, compactHeightConstraint])
+            NSLayoutConstraint.activate([regularWidthConstraint, regularHeightConstraint])
+        } else {
+            NSLayoutConstraint.deactivate([regularWidthConstraint, regularHeightConstraint])
+            NSLayoutConstraint.activate([compactWidthConstraint, compactHeightConstraint])
+        }
     }
     
     @objc func keyboardWillAppear(_ notification: Notification) {
