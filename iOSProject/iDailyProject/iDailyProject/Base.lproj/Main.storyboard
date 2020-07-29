@@ -124,7 +124,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LfI-3Z-Of5" userLabel="ContactName">
-                                                <rect key="frame" x="172" y="80" width="31" height="14.5"/>
+                                                <rect key="frame" x="172.5" y="80" width="30.5" height="14.5"/>
                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -201,15 +201,13 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstItem="LfI-3Z-Of5" firstAttribute="centerX" secondItem="2Ez-MX-Dt5" secondAttribute="centerX" placeholder="YES" id="0Il-WC-bPG"/>
                                             <constraint firstItem="F6D-b3-Yq8" firstAttribute="top" secondItem="LfI-3Z-Of5" secondAttribute="bottom" constant="8" id="FQS-1q-dPo"/>
                                             <constraint firstItem="LfI-3Z-Of5" firstAttribute="top" secondItem="RP5-OC-0V8" secondAttribute="bottom" constant="10" placeholder="YES" id="FTU-KF-rep"/>
-                                            <constraint firstItem="LfI-3Z-Of5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2Ez-MX-Dt5" secondAttribute="leading" constant="20" symbolic="YES" id="GRQ-VM-78V"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="F6D-b3-Yq8" secondAttribute="trailing" id="HUm-Vb-4OG"/>
                                             <constraint firstItem="F6D-b3-Yq8" firstAttribute="leading" secondItem="2Ez-MX-Dt5" secondAttribute="leadingMargin" id="Qmy-qI-4TD"/>
+                                            <constraint firstItem="LfI-3Z-Of5" firstAttribute="centerX" secondItem="2Ez-MX-Dt5" secondAttribute="centerX" id="Sd7-6T-7OT"/>
                                             <constraint firstItem="RP5-OC-0V8" firstAttribute="top" secondItem="2Ez-MX-Dt5" secondAttribute="top" constant="10" placeholder="YES" id="Tie-uC-pWE"/>
                                             <constraint firstItem="F6D-b3-Yq8" firstAttribute="bottom" secondItem="2Ez-MX-Dt5" secondAttribute="bottom" constant="8" id="Wc1-Go-Sbo"/>
-                                            <constraint firstAttribute="trailing" secondItem="LfI-3Z-Of5" secondAttribute="trailing" constant="172" id="Zq2-zE-695"/>
                                             <constraint firstItem="RP5-OC-0V8" firstAttribute="centerX" secondItem="2Ez-MX-Dt5" secondAttribute="centerX" placeholder="YES" id="cFT-1i-JmP"/>
                                         </constraints>
                                     </view>
