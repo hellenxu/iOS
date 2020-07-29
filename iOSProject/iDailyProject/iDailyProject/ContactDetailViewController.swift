@@ -10,6 +10,11 @@ import UIKit
 
 class ContactDetailViewController: UIViewController {
     @IBOutlet var scrollViewBottomConstraint: NSLayoutConstraint!
+    @IBOutlet var contactImage: UIImageView!
+    @IBOutlet var contactName: UILabel!
+    
+    var compactWidthConstraint: NSLayoutConstraint!
+    var compactHeightConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +23,22 @@ class ContactDetailViewController: UIViewController {
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIApplication.keyboardWillHideNotification, object: nil)
         
+        let views: [String: Any] = ["ContactImage": contactImage, "ContactName": contactName]
+        var allConstraints = [NSLayoutConstraint]()
+        
+        // constraints for ContactImage
+        compactWidthConstraint = contactImage.widthAnchor.constraint(equalToConstant: 60)
+        compactHeightConstraint = contactImage.heightAnchor.constraint(equalToConstant: 60)
+        let centerXConstraint = contactImage.centerXAnchor.constraint(equalTo: self.view.centerXAnchor)
+        
+        let verticalPositionConstraints = NSLayoutConstraint.constraints(withVisualFormat: "V:|-[ContactImage]-[ContactName]", options: [.alignAllCenterX], metrics: nil, views: views)
+        allConstraints += verticalPositionConstraints
+        
+        allConstraints.append(centerXConstraint)
+        allConstraints.append(compactWidthConstraint)
+        allConstraints.append(compactHeightConstraint)
+        
+        NSLayoutConstraint.activate(allConstraints)
     }
     
     @objc func keyboardWillAppear(_ notification: Notification) {
