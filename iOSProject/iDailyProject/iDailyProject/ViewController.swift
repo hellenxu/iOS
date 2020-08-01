@@ -28,13 +28,22 @@ class ViewController: UIViewController {
         super.setEditing(editing, animated: animated)
         
         for cell in collectionView.visibleCells {
-            UIView.animate(withDuration: 0.2, delay: 0, options: [.curveEaseOut], animations:  {
+//            UIView.animate(withDuration: 0.2, delay: 0, options: [.curveEaseOut], animations:  {
+//                if editing {
+//                    cell.backgroundColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1)
+//                } else {
+//                    cell.backgroundColor = .clear
+//                }
+//            }, completion: nil)
+            let animator = UIViewPropertyAnimator(duration: 0.2, curve: .easeOut)
+            {
                 if editing {
                     cell.backgroundColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1)
                 } else {
                     cell.backgroundColor = .clear
                 }
-            }, completion: nil)
+            }
+            animator.startAnimation()
         }
     }
 }
