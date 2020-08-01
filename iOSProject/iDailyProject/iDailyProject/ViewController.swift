@@ -212,15 +212,31 @@ extension ViewController: UICollectionViewDelegate {
         guard let cell = collectionView.cellForItem(at: indexPath) as? ContactCell
             else {return }
         
-        UIView.animate(withDuration: 0.1, delay: 0, options: [.curveEaseOut], animations: {
+//        UIView.animate(withDuration: 0.1, delay: 0, options: [.curveEaseOut], animations: {
+//            cell.contactImage.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+//        }, completion: {_ in
+//            UIView.animate(withDuration: 0.1, delay: 0, options: [.curveEaseIn], animations: {
+//                cell.contactImage.transform = .identity
+//            }, completion: { [weak self] _ in
+//                self?.performSegue(withIdentifier: "detailViewSegue", sender: self)
+//            })
+//        })
+        
+        // use UIViewPropertyAnimator to implement bouncing effect
+        let downAnimator = UIViewPropertyAnimator(duration: 0.1, curve: .easeOut)
+        {
             cell.contactImage.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
-        }, completion: {_ in
-            UIView.animate(withDuration: 0.1, delay: 0, options: [.curveEaseIn], animations: {
-                cell.contactImage.transform = .identity
-            }, completion: { [weak self] _ in
-                self?.performSegue(withIdentifier: "detailViewSegue", sender: self)
-            })
-        })
+        }
+        let upAnimator = UIViewPropertyAnimator(duration: 0.1, curve: .easeIn) {
+            cell.contactImage.transform = .identity
+        }
+        downAnimator.addCompletion{_ in
+            upAnimator.startAnimation()
+        }
+        upAnimator.addCompletion {[weak self]_ in
+            self?.performSegue(withIdentifier: "detailViewSegue", sender: self)
+        }
+        downAnimator.startAnimation()
     }
 }
 
