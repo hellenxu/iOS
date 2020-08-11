@@ -231,8 +231,11 @@
                         <viewLayoutGuide key="safeArea" id="DdP-lg-vje"/>
                     </view>
                     <connections>
+                        <outlet property="contactAddress" destination="s5B-27-nT7" id="PZ3-vP-PUa"/>
+                        <outlet property="contactEmail" destination="Bz7-CZ-tNV" id="Iee-Vy-jRF"/>
                         <outlet property="contactImage" destination="RP5-OC-0V8" id="aY4-QR-6ey"/>
                         <outlet property="contactName" destination="LfI-3Z-Of5" id="9bc-Gy-3q7"/>
+                        <outlet property="contactPhone" destination="Rdo-h5-WEM" id="wjh-qh-FeE"/>
                         <outlet property="scrollViewBottomConstraint" destination="vXo-0S-ifY" id="bhU-pZ-LGW"/>
                     </connections>
                 </viewController>

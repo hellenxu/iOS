@@ -35,14 +35,23 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let contactDetailVC = segue.destination as? ContactDetailViewController, segue.identifier == "detailViewSegue",
+            let selectedIndex = collectionView.indexPathsForSelectedItems?.first{
+            contactDetailVC.contact = contacts[selectedIndex.row]
+        }
+    }
+}
+
 //MARKER: private extension
 private extension ViewController {
     //setup views
     func setupViews() {
-//        tableView.delegate = self
-//        tableView.dataSource = self
-//        tableView.rowHeight = 60
-//        navigationItem.leftBarButtonItem = editButtonItem
+        //        tableView.delegate = self
+        //        tableView.dataSource = self
+        //        tableView.rowHeight = 60
+        //        navigationItem.leftBarButtonItem = editButtonItem
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.collectionViewLayout = ContactCollectionViewLayout()

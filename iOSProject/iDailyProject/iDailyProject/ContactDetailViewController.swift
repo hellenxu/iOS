@@ -12,6 +12,11 @@ class ContactDetailViewController: UIViewController {
     @IBOutlet var scrollViewBottomConstraint: NSLayoutConstraint!
     @IBOutlet var contactImage: UIImageView!
     @IBOutlet var contactName: UILabel!
+    @IBOutlet var contactPhone: UILabel!
+    @IBOutlet var contactEmail: UILabel!
+    @IBOutlet var contactAddress: UILabel!
+    
+    var contact: Contact?
     
     var compactWidthConstraint: NSLayoutConstraint!
     var compactHeightConstraint: NSLayoutConstraint!
@@ -48,6 +53,16 @@ class ContactDetailViewController: UIViewController {
         }
         
         NSLayoutConstraint.activate(allConstraints)
+        
+        if let contact = self.contact {
+            contact.fetchImageIfNeeded { [weak self] image in
+                self?.contactImage.image = image
+            }
+            contactName.text = "\(contact.givenName) \(contact.familyName)"
+            contactPhone.text = contact.phoneNumber
+            contactEmail.text = contact.emailAddress
+            contactAddress.text = contact.address
+        }
     }
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
