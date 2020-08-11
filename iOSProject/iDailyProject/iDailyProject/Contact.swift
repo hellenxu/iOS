@@ -18,6 +18,18 @@ class Contact {
     var familyName: String {
         return contact.familyName
     }
+    var emailAddress: String {
+        return String(contact.emailAddresses.first?.value ?? "--")
+    }
+    var phoneNumber: String {
+        return contact.phoneNumbers.first?.value.stringValue ?? "--"
+    }
+    var address: String {
+        let street = contact.postalAddresses.first?.value.street ?? "--"
+        let city = contact.postalAddresses.first?.value.city ?? "--"
+        
+        return "\(street)\(city)"
+    }
     
     init(contact: CNContact) {
         self.contact = contact
