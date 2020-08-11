@@ -18,6 +18,10 @@ class ViewController: UIViewController {
         
         setupViews()
         requestContactPermission()
+        
+        if traitCollection.forceTouchCapability == .available {
+            registerForPreviewing(with: self, sourceView: collectionView)
+        }
     }
     
     override func setEditing(_ editing: Bool, animated: Bool) {
@@ -41,6 +45,25 @@ extension ViewController {
             let selectedIndex = collectionView.indexPathsForSelectedItems?.first{
             contactDetailVC.contact = contacts[selectedIndex.row]
         }
+    }
+}
+
+//MARKER: preview delegate
+extension ViewController: UIViewControllerPreviewingDelegate {
+    func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
+        guard let tappedIndex = collectionView.indexPathForItem(at: location)
+            else { return nil }
+        let contact = contacts[tappedIndex.row]
+        
+        guard let contactDetailViewController = storyboard?.instantiateViewController(withIdentifier: "ContactDetailViewController") as? ContactDetailViewController
+            else { return nil }
+        contactDetailViewController.contact = contact
+        
+        return contactDetailViewController
+    }
+    
+    func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController) {
+        navigationController?.show(viewControllerToCommit, sender: self)
     }
 }
 
