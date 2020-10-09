@@ -15,8 +15,12 @@ class ContactDetailViewController: UIViewController {
     @IBOutlet var contactPhone: UILabel!
     @IBOutlet var contactEmail: UILabel!
     @IBOutlet var contactAddress: UILabel!
+    @IBOutlet var drawer: UIView!
     
     var contact: Contact?
+    var isDrawerOpen: Bool = false
+    var drawerPanStart: CGFloat = 0
+    var animator: UIViewPropertyAnimator!
     
     var compactWidthConstraint: NSLayoutConstraint!
     var compactHeightConstraint: NSLayoutConstraint!
@@ -63,6 +67,9 @@ class ContactDetailViewController: UIViewController {
             contactEmail.text = contact.emailAddress
             contactAddress.text = contact.address
         }
+        
+        let panRecognizer = UIPanGestureRecognizer(target: self, action: #selector(didPanOnDrawer(recognizer:)))
+        drawer.addGestureRecognizer(panRecognizer)
     }
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
@@ -98,5 +105,56 @@ class ContactDetailViewController: UIViewController {
         
         scrollViewBottomConstraint.constant = 0
         UIView.animate(withDuration: TimeInterval(animDuration), animations: {[weak self] in self?.view.layoutIfNeeded()})
+    }
+}
+
+extension ContactDetailViewController {
+    func setUpAnimation() {
+        guard animator == nil || animator?.isRunning == false
+            else {return}
+            animator = UIViewPropertyAnimator(duration: 1, curve: .easeOut) {[unowned self] in
+            if self.isDrawerOpen {
+                self.drawer.transform = CGAffineTransform.identity
+            } else {
+                self.drawer.transform = CGAffineTransform(translationX: 0, y: -305)
+            }
+        }
+        
+        animator?.addCompletion {[unowned self] _ in
+            self.animator = nil
+            // if the drawer is not transformed, its transformation will equal CGAffineTransform.identity
+            self.isDrawerOpen = !(self.drawer.transform == CGAffineTransform.identity)
+        }
+    }
+    
+    @IBAction func toggleDrawerTapped() {
+        setUpAnimation()
+        animator?.startAnimation()
+    }
+    
+    @objc func didPanOnDrawer(recognizer: UIPanGestureRecognizer) {
+        switch recognizer.state {
+        case .began:
+            setUpAnimation()
+            animator?.pauseAnimation()
+            drawerPanStart = animator?.fractionComplete ?? 0
+        
+        case .changed:
+            if self.isDrawerOpen {
+                animator?.fractionComplete = (recognizer.translation(in: drawer).y / 305) + drawerPanStart
+            } else {
+                animator?.fractionComplete = (recognizer.translation(in: drawer).y / -305) + drawerPanStart
+            }
+
+        default:
+            drawerPanStart = 0
+            let timing = UICubicTimingParameters(animationCurve: .easeOut)
+            animator?.continueAnimation(withTimingParameters: timing, durationFactor: 0)
+            
+            let isSwipingDown = recognizer.velocity(in: drawer).y > 0
+            if isSwipingDown == !isDrawerOpen {
+                animator?.isReversed = true
+            }
+        }
     }
 }

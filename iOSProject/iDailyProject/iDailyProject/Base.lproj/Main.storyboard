@@ -116,6 +116,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lsK-hM-o8s">
                                         <rect key="frame" x="138" y="8" width="99" height="30"/>
                                         <state key="normal" title="Toggle Drawer"/>
+                                        <connections>
+                                            <action selector="toggleDrawerTapped" destination="jJb-Rn-7nr" eventType="touchUpInside" id="VY7-Ia-YfT"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
@@ -256,6 +259,7 @@
                         <outlet property="contactImage" destination="RP5-OC-0V8" id="aY4-QR-6ey"/>
                         <outlet property="contactName" destination="LfI-3Z-Of5" id="9bc-Gy-3q7"/>
                         <outlet property="contactPhone" destination="Rdo-h5-WEM" id="wjh-qh-FeE"/>
+                        <outlet property="drawer" destination="pK4-vn-qIe" id="SIz-L4-ElZ"/>
                         <outlet property="scrollViewBottomConstraint" destination="vXo-0S-ifY" id="bhU-pZ-LGW"/>
                     </connections>
                 </viewController>
