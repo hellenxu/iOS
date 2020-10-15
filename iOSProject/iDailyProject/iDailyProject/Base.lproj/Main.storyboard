@@ -110,24 +110,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pK4-vn-qIe" userLabel="Drawer">
-                                <rect key="frame" x="0.0" y="733" width="375" height="350"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lsK-hM-o8s">
-                                        <rect key="frame" x="138" y="8" width="99" height="30"/>
-                                        <state key="normal" title="Toggle Drawer"/>
-                                        <connections>
-                                            <action selector="toggleDrawerTapped" destination="jJb-Rn-7nr" eventType="touchUpInside" id="VY7-Ia-YfT"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                <constraints>
-                                    <constraint firstItem="lsK-hM-o8s" firstAttribute="top" secondItem="pK4-vn-qIe" secondAttribute="top" constant="8" id="247-0b-FDx"/>
-                                    <constraint firstItem="lsK-hM-o8s" firstAttribute="centerX" secondItem="pK4-vn-qIe" secondAttribute="centerX" id="HfI-0R-L6n"/>
-                                    <constraint firstAttribute="height" constant="350" id="u3d-xD-W1C"/>
-                                </constraints>
-                            </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UDh-WG-sjY">
                                 <rect key="frame" x="0.0" y="88" width="375" height="690"/>
                                 <subviews>
@@ -238,6 +220,24 @@
                                     <constraint firstItem="2Ez-MX-Dt5" firstAttribute="leading" secondItem="UDh-WG-sjY" secondAttribute="leading" id="vuM-v9-6eo"/>
                                 </constraints>
                             </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pK4-vn-qIe" userLabel="Drawer">
+                                <rect key="frame" x="0.0" y="733" width="375" height="350"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lsK-hM-o8s">
+                                        <rect key="frame" x="138" y="8" width="99" height="30"/>
+                                        <state key="normal" title="Toggle Drawer"/>
+                                        <connections>
+                                            <action selector="toggleDrawerTapped" destination="jJb-Rn-7nr" eventType="touchUpInside" id="VY7-Ia-YfT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstItem="lsK-hM-o8s" firstAttribute="top" secondItem="pK4-vn-qIe" secondAttribute="top" constant="8" id="247-0b-FDx"/>
+                                    <constraint firstItem="lsK-hM-o8s" firstAttribute="centerX" secondItem="pK4-vn-qIe" secondAttribute="centerX" id="HfI-0R-L6n"/>
+                                    <constraint firstAttribute="height" constant="350" id="u3d-xD-W1C"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DdP-lg-vje"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

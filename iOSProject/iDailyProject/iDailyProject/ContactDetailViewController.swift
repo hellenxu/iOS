@@ -128,11 +128,14 @@ extension ContactDetailViewController {
     }
     
     @IBAction func toggleDrawerTapped() {
+        print("xxl-tapped-drawer")
         setUpAnimation()
         animator?.startAnimation()
     }
     
     @objc func didPanOnDrawer(recognizer: UIPanGestureRecognizer) {
+        print("xxl-pan-on-drawer")
+
         switch recognizer.state {
         case .began:
             setUpAnimation()
