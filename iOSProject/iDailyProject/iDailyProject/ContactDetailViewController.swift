@@ -112,7 +112,25 @@ extension ContactDetailViewController {
     func setUpAnimation() {
         guard animator == nil || animator?.isRunning == false
             else {return}
-            animator = UIViewPropertyAnimator(duration: 1, curve: .easeOut) {[unowned self] in
+        
+        // ease out animation
+//            animator = UIViewPropertyAnimator(duration: 1, curve: .easeOut) {[unowned self] in
+//            if self.isDrawerOpen {
+//                self.drawer.transform = CGAffineTransform.identity
+//            } else {
+//                self.drawer.transform = CGAffineTransform(translationX: 0, y: -305)
+//            }
+//        }
+        
+        // Spring animation
+        let springParams: UISpringTimingParameters
+        if self.isDrawerOpen {
+            springParams = UISpringTimingParameters(dampingRatio: 0.8, initialVelocity: CGVector(dx: 0, dy: 10))
+        } else {
+            springParams = UISpringTimingParameters(dampingRatio: 0.8, initialVelocity: CGVector(dx: 0, dy: -10))
+        }
+        animator = UIViewPropertyAnimator(duration: 1, timingParameters: springParams)
+        animator?.addAnimations {[unowned self] in
             if self.isDrawerOpen {
                 self.drawer.transform = CGAffineTransform.identity
             } else {
