@@ -169,10 +169,19 @@ extension ContactDetailViewController {
 
         default:
             drawerPanStart = 0
-            let timing = UICubicTimingParameters(animationCurve: .easeOut)
-            animator?.continueAnimation(withTimingParameters: timing, durationFactor: 0)
             
-            let isSwipingDown = recognizer.velocity(in: drawer).y > 0
+            // ease out animation
+//            let timing = UICubicTimingParameters(animationCurve: .easeOut)
+//            animator?.continueAnimation(withTimingParameters: timing, durationFactor: 0)
+//
+//            let isSwipingDown = recognizer.velocity(in: drawer).y > 0
+            
+            // spring animation
+            let currentVelocity = recognizer.velocity(in: drawer)
+            let springTiming = UISpringTimingParameters(dampingRatio: 0.8, initialVelocity: CGVector(dx: 0, dy: currentVelocity.y))
+            animator?.continueAnimation(withTimingParameters: springTiming, durationFactor: 0)
+            let isSwipingDown = currentVelocity.y > 0
+            
             if isSwipingDown == !isDrawerOpen {
                 animator?.isReversed = true
             }
