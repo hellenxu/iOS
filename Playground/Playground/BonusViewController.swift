@@ -18,11 +18,22 @@ class BonusViewController : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+  
+// gravity animation
         let squares: [UIDynamicItem] = [square1, square2, square3]
         animator = UIDynamicAnimator(referenceView: view)
         let gravityBehavior = UIGravityBehavior(items: squares)
         animator.addBehavior(gravityBehavior)
+        
+        var anchorX = 250
+        for square in squares {
+            let anchorPoint = CGPoint(x: anchorX, y: 0)
+            anchorX -= 30
+            let attachBehavior = UIAttachmentBehavior(item: square, attachedToAnchor: anchorPoint)
+            attachBehavior.damping = 0.8
+            animator.addBehavior(attachBehavior)
+        }
+    
     }
     
 }
