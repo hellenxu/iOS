@@ -14,6 +14,7 @@ class CustomPresentedViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        transitioningDelegate = self
     }
     
 
@@ -27,4 +28,14 @@ class CustomPresentedViewController: UIViewController {
     }
     */
 
+}
+
+extension CustomPresentedViewController: UIViewControllerTransitioningDelegate {
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return CustomModalShowAnimator()
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return nil
+    }
 }
