@@ -74,7 +74,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vsQ-VW-0oI" secondAttribute="trailing" constant="10" id="pB5-sG-vRw"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="LdB-Sm-HKC"/>
+                    <navigationItem key="navigationItem" id="LdB-Sm-HKC">
+                        <barButtonItem key="leftBarButtonItem" title="Show Modal" id="Z5j-dD-6TV">
+                            <connections>
+                                <segue destination="42h-v8-OSN" kind="presentation" id="bUe-cC-fmv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="vsQ-VW-0oI" id="iZx-TA-zFR"/>
                         <segue destination="jJb-Rn-7nr" kind="show" identifier="detailViewSegue" id="yhs-uG-Yld"/>
@@ -266,6 +272,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lN8-Rq-yYv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1842.4000000000001" y="19.340329835082461"/>
+        </scene>
+        <!--Custom Presented View Controller-->
+        <scene sceneID="6yw-MS-qVn">
+            <objects>
+                <viewController id="42h-v8-OSN" customClass="CustomPresentedViewController" customModule="iDailyProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="muj-AR-O7l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="fEU-ti-or0"/>
+                        <color key="backgroundColor" red="0.66255355643475067" green="0.90248418473006042" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4xg-rF-mQj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1842" y="-676"/>
         </scene>
     </scenes>
     <resources>
