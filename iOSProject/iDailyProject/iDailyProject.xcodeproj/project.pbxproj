@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1141C7F22548F64800FE8166 /* CustomPresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141C7F12548F64800FE8166 /* CustomPresentedViewController.swift */; };
 		1155B22021F01B6D00D08EAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1155B21F21F01B6D00D08EAF /* AppDelegate.swift */; };
 		1155B22221F01B6D00D08EAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1155B22121F01B6D00D08EAF /* ViewController.swift */; };
 		1155B22521F01B6D00D08EAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1155B22321F01B6D00D08EAF /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		0CC7973B06244D000D350266 /* Pods_iDailyProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iDailyProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1141C7F12548F64800FE8166 /* CustomPresentedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPresentedViewController.swift; sourceTree = "<group>"; };
 		1155B21C21F01B6D00D08EAF /* iDailyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDailyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1155B21F21F01B6D00D08EAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1155B22121F01B6D00D08EAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				11E58B05229E20F100FA0600 /* Contact.swift */,
 				11639E1D22A75D9100BED97A /* ContactCollectionViewLayout.swift */,
 				117B6BE824C9ECA9004211F2 /* ContactDetailViewController.swift */,
+				1141C7F12548F64800FE8166 /* CustomPresentedViewController.swift */,
 			);
 			path = iDailyProject;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 			files = (
 				11E58B0422984E1800FA0600 /* ContactCell.swift in Sources */,
 				11639E1E22A75D9100BED97A /* ContactCollectionViewLayout.swift in Sources */,
+				1141C7F22548F64800FE8166 /* CustomPresentedViewController.swift in Sources */,
 				1155B22221F01B6D00D08EAF /* ViewController.swift in Sources */,
 				117B6BE924C9ECA9004211F2 /* ContactDetailViewController.swift in Sources */,
 				11E58B06229E20F100FA0600 /* Contact.swift in Sources */,
