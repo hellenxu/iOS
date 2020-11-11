@@ -18,6 +18,7 @@
 		11639E1E22A75D9100BED97A /* ContactCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11639E1D22A75D9100BED97A /* ContactCollectionViewLayout.swift */; };
 		117B6BDB24C63834004211F2 /* iDailyProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117B6BDA24C63834004211F2 /* iDailyProjectUITests.swift */; };
 		117B6BE924C9ECA9004211F2 /* ContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117B6BE824C9ECA9004211F2 /* ContactDetailViewController.swift */; };
+		11850C74255B82BE00CAC388 /* CustomModalHideAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11850C73255B82BE00CAC388 /* CustomModalHideAnimator.swift */; };
 		11E58B0422984E1800FA0600 /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E58B0322984E1800FA0600 /* ContactCell.swift */; };
 		11E58B06229E20F100FA0600 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E58B05229E20F100FA0600 /* Contact.swift */; };
 		ADF1F464D67E927E897D0B2E /* Pods_iDailyProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17657F685C07913C63403BEC /* Pods_iDailyProjectUITests.framework */; };
@@ -51,6 +52,7 @@
 		117B6BDA24C63834004211F2 /* iDailyProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDailyProjectUITests.swift; sourceTree = "<group>"; };
 		117B6BDC24C63834004211F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		117B6BE824C9ECA9004211F2 /* ContactDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailViewController.swift; sourceTree = "<group>"; };
+		11850C73255B82BE00CAC388 /* CustomModalHideAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModalHideAnimator.swift; sourceTree = "<group>"; };
 		11E58B0322984E1800FA0600 /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
 		11E58B05229E20F100FA0600 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		17657F685C07913C63403BEC /* Pods_iDailyProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iDailyProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +118,7 @@
 				117B6BE824C9ECA9004211F2 /* ContactDetailViewController.swift */,
 				1141C7F12548F64800FE8166 /* CustomPresentedViewController.swift */,
 				1141C7F52548FBF900FE8166 /* CustomModalShowAnimator.swift */,
+				11850C73255B82BE00CAC388 /* CustomModalHideAnimator.swift */,
 			);
 			path = iDailyProject;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11E58B0422984E1800FA0600 /* ContactCell.swift in Sources */,
+				11850C74255B82BE00CAC388 /* CustomModalHideAnimator.swift in Sources */,
 				11639E1E22A75D9100BED97A /* ContactCollectionViewLayout.swift in Sources */,
 				1141C7F22548F64800FE8166 /* CustomPresentedViewController.swift in Sources */,
 				1155B22221F01B6D00D08EAF /* ViewController.swift in Sources */,
