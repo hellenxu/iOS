@@ -21,4 +21,26 @@ class CustomModalHideAnimator: UIPercentDrivenInteractiveTransition {
         viewController.view.addGestureRecognizer(panGesture)
     }
     
+    @objc func handleEdgePan(gestureRecognizer: UIScreenEdgePanGestureRecognizer) {
+        let panTranslation = gestureRecognizer.translation(in: viewController.view)
+        let animationProgress = min(max(panTranslation.x / 200, 0.0), 1.0)
+        
+        switch gestureRecognizer.state {
+        case .began:
+            viewController.dismiss(animated: true, completion: nil)
+        case .changed:
+            update(animationProgress)
+            break
+        case .ended:
+            if animationProgress < 0.5 {
+                cancel()
+            } else {
+                finish()
+            }
+            break
+        default:
+            cancel()
+            break
+        }
+    }
 }
