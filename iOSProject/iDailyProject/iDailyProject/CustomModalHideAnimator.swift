@@ -10,6 +10,7 @@ import UIKit
 
 class CustomModalHideAnimator: UIPercentDrivenInteractiveTransition {
     let viewController: UIViewController
+    var currentAnimator: UIViewPropertyAnimator?
     
     init(withViewController viewController: UIViewController) {
         self.viewController = viewController
@@ -42,5 +43,52 @@ class CustomModalHideAnimator: UIPercentDrivenInteractiveTransition {
             cancel()
             break
         }
+    }
+}
+
+extension CustomModalHideAnimator: UIViewControllerAnimatedTransitioning {
+
+    func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
+        return 0.6
+    }
+    
+    func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+        let animator = interruptibleAnimator(using: transitionContext)
+        animator.startAnimation()
+    }
+    
+    func interruptibleAnimator(using transitionContext: UIViewControllerContextTransitioning) -> UIViewImplicitlyAnimating {
+
+        // reuse current animator to void create a new instance again
+        if let animator = currentAnimator {
+            return animator
+        }
+        
+        guard let fromViewController = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from), let toViewController = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to) else {
+            return UIViewPropertyAnimator()
+        }
+        
+        let transitionContainer = transitionContext.containerView
+        transitionContainer.addSubview(toViewController.view)
+        transitionContainer.addSubview(fromViewController.view)
+        
+        let animationTiming = UISpringTimingParameters(dampingRatio: 0.8, initialVelocity: CGVector(dx: 1, dy: 0))
+        let animator = UIViewPropertyAnimator(duration: transitionDuration(using: transitionContext), timingParameters: animationTiming)
+        
+        self.currentAnimator = animator
+        
+        animator.addAnimations {
+            var transform = CGAffineTransform.identity
+            transform = transform.concatenating(CGAffineTransform(scaleX: 0.6, y: 0.6))
+            transform = transform.concatenating(CGAffineTransform(translationX: 0, y: -200))
+            fromViewController.view.transform = transform
+            fromViewController.view.alpha = 0
+        }
+        
+        animator.addCompletion{[weak self] finished in
+            self?.currentAnimator = nil
+            transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
+        }
+        return animator
     }
 }
