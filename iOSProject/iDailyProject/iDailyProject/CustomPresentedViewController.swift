@@ -10,11 +10,15 @@ import UIKit
 
 class CustomPresentedViewController: UIViewController {
 
+    var hideAnimator: CustomModalHideAnimator?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         transitioningDelegate = self
+        
+        hideAnimator = CustomModalHideAnimator(withViewController: self)
     }
     
 
@@ -36,6 +40,10 @@ extension CustomPresentedViewController: UIViewControllerTransitioningDelegate {
     }
     
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return nil
+        return hideAnimator
+    }
+    
+    func interactionControllerForDismissal(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+        return hideAnimator
     }
 }
