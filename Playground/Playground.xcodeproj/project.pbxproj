@@ -16,6 +16,7 @@
 		1190E92A21DF089C001F52C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1190E92821DF089C001F52C4 /* Main.storyboard */; };
 		1190E92C21DF089E001F52C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1190E92B21DF089E001F52C4 /* Assets.xcassets */; };
 		1190E92F21DF089E001F52C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1190E92D21DF089E001F52C4 /* LaunchScreen.storyboard */; };
+		1193D235260053F800799C6D /* Calculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1193D234260053F800799C6D /* Calculator.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1190E92B21DF089E001F52C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1190E92E21DF089E001F52C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1190E93021DF089E001F52C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1193D234260053F800799C6D /* Calculator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calculator.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				1190E93021DF089E001F52C4 /* Info.plist */,
 				1141C7EA2547C15100FE8166 /* Animation.storyboard */,
 				1141C7ED2547C3EC00FE8166 /* BonusViewController.swift */,
+				1193D234260053F800799C6D /* Calculator.storyboard */,
 			);
 			path = Playground;
 			sourceTree = "<group>";
@@ -134,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1193D235260053F800799C6D /* Calculator.storyboard in Resources */,
 				1190E92F21DF089E001F52C4 /* LaunchScreen.storyboard in Resources */,
 				1155B21221EECD5700D08EAF /* About.html in Resources */,
 				1190E92C21DF089E001F52C4 /* Assets.xcassets in Resources */,
