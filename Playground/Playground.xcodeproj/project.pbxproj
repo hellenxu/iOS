@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1102DDAF2601A70300BDBBA3 /* F.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1102DDAA2601A70300BDBBA3 /* F.wav */; };
+		1102DDB02601A70300BDBBA3 /* G.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1102DDAB2601A70300BDBBA3 /* G.wav */; };
+		1102DDB12601A70300BDBBA3 /* D.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1102DDAC2601A70300BDBBA3 /* D.wav */; };
+		1102DDB22601A70300BDBBA3 /* E.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1102DDAD2601A70300BDBBA3 /* E.wav */; };
+		1102DDB32601A70300BDBBA3 /* C.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1102DDAE2601A70300BDBBA3 /* C.wav */; };
 		1141C7EB2547C15100FE8166 /* Animation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1141C7EA2547C15100FE8166 /* Animation.storyboard */; };
 		1141C7EE2547C3EC00FE8166 /* BonusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141C7ED2547C3EC00FE8166 /* BonusViewController.swift */; };
 		1155B20E21EC201E00D08EAF /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1155B20D21EC201E00D08EAF /* AboutViewController.swift */; };
@@ -18,9 +23,15 @@
 		1190E92F21DF089E001F52C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1190E92D21DF089E001F52C4 /* LaunchScreen.storyboard */; };
 		1193D235260053F800799C6D /* Calculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1193D234260053F800799C6D /* Calculator.storyboard */; };
 		1193D239260194E500799C6D /* Keyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1193D238260194E500799C6D /* Keyboard.storyboard */; };
+		1193D24726019C2100799C6D /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1193D24626019C2100799C6D /* KeyboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1102DDAA2601A70300BDBBA3 /* F.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = F.wav; sourceTree = "<group>"; };
+		1102DDAB2601A70300BDBBA3 /* G.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = G.wav; sourceTree = "<group>"; };
+		1102DDAC2601A70300BDBBA3 /* D.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = D.wav; sourceTree = "<group>"; };
+		1102DDAD2601A70300BDBBA3 /* E.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = E.wav; sourceTree = "<group>"; };
+		1102DDAE2601A70300BDBBA3 /* C.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = C.wav; sourceTree = "<group>"; };
 		1141C7EA2547C15100FE8166 /* Animation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Animation.storyboard; sourceTree = "<group>"; };
 		1141C7ED2547C3EC00FE8166 /* BonusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonusViewController.swift; sourceTree = "<group>"; };
 		1155B20D21EC201E00D08EAF /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +45,7 @@
 		1190E93021DF089E001F52C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1193D234260053F800799C6D /* Calculator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calculator.storyboard; sourceTree = "<group>"; };
 		1193D238260194E500799C6D /* Keyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Keyboard.storyboard; sourceTree = "<group>"; };
+		1193D24626019C2100799C6D /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +59,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1102DDB52601A71D00BDBBA3 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				1102DDAE2601A70300BDBBA3 /* C.wav */,
+				1102DDAC2601A70300BDBBA3 /* D.wav */,
+				1102DDAD2601A70300BDBBA3 /* E.wav */,
+				1102DDAA2601A70300BDBBA3 /* F.wav */,
+				1102DDAB2601A70300BDBBA3 /* G.wav */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
 		1190E91821DF089C001F52C4 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +90,7 @@
 		1190E92321DF089C001F52C4 /* Playground */ = {
 			isa = PBXGroup;
 			children = (
+				1102DDB52601A71D00BDBBA3 /* sounds */,
 				1155B21121EECD5700D08EAF /* About.html */,
 				1190E92421DF089C001F52C4 /* AppDelegate.swift */,
 				1190E92621DF089C001F52C4 /* ViewController.swift */,
@@ -78,6 +103,7 @@
 				1141C7ED2547C3EC00FE8166 /* BonusViewController.swift */,
 				1193D234260053F800799C6D /* Calculator.storyboard */,
 				1193D238260194E500799C6D /* Keyboard.storyboard */,
+				1193D24626019C2100799C6D /* KeyboardViewController.swift */,
 			);
 			path = Playground;
 			sourceTree = "<group>";
@@ -140,13 +166,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1102DDB32601A70300BDBBA3 /* C.wav in Resources */,
+				1102DDB22601A70300BDBBA3 /* E.wav in Resources */,
+				1102DDB02601A70300BDBBA3 /* G.wav in Resources */,
 				1193D235260053F800799C6D /* Calculator.storyboard in Resources */,
 				1190E92F21DF089E001F52C4 /* LaunchScreen.storyboard in Resources */,
 				1155B21221EECD5700D08EAF /* About.html in Resources */,
 				1193D239260194E500799C6D /* Keyboard.storyboard in Resources */,
 				1190E92C21DF089E001F52C4 /* Assets.xcassets in Resources */,
 				1190E92A21DF089C001F52C4 /* Main.storyboard in Resources */,
+				1102DDB12601A70300BDBBA3 /* D.wav in Resources */,
 				1141C7EB2547C15100FE8166 /* Animation.storyboard in Resources */,
+				1102DDAF2601A70300BDBBA3 /* F.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1155B20E21EC201E00D08EAF /* AboutViewController.swift in Sources */,
+				1193D24726019C2100799C6D /* KeyboardViewController.swift in Sources */,
 				1190E92721DF089C001F52C4 /* ViewController.swift in Sources */,
 				1141C7EE2547C3EC00FE8166 /* BonusViewController.swift in Sources */,
 				1190E92521DF089C001F52C4 /* AppDelegate.swift in Sources */,
