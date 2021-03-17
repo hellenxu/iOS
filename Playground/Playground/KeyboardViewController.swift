@@ -21,10 +21,11 @@ class KeyboardViewController: UIViewController {
     
     @IBAction func keyPressed(_ sender: UIButton) {
         
-        if let title = sender.currentTitle {
-            playKeySound(title)
-        }
-
+//        if let title = sender.currentTitle {
+//            playKeySound(title)
+//        }
+        
+        dimAnim(sender)
     }
     
     func playKeySound(_ key: String) {
@@ -34,4 +35,11 @@ class KeyboardViewController: UIViewController {
         }
     }
     
+    func dimAnim(_ sender: UIButton) {
+        UIView.animate(withDuration: 0.2, animations: {
+            sender.alpha = 0.5
+        }, completion: {_ in
+            sender.alpha = 1
+        })
+    }
 }
