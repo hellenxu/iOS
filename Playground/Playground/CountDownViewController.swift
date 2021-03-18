@@ -12,6 +12,7 @@ class CountDownViewController: UIViewController {
     private let cookingTimes : [String: Int] = ["Soft": 5, "Medium": 7, "Hard": 12]
     private var currentTime = 0
     private var timer: Timer!
+    @IBOutlet weak var infoTitle: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,9 +21,15 @@ class CountDownViewController: UIViewController {
 
     
     @IBAction func startCountDown(_ sender: UIButton) {
+        
         if let title = sender.currentTitle {
             print("selected: \(title)")
-            currentTime = cookingTimes[title]! * 60
+            
+            if timer != nil {
+                timer.invalidate()
+            }
+            
+            currentTime = cookingTimes[title]!
             timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateProgress), userInfo: nil, repeats: true)
             
             //TODO disable click
@@ -31,10 +38,11 @@ class CountDownViewController: UIViewController {
     
     @objc func updateProgress() {
         if currentTime > 0 {
+            print("\(currentTime) seconds left")
             currentTime -= 1
-            print("\(currentTime)seconds left")
         }else{
             timer.invalidate()
+            infoTitle.text = "Done!!"
         }
     }
     

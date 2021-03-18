@@ -46,18 +46,31 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do you like your egg?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="hA5-Tl-fCb">
+                                <rect key="frame" x="30" y="160" width="354" height="84"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DKg-dG-0ct"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="hA5-Tl-fCb" firstAttribute="top" secondItem="DKg-dG-0ct" secondAttribute="top" constant="116" id="F2g-Wk-44L"/>
+                            <constraint firstItem="hA5-Tl-fCb" firstAttribute="leading" secondItem="fyg-kP-uPi" secondAttribute="leading" constant="30" id="Kcl-aL-8WC"/>
                             <constraint firstItem="cVP-Vf-d7c" firstAttribute="centerX" secondItem="fyg-kP-uPi" secondAttribute="centerX" id="SKd-CX-1hj"/>
+                            <constraint firstItem="hA5-Tl-fCb" firstAttribute="centerX" secondItem="fyg-kP-uPi" secondAttribute="centerX" id="gc4-5J-Brv"/>
                             <constraint firstItem="cVP-Vf-d7c" firstAttribute="centerY" secondItem="fyg-kP-uPi" secondAttribute="centerY" id="nCU-M9-LWE"/>
+                            <constraint firstAttribute="trailing" secondItem="hA5-Tl-fCb" secondAttribute="trailing" constant="30" id="wRQ-cP-Y94"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="infoTitle" destination="hA5-Tl-fCb" id="MjD-k6-Fs5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5UF-gd-452" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-133" y="3"/>
+            <point key="canvasLocation" x="-133.33333333333334" y="2.6785714285714284"/>
         </scene>
     </scenes>
     <resources>
