@@ -17,55 +17,92 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="59" translatesAutoresizingMaskIntoConstraints="NO" id="cVP-Vf-d7c">
-                                <rect key="frame" x="150" y="317" width="114" height="262"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="V0X-vC-Lfq">
+                                <rect key="frame" x="0.0" y="54" width="414" height="798"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfE-U2-hCp">
-                                        <rect key="frame" x="0.0" y="0.0" width="114" height="48"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                        <state key="normal" title="Soft"/>
-                                        <connections>
-                                            <action selector="startCountDown:" destination="3Sg-ie-1aT" eventType="touchUpInside" id="vqZ-NV-iUv"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Imz-96-nxy">
-                                        <rect key="frame" x="0.0" y="107" width="114" height="48"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                        <state key="normal" title="Medium"/>
-                                        <connections>
-                                            <action selector="startCountDown:" destination="3Sg-ie-1aT" eventType="touchUpInside" id="jDe-Qn-LkK"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMk-qp-apw">
-                                        <rect key="frame" x="0.0" y="214" width="114" height="48"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                        <state key="normal" title="Hard"/>
-                                        <connections>
-                                            <action selector="startCountDown:" destination="3Sg-ie-1aT" eventType="touchUpInside" id="ZaM-fY-NsE"/>
-                                        </connections>
-                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IiG-ZZ-MOJ" userLabel="TitleContainer">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="266"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do you like your egg?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="hA5-Tl-fCb">
+                                                <rect key="frame" x="10" y="30" width="394" height="84"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="hA5-Tl-fCb" firstAttribute="top" secondItem="IiG-ZZ-MOJ" secondAttribute="top" constant="30" id="Cfp-As-tmX"/>
+                                            <constraint firstItem="hA5-Tl-fCb" firstAttribute="leading" secondItem="IiG-ZZ-MOJ" secondAttribute="leading" constant="10" id="Ij5-iz-JKd"/>
+                                            <constraint firstAttribute="trailing" secondItem="hA5-Tl-fCb" secondAttribute="trailing" constant="10" id="MCY-eA-4zg"/>
+                                            <constraint firstItem="hA5-Tl-fCb" firstAttribute="centerX" secondItem="IiG-ZZ-MOJ" secondAttribute="centerX" id="Wz9-pC-G1b"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="59" translatesAutoresizingMaskIntoConstraints="NO" id="cVP-Vf-d7c">
+                                        <rect key="frame" x="0.0" y="266" width="414" height="266"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfE-U2-hCp">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                <state key="normal" title="Soft"/>
+                                                <connections>
+                                                    <action selector="startCountDown:" destination="3Sg-ie-1aT" eventType="touchUpInside" id="vqZ-NV-iUv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Imz-96-nxy">
+                                                <rect key="frame" x="0.0" y="111" width="414" height="48"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                <state key="normal" title="Medium"/>
+                                                <connections>
+                                                    <action selector="startCountDown:" destination="3Sg-ie-1aT" eventType="touchUpInside" id="jDe-Qn-LkK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMk-qp-apw">
+                                                <rect key="frame" x="0.0" y="218" width="414" height="48"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                <state key="normal" title="Hard"/>
+                                                <connections>
+                                                    <action selector="startCountDown:" destination="3Sg-ie-1aT" eventType="touchUpInside" id="ZaM-fY-NsE"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QQi-PF-nMm" userLabel="ProgressContainer">
+                                        <rect key="frame" x="0.0" y="532" width="414" height="266"/>
+                                        <subviews>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UyP-kn-VOa">
+                                                <rect key="frame" x="45" y="125.5" width="324" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="GdI-fa-Naq"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="P41-UN-qjS"/>
+                                                </constraints>
+                                                <color key="progressTintColor" systemColor="systemOrangeColor"/>
+                                                <color key="trackTintColor" systemColor="systemGray2Color"/>
+                                            </progressView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="UyP-kn-VOa" firstAttribute="centerY" secondItem="QQi-PF-nMm" secondAttribute="centerY" id="Npy-5a-dzU"/>
+                                            <constraint firstAttribute="trailing" secondItem="UyP-kn-VOa" secondAttribute="trailing" constant="45" id="hlX-5S-fYc"/>
+                                            <constraint firstItem="UyP-kn-VOa" firstAttribute="centerX" secondItem="QQi-PF-nMm" secondAttribute="centerX" id="igy-hp-9On"/>
+                                            <constraint firstItem="UyP-kn-VOa" firstAttribute="leading" secondItem="QQi-PF-nMm" secondAttribute="leading" constant="45" id="qyR-m6-RD0"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do you like your egg?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="hA5-Tl-fCb">
-                                <rect key="frame" x="30" y="160" width="354" height="84"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DKg-dG-0ct"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="hA5-Tl-fCb" firstAttribute="top" secondItem="DKg-dG-0ct" secondAttribute="top" constant="116" id="F2g-Wk-44L"/>
-                            <constraint firstItem="hA5-Tl-fCb" firstAttribute="leading" secondItem="fyg-kP-uPi" secondAttribute="leading" constant="30" id="Kcl-aL-8WC"/>
-                            <constraint firstItem="cVP-Vf-d7c" firstAttribute="centerX" secondItem="fyg-kP-uPi" secondAttribute="centerX" id="SKd-CX-1hj"/>
-                            <constraint firstItem="hA5-Tl-fCb" firstAttribute="centerX" secondItem="fyg-kP-uPi" secondAttribute="centerX" id="gc4-5J-Brv"/>
-                            <constraint firstItem="cVP-Vf-d7c" firstAttribute="centerY" secondItem="fyg-kP-uPi" secondAttribute="centerY" id="nCU-M9-LWE"/>
-                            <constraint firstAttribute="trailing" secondItem="hA5-Tl-fCb" secondAttribute="trailing" constant="30" id="wRQ-cP-Y94"/>
+                            <constraint firstItem="V0X-vC-Lfq" firstAttribute="top" secondItem="DKg-dG-0ct" secondAttribute="top" constant="10" id="4Ge-Bj-YhP"/>
+                            <constraint firstAttribute="trailing" secondItem="V0X-vC-Lfq" secondAttribute="trailing" id="4Z8-aC-aeN"/>
+                            <constraint firstItem="V0X-vC-Lfq" firstAttribute="leading" secondItem="DKg-dG-0ct" secondAttribute="leading" id="5pH-Lv-RmL"/>
+                            <constraint firstItem="DKg-dG-0ct" firstAttribute="bottom" secondItem="V0X-vC-Lfq" secondAttribute="bottom" constant="10" id="oMj-BO-6yU"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="infoTitle" destination="hA5-Tl-fCb" id="MjD-k6-Fs5"/>
+                        <outlet property="progressBar" destination="UyP-kn-VOa" id="Ugy-VO-juh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5UF-gd-452" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -76,6 +113,12 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
