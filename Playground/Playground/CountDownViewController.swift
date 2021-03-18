@@ -26,10 +26,7 @@ class CountDownViewController: UIViewController {
         if let title = sender.currentTitle {
             print("selected: \(title)")
             
-            if timer != nil {
-                timer.invalidate()
-            }
-            infoTitle.text = "Cooking..."
+            infoTitle.text = title
             progressBar.progress = 0.0
             targetTime = cookingTimes[title] != nil ? cookingTimes[title]! : 0
             timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateProgress), userInfo: nil, repeats: true)
