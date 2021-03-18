@@ -18,22 +18,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="59" translatesAutoresizingMaskIntoConstraints="NO" id="cVP-Vf-d7c">
-                                <rect key="frame" x="120" y="317" width="174" height="262"/>
+                                <rect key="frame" x="150" y="317" width="114" height="262"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfE-U2-hCp">
-                                        <rect key="frame" x="0.0" y="0.0" width="174" height="48"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="114" height="48"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                        <state key="normal" title="Soft Egg"/>
+                                        <state key="normal" title="Soft"/>
+                                        <connections>
+                                            <action selector="startCountDown:" destination="3Sg-ie-1aT" eventType="touchUpInside" id="vqZ-NV-iUv"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Imz-96-nxy">
-                                        <rect key="frame" x="0.0" y="107" width="174" height="48"/>
+                                        <rect key="frame" x="0.0" y="107" width="114" height="48"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                        <state key="normal" title="Medium Egg"/>
+                                        <state key="normal" title="Medium"/>
+                                        <connections>
+                                            <action selector="startCountDown:" destination="3Sg-ie-1aT" eventType="touchUpInside" id="jDe-Qn-LkK"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMk-qp-apw">
-                                        <rect key="frame" x="0.0" y="214" width="174" height="48"/>
+                                        <rect key="frame" x="0.0" y="214" width="114" height="48"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                        <state key="normal" title="Hard Egg"/>
+                                        <state key="normal" title="Hard"/>
+                                        <connections>
+                                            <action selector="startCountDown:" destination="3Sg-ie-1aT" eventType="touchUpInside" id="ZaM-fY-NsE"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

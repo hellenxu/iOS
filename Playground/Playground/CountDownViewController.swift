@@ -9,22 +9,33 @@
 import UIKit
 
 class CountDownViewController: UIViewController {
-
+    private let cookingTimes : [String: Int] = ["Soft": 5, "Medium": 7, "Hard": 12]
+    private var currentTime = 0
+    private var timer: Timer!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+    }
+
+    
+    @IBAction func startCountDown(_ sender: UIButton) {
+        if let title = sender.currentTitle {
+            print("selected: \(title)")
+            currentTime = cookingTimes[title]! * 60
+            timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateProgress), userInfo: nil, repeats: true)
+            
+            //TODO disable click
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc func updateProgress() {
+        if currentTime > 0 {
+            currentTime -= 1
+            print("\(currentTime)seconds left")
+        }else{
+            timer.invalidate()
+        }
     }
-    */
-
+    
 }
