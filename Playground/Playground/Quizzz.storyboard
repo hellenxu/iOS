@@ -26,12 +26,13 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRR-Yp-HuU" userLabel="True Button">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="SRR-Yp-HuU" userLabel="True Button">
                                         <rect key="frame" x="0.0" y="650" width="394" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="Xdh-Ku-CLC"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <color key="tintColor" red="0.20433139189999999" green="0.69519331750000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="True"/>
                                         <connections>
                                             <action selector="submitAnswer:" destination="slm-U6-lQ6" eventType="touchUpInside" id="jt4-5c-wEF"/>
@@ -43,6 +44,7 @@
                                             <constraint firstAttribute="height" constant="40" id="sPy-ce-RhC"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <color key="tintColor" red="0.20433139189999999" green="0.69519331750000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="False"/>
                                         <connections>
                                             <action selector="submitAnswer:" destination="slm-U6-lQ6" eventType="touchUpInside" id="JSB-Ci-taK"/>

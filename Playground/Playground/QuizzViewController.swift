@@ -18,7 +18,8 @@ class QuizzViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        questionLabel.text = "4 + 3 = 7"
+    
     }
     
     @IBAction func submitAnswer(_ sender: UIButton) {
