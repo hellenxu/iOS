@@ -42,10 +42,10 @@ class QuizzViewController: UIViewController {
         if let title = sender.currentTitle {
             if title == questions[currentQuestionNum].answer {
                 print("xxl-right")
-                trueButton.backgroundColor = UIColor.green
+                sender.backgroundColor = UIColor.green
             } else {
                 print("xxl-wrong")
-                falseButton.backgroundColor = UIColor.red
+                sender.backgroundColor = UIColor.red
             }
             
             currentQuestionNum = (currentQuestionNum + 1) % questions.count
@@ -58,7 +58,7 @@ class QuizzViewController: UIViewController {
         questionLabel.text = questions[currentQuestionNum].question
         progressBar.progress = Float(currentQuestionNum) / Float(questions.count)
         
-        Timer.scheduledTimer(withTimeInterval: 1.2, repeats: false, block: {_ in
+        Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false, block: {_ in
             self.trueButton.backgroundColor = UIColor.clear
             self.falseButton.backgroundColor = UIColor.clear
         })
