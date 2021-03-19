@@ -23,7 +23,7 @@
 	<key>UILaunchStoryboardName</key>
 	<string>Portrait</string>
 	<key>UIMainStoryboardFile</key>
-	<string>CountdownTimer</string>
+	<string>Quizzz</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
