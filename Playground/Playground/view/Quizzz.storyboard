@@ -20,8 +20,14 @@
                             <stackView opaque="NO" contentMode="top" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pUV-7P-Tmh">
                                 <rect key="frame" x="10" y="54" width="394" height="778"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIB-Fy-iqZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="86.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question text??" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhk-P6-fhj" userLabel="Quiz text">
-                                        <rect key="frame" x="0.0" y="0.0" width="394" height="630"/>
+                                        <rect key="frame" x="0.0" y="106.5" width="394" height="523.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -74,6 +80,7 @@
                         <outlet property="falseButton" destination="fgb-dc-a9E" id="geW-Dg-rdK"/>
                         <outlet property="progressBar" destination="1Sz-oH-Rll" id="cTH-zr-Xsd"/>
                         <outlet property="questionLabel" destination="rhk-P6-fhj" id="Siw-L8-ZwB"/>
+                        <outlet property="scoreLabel" destination="UIB-Fy-iqZ" id="RJS-RI-ur2"/>
                         <outlet property="trueButton" destination="SRR-Yp-HuU" id="6wd-Eo-EV4"/>
                     </connections>
                 </viewController>

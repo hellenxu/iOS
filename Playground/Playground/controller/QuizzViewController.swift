@@ -11,6 +11,7 @@ import UIKit
 class QuizzViewController: UIViewController {
     
     @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var trueButton: UIButton!
     @IBOutlet weak var falseButton: UIButton!
     @IBOutlet weak var progressBar: UIProgressView!
@@ -33,7 +34,7 @@ class QuizzViewController: UIViewController {
                 sender.backgroundColor = UIColor.red
             }
             
-            quizHub.inCreaseCurrentQuestionNum()
+            quizHub.nextQuestion()
             updateUI()
         }
     }
@@ -41,6 +42,7 @@ class QuizzViewController: UIViewController {
     func updateUI() {
         questionLabel.text = quizHub.getCurrentQuestion()
         progressBar.progress = quizHub.getCurrentProgress()
+        scoreLabel.text = "Score: \(String(describing: quizHub.getCurrentScore()))"
         
         Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false, block: {_ in
             self.trueButton.backgroundColor = UIColor.clear

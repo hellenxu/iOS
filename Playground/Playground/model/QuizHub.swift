@@ -24,10 +24,12 @@ struct QuizHub{
         Question(q: "Chocolate affects a dog's heart and nervous system; a few ounces are enough to kill a small dog.", a: "True")
     ]
     
-    var currentQuestionNum = 0
+    private var currentQuestionNum = 0
+    private var currentScore = 0
     
-    func checkAnswer(_ userAnswer: String) -> Bool {
+    mutating func checkAnswer(_ userAnswer: String) -> Bool {
         if userAnswer == questions[currentQuestionNum].answer {
+            currentScore += 1
             return true
         } else {
             return false
@@ -42,7 +44,14 @@ struct QuizHub{
         return Float(currentQuestionNum + 1) / Float(questions.count)
     }
     
-    mutating func inCreaseCurrentQuestionNum() {
+    mutating func nextQuestion() {
         currentQuestionNum = (currentQuestionNum + 1) % questions.count
+    }
+    
+    mutating func getCurrentScore() -> Int {
+        if currentQuestionNum == 0 {
+            currentScore = 0
+        }
+        return currentScore
     }
 }
