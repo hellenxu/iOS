@@ -81,6 +81,40 @@
 			path = sounds;
 			sourceTree = "<group>";
 		};
+		1102DDC826096A8200BDBBA3 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				1102DDBA260300F400BDBBA3 /* CountdownTimer.storyboard */,
+				1193D238260194E500799C6D /* Keyboard.storyboard */,
+				1141C7EA2547C15100FE8166 /* Animation.storyboard */,
+				1190E92D21DF089E001F52C4 /* LaunchScreen.storyboard */,
+				1193D234260053F800799C6D /* Calculator.storyboard */,
+				1190E92821DF089C001F52C4 /* Main.storyboard */,
+				1102DDBE2604210200BDBBA3 /* Quizzz.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		1102DDCA26096B1800BDBBA3 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1102DDC52605020700BDBBA3 /* Question.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		1102DDCC26096B3A00BDBBA3 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				1141C7ED2547C3EC00FE8166 /* BonusViewController.swift */,
+				1102DDC12604211800BDBBA3 /* QuizzViewController.swift */,
+				1193D24626019C2100799C6D /* KeyboardViewController.swift */,
+				1102DDB7260300DF00BDBBA3 /* CountDownViewController.swift */,
+				1155B20D21EC201E00D08EAF /* AboutViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
 		1190E91821DF089C001F52C4 = {
 			isa = PBXGroup;
 			children = (
@@ -104,21 +138,11 @@
 				1155B21121EECD5700D08EAF /* About.html */,
 				1190E92421DF089C001F52C4 /* AppDelegate.swift */,
 				1190E92621DF089C001F52C4 /* ViewController.swift */,
-				1190E92821DF089C001F52C4 /* Main.storyboard */,
-				1155B20D21EC201E00D08EAF /* AboutViewController.swift */,
+				1102DDCA26096B1800BDBBA3 /* model */,
+				1102DDC826096A8200BDBBA3 /* view */,
+				1102DDCC26096B3A00BDBBA3 /* controller */,
 				1190E92B21DF089E001F52C4 /* Assets.xcassets */,
-				1190E92D21DF089E001F52C4 /* LaunchScreen.storyboard */,
 				1190E93021DF089E001F52C4 /* Info.plist */,
-				1141C7EA2547C15100FE8166 /* Animation.storyboard */,
-				1141C7ED2547C3EC00FE8166 /* BonusViewController.swift */,
-				1193D234260053F800799C6D /* Calculator.storyboard */,
-				1102DDBE2604210200BDBBA3 /* Quizzz.storyboard */,
-				1102DDC12604211800BDBBA3 /* QuizzViewController.swift */,
-				1193D238260194E500799C6D /* Keyboard.storyboard */,
-				1193D24626019C2100799C6D /* KeyboardViewController.swift */,
-				1102DDB7260300DF00BDBBA3 /* CountDownViewController.swift */,
-				1102DDBA260300F400BDBBA3 /* CountdownTimer.storyboard */,
-				1102DDC52605020700BDBBA3 /* Question.swift */,
 			);
 			path = Playground;
 			sourceTree = "<group>";
