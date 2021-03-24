@@ -18,6 +18,8 @@
 		1102DDC22604211800BDBBA3 /* QuizzViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1102DDC12604211800BDBBA3 /* QuizzViewController.swift */; };
 		1102DDC62605020700BDBBA3 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1102DDC52605020700BDBBA3 /* Question.swift */; };
 		1102DDD026096B8600BDBBA3 /* QuizHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1102DDCF26096B8500BDBBA3 /* QuizHub.swift */; };
+		1102DE45260AE61F00BDBBA3 /* Destiny.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1102DE44260AE61F00BDBBA3 /* Destiny.storyboard */; };
+		1102DE48260AE71500BDBBA3 /* MultiOptionQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1102DE47260AE71500BDBBA3 /* MultiOptionQuestion.swift */; };
 		1141C7EB2547C15100FE8166 /* Animation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1141C7EA2547C15100FE8166 /* Animation.storyboard */; };
 		1141C7EE2547C3EC00FE8166 /* BonusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141C7ED2547C3EC00FE8166 /* BonusViewController.swift */; };
 		1155B20E21EC201E00D08EAF /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1155B20D21EC201E00D08EAF /* AboutViewController.swift */; };
@@ -44,6 +46,8 @@
 		1102DDC12604211800BDBBA3 /* QuizzViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzViewController.swift; sourceTree = "<group>"; };
 		1102DDC52605020700BDBBA3 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		1102DDCF26096B8500BDBBA3 /* QuizHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizHub.swift; sourceTree = "<group>"; };
+		1102DE44260AE61F00BDBBA3 /* Destiny.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Destiny.storyboard; sourceTree = "<group>"; };
+		1102DE47260AE71500BDBBA3 /* MultiOptionQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiOptionQuestion.swift; sourceTree = "<group>"; };
 		1141C7EA2547C15100FE8166 /* Animation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Animation.storyboard; sourceTree = "<group>"; };
 		1141C7ED2547C3EC00FE8166 /* BonusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonusViewController.swift; sourceTree = "<group>"; };
 		1155B20D21EC201E00D08EAF /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +97,7 @@
 				1193D234260053F800799C6D /* Calculator.storyboard */,
 				1190E92821DF089C001F52C4 /* Main.storyboard */,
 				1102DDBE2604210200BDBBA3 /* Quizzz.storyboard */,
+				1102DE44260AE61F00BDBBA3 /* Destiny.storyboard */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -102,6 +107,7 @@
 			children = (
 				1102DDC52605020700BDBBA3 /* Question.swift */,
 				1102DDCF26096B8500BDBBA3 /* QuizHub.swift */,
+				1102DE47260AE71500BDBBA3 /* MultiOptionQuestion.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -215,6 +221,7 @@
 				1190E92F21DF089E001F52C4 /* LaunchScreen.storyboard in Resources */,
 				1155B21221EECD5700D08EAF /* About.html in Resources */,
 				1193D239260194E500799C6D /* Keyboard.storyboard in Resources */,
+				1102DE45260AE61F00BDBBA3 /* Destiny.storyboard in Resources */,
 				1190E92C21DF089E001F52C4 /* Assets.xcassets in Resources */,
 				1190E92A21DF089C001F52C4 /* Main.storyboard in Resources */,
 				1102DDBF2604210200BDBBA3 /* Quizzz.storyboard in Resources */,
@@ -236,6 +243,7 @@
 				1102DDC62605020700BDBBA3 /* Question.swift in Sources */,
 				1155B20E21EC201E00D08EAF /* AboutViewController.swift in Sources */,
 				1193D24726019C2100799C6D /* KeyboardViewController.swift in Sources */,
+				1102DE48260AE71500BDBBA3 /* MultiOptionQuestion.swift in Sources */,
 				1190E92721DF089C001F52C4 /* ViewController.swift in Sources */,
 				1102DDC22604211800BDBBA3 /* QuizzViewController.swift in Sources */,
 				1141C7EE2547C3EC00FE8166 /* BonusViewController.swift in Sources */,
