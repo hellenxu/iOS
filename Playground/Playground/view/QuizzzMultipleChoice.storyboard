@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cad-qV-8SR">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Quizz Multiple Choice View Controller-->
         <scene sceneID="BhF-zS-Zzp">
             <objects>
-                <viewController id="Cad-qV-8SR" sceneMemberID="viewController">
+                <viewController id="Cad-qV-8SR" customClass="QuizzMultipleChoiceViewController" customModule="Playground" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iXK-pz-RnK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,6 +40,9 @@
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                         <color key="tintColor" red="0.20433139189999999" green="0.69519331750000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="True"/>
+                                        <connections>
+                                            <action selector="submitAnswer:" destination="Cad-qV-8SR" eventType="touchUpInside" id="7YK-kK-QIg"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="2pF-RD-4Ne" userLabel="Choice Two Button">
                                         <rect key="frame" x="0.0" y="650" width="394" height="40"/>
@@ -49,6 +52,9 @@
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                         <color key="tintColor" red="0.20433139189999999" green="0.69519331750000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="True"/>
+                                        <connections>
+                                            <action selector="submitAnswer:" destination="Cad-qV-8SR" eventType="touchUpInside" id="F2K-DS-Gzq"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1RD-Rv-8YQ" userLabel="Choice Three Button">
                                         <rect key="frame" x="0.0" y="710" width="394" height="40"/>
@@ -58,6 +64,9 @@
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                         <color key="tintColor" red="0.20433139189999999" green="0.69519331750000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="False"/>
+                                        <connections>
+                                            <action selector="submitAnswer:" destination="Cad-qV-8SR" eventType="touchUpInside" id="Owp-Ep-RlQ"/>
+                                        </connections>
                                     </button>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LLV-tm-Xdv" userLabel="Completion Progressbar">
                                         <rect key="frame" x="0.0" y="770" width="394" height="8"/>
@@ -79,6 +88,14 @@
                             <constraint firstItem="lTz-iF-3rQ" firstAttribute="top" secondItem="wCi-bS-Zj6" secondAttribute="top" constant="10" id="Qwk-dB-J6m"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="choiceOneButton" destination="0Cn-G5-RHV" id="X2U-2l-qRA"/>
+                        <outlet property="choiceThreeButton" destination="1RD-Rv-8YQ" id="H7g-uW-40f"/>
+                        <outlet property="choiceTwoButton" destination="2pF-RD-4Ne" id="9sm-um-R1o"/>
+                        <outlet property="progressView" destination="LLV-tm-Xdv" id="Xdd-eC-U7a"/>
+                        <outlet property="questionLabel" destination="h9j-B6-7nZ" id="14Z-iX-9H2"/>
+                        <outlet property="scoreLabel" destination="tUt-hb-u2P" id="wTO-Sv-9IT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rGI-WF-yAb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

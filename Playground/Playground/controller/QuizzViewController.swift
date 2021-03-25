@@ -26,7 +26,7 @@ class QuizzViewController: UIViewController {
     
     @IBAction func submitAnswer(_ sender: UIButton) {
         if let title = sender.currentTitle {
-            if quizHub.checkAnswer(title) {
+            if quizHub.checkAnswer(title, false) {
                 print("xxl-right")
                 sender.backgroundColor = UIColor.green
             } else {
@@ -34,14 +34,14 @@ class QuizzViewController: UIViewController {
                 sender.backgroundColor = UIColor.red
             }
             
-            quizHub.nextQuestion()
+            quizHub.nextQuestion(false)
             updateUI()
         }
     }
     
     func updateUI() {
-        questionLabel.text = quizHub.getCurrentQuestion()
-        progressBar.progress = quizHub.getCurrentProgress()
+        questionLabel.text = quizHub.getCurrentQuestion(false)
+        progressBar.progress = quizHub.getCurrentProgress(false)
         scoreLabel.text = "Score: \(String(describing: quizHub.getCurrentScore()))"
         
         Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false, block: {_ in

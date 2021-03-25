@@ -40,8 +40,10 @@ struct QuizHub{
     private var currentQuestionNum = 0
     private var currentScore = 0
     
-    mutating func checkAnswer(_ userAnswer: String) -> Bool {
-        if userAnswer == questions[currentQuestionNum].answer {
+    mutating func checkAnswer(_ userAnswer: String, _ isMultipleChoice: Bool) -> Bool {
+        let expectedAnswer = isMultipleChoice ? multiQuestions[currentQuestionNum].correctAnswer : questions[currentQuestionNum].answer
+        
+        if userAnswer == expectedAnswer {
             currentScore += 1
             return true
         } else {
@@ -49,16 +51,19 @@ struct QuizHub{
         }
     }
     
-    func getCurrentQuestion() -> String{
-        return questions[currentQuestionNum].question
+    func getCurrentQuestion(_ isMultipleChoice: Bool) -> String{
+        let question = isMultipleChoice ? multiQuestions[currentQuestionNum].question : questions[currentQuestionNum].question
+        return question
     }
     
-    func getCurrentProgress() -> Float {
-        return Float(currentQuestionNum + 1) / Float(questions.count)
+    func getCurrentProgress(_ isMultipleChoice: Bool) -> Float {
+        let totalAmt = isMultipleChoice ? multiQuestions.count : questions.count
+        return Float(currentQuestionNum + 1) / Float(totalAmt)
     }
     
-    mutating func nextQuestion() {
-        currentQuestionNum = (currentQuestionNum + 1) % questions.count
+    mutating func nextQuestion(_ isMultipleChoice: Bool) {
+        let totalAmt = isMultipleChoice ? multiQuestions.count : questions.count
+        currentQuestionNum = (currentQuestionNum + 1) % totalAmt
     }
     
     mutating func getCurrentScore() -> Int {
@@ -66,5 +71,21 @@ struct QuizHub{
             currentScore = 0
         }
         return currentScore
+    }
+    
+    func getChoiceOne() -> String {
+        return getChoice(index: 0)
+    }
+    
+    func getChoiceTwo() -> String {
+        return getChoice(index: 1)
+    }
+    
+    func getChoiceThree() -> String {
+        return getChoice(index: 2)
+    }
+    
+    private func getChoice(index: Int) -> String {
+        return multiQuestions[currentQuestionNum].answerOptions[index]
     }
 }
