@@ -22,6 +22,8 @@
 		1102DE48260AE71500BDBBA3 /* MultiOptionQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1102DE47260AE71500BDBBA3 /* MultiOptionQuestion.swift */; };
 		1102DE4B260C3D1600BDBBA3 /* QuizzzMultipleChoice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1102DE4A260C3D1600BDBBA3 /* QuizzzMultipleChoice.storyboard */; };
 		1102DE4E260C3F4100BDBBA3 /* QuizzMultipleChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1102DE4D260C3F4100BDBBA3 /* QuizzMultipleChoiceViewController.swift */; };
+		1102DE5226142E5E00BDBBA3 /* StoryHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1102DE5126142E5E00BDBBA3 /* StoryHub.swift */; };
+		1102DE5526142E6D00BDBBA3 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1102DE5426142E6D00BDBBA3 /* Story.swift */; };
 		1141C7EB2547C15100FE8166 /* Animation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1141C7EA2547C15100FE8166 /* Animation.storyboard */; };
 		1141C7EE2547C3EC00FE8166 /* BonusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141C7ED2547C3EC00FE8166 /* BonusViewController.swift */; };
 		1155B20E21EC201E00D08EAF /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1155B20D21EC201E00D08EAF /* AboutViewController.swift */; };
@@ -52,6 +54,8 @@
 		1102DE47260AE71500BDBBA3 /* MultiOptionQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiOptionQuestion.swift; sourceTree = "<group>"; };
 		1102DE4A260C3D1600BDBBA3 /* QuizzzMultipleChoice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuizzzMultipleChoice.storyboard; sourceTree = "<group>"; };
 		1102DE4D260C3F4100BDBBA3 /* QuizzMultipleChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzMultipleChoiceViewController.swift; sourceTree = "<group>"; };
+		1102DE5126142E5E00BDBBA3 /* StoryHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryHub.swift; sourceTree = "<group>"; };
+		1102DE5426142E6D00BDBBA3 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		1141C7EA2547C15100FE8166 /* Animation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Animation.storyboard; sourceTree = "<group>"; };
 		1141C7ED2547C3EC00FE8166 /* BonusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonusViewController.swift; sourceTree = "<group>"; };
 		1155B20D21EC201E00D08EAF /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +117,8 @@
 				1102DDC52605020700BDBBA3 /* Question.swift */,
 				1102DDCF26096B8500BDBBA3 /* QuizHub.swift */,
 				1102DE47260AE71500BDBBA3 /* MultiOptionQuestion.swift */,
+				1102DE5126142E5E00BDBBA3 /* StoryHub.swift */,
+				1102DE5426142E6D00BDBBA3 /* Story.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -254,7 +260,9 @@
 				1190E92721DF089C001F52C4 /* ViewController.swift in Sources */,
 				1102DDC22604211800BDBBA3 /* QuizzViewController.swift in Sources */,
 				1141C7EE2547C3EC00FE8166 /* BonusViewController.swift in Sources */,
+				1102DE5526142E6D00BDBBA3 /* Story.swift in Sources */,
 				1190E92521DF089C001F52C4 /* AppDelegate.swift in Sources */,
+				1102DE5226142E5E00BDBBA3 /* StoryHub.swift in Sources */,
 				1102DDD026096B8600BDBBA3 /* QuizHub.swift in Sources */,
 				1102DE4E260C3F4100BDBBA3 /* QuizzMultipleChoiceViewController.swift in Sources */,
 			);
