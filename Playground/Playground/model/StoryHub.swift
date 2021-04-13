@@ -41,4 +41,30 @@ struct StoryHub{
             choice2: "End", choice2Destination: 0
         )
     ]
+    
+    private var currentStoryIndex = 0
+    
+    func getCurrentStoryDescription() -> String {
+        return stories[currentStoryIndex].title
+    }
+    
+    func getChoiceOne() -> String {
+        return stories[currentStoryIndex].choice1
+    }
+    
+    func getChoiceTwo() -> String {
+        return stories[currentStoryIndex].choice2
+    }
+    
+    mutating func updateCurrentStoryIndex(choice: String) {
+        let story = stories[currentStoryIndex]
+        
+        if story.choice1 == choice {
+            currentStoryIndex = story.choice1Destination
+        } else if story.choice2 == choice {
+            currentStoryIndex = story.choice2Destination
+        } else {
+            currentStoryIndex += 1
+        }
+    }
 }

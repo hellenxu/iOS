@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Destiny View Controller-->
         <scene sceneID="81d-uv-RXZ">
             <objects>
-                <viewController id="dXM-q5-rxJ" sceneMemberID="viewController">
+                <viewController id="dXM-q5-rxJ" customClass="DestinyViewController" customModule="Playground" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VDF-RR-QWU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,13 +20,13 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7XU-34-qJn">
                                 <rect key="frame" x="10" y="54" width="394" height="798"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRk-xg-VkY">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRk-xg-VkY">
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="638"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3r-1a-b9r">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="c3r-1a-b9r">
                                         <rect key="frame" x="0.0" y="658" width="394" height="60"/>
                                         <color key="backgroundColor" red="0.84133090101522856" green="0.2793232122098977" blue="0.54543793121762163" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -36,8 +36,11 @@
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="submitChoice:" destination="dXM-q5-rxJ" eventType="touchUpInside" id="E8Z-JN-raf"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERU-pM-jy6">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ERU-pM-jy6">
                                         <rect key="frame" x="0.0" y="738" width="394" height="60"/>
                                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                         <constraints>
@@ -47,6 +50,10 @@
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="submitChoice:" destination="VnT-Ps-sul" eventType="touchUpInside" id="FTQ-0I-qDI"/>
+                                            <action selector="submitChoice:" destination="dXM-q5-rxJ" eventType="touchUpInside" id="fuJ-QH-khe"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -68,8 +75,14 @@
                             <constraint firstItem="7XU-34-qJn" firstAttribute="leading" secondItem="rbd-qQ-wd6" secondAttribute="leading" constant="10" id="mgV-pi-UBY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="choiceOne" destination="c3r-1a-b9r" id="UzE-De-naC"/>
+                        <outlet property="choiceTwo" destination="ERU-pM-jy6" id="Jxd-dg-qUE"/>
+                        <outlet property="storyDescription" destination="WRk-xg-VkY" id="sfk-Vj-Ap9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nXS-Qd-bZi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="VnT-Ps-sul" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="221.73913043478262" y="45.535714285714285"/>
         </scene>
