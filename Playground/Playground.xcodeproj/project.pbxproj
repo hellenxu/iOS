@@ -29,6 +29,7 @@
 		1141C7EE2547C3EC00FE8166 /* BonusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141C7ED2547C3EC00FE8166 /* BonusViewController.swift */; };
 		1155B20E21EC201E00D08EAF /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1155B20D21EC201E00D08EAF /* AboutViewController.swift */; };
 		1155B21221EECD5700D08EAF /* About.html in Resources */ = {isa = PBXBuildFile; fileRef = 1155B21121EECD5700D08EAF /* About.html */; };
+		118E5247262543E300BA8824 /* BMICalculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 118E5246262543E300BA8824 /* BMICalculator.storyboard */; };
 		1190E92521DF089C001F52C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1190E92421DF089C001F52C4 /* AppDelegate.swift */; };
 		1190E92721DF089C001F52C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1190E92621DF089C001F52C4 /* ViewController.swift */; };
 		1190E92A21DF089C001F52C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1190E92821DF089C001F52C4 /* Main.storyboard */; };
@@ -62,6 +63,7 @@
 		1141C7ED2547C3EC00FE8166 /* BonusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonusViewController.swift; sourceTree = "<group>"; };
 		1155B20D21EC201E00D08EAF /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		1155B21121EECD5700D08EAF /* About.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = About.html; sourceTree = "<group>"; };
+		118E5246262543E300BA8824 /* BMICalculator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BMICalculator.storyboard; sourceTree = "<group>"; };
 		1190E92121DF089C001F52C4 /* Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1190E92421DF089C001F52C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1190E92621DF089C001F52C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				1102DDBE2604210200BDBBA3 /* Quizzz.storyboard */,
 				1102DE44260AE61F00BDBBA3 /* Destiny.storyboard */,
 				1102DE4A260C3D1600BDBBA3 /* QuizzzMultipleChoice.storyboard */,
+				118E5246262543E300BA8824 /* BMICalculator.storyboard */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				1102DE4B260C3D1600BDBBA3 /* QuizzzMultipleChoice.storyboard in Resources */,
 				1102DDBF2604210200BDBBA3 /* Quizzz.storyboard in Resources */,
 				1102DDB12601A70300BDBBA3 /* D.wav in Resources */,
+				118E5247262543E300BA8824 /* BMICalculator.storyboard in Resources */,
 				1102DDBB260300F400BDBBA3 /* CountdownTimer.storyboard in Resources */,
 				1141C7EB2547C15100FE8166 /* Animation.storyboard in Resources */,
 				1102DDAF2601A70300BDBBA3 /* F.wav in Resources */,
