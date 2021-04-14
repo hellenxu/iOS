@@ -77,7 +77,7 @@
                                             <constraint firstAttribute="height" constant="21" id="Hf8-N7-4HR"/>
                                         </constraints>
                                     </stackView>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="MYl-vv-Wx0">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="MYl-vv-Wx0">
                                         <rect key="frame" x="-2" y="657" width="378" height="61"/>
                                         <color key="tintColor" red="0.20000000000000001" green="0.0" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -116,6 +116,10 @@
                             <constraint firstItem="Ltg-FL-gCo" firstAttribute="bottom" secondItem="jWb-bS-UW0" secondAttribute="bottom" constant="20" id="ld1-88-Z6T"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="heightLabel" destination="3F2-RC-qKg" id="VQy-ss-Olk"/>
+                        <outlet property="weightLabel" destination="ks9-dG-vKJ" id="Ec9-Vb-JZs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ir6-p1-g4L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
