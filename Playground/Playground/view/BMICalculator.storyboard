@@ -35,7 +35,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.5m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3F2-RC-qKg">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.6m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3F2-RC-qKg">
                                                 <rect key="frame" x="338" y="0.0" width="36" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -46,7 +46,7 @@
                                             <constraint firstAttribute="height" constant="21" id="nGa-L4-pPa"/>
                                         </constraints>
                                     </stackView>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.6000000000000001" minValue="0.0" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="9cm-cj-GZA">
+                                    <slider opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.6000000000000001" minValue="0.0" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="9cm-cj-GZA">
                                         <rect key="frame" x="-2" y="556" width="378" height="61"/>
                                         <color key="tintColor" red="0.20000000000000001" green="0.0" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -66,8 +66,8 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100Kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ks9-dG-vKJ">
-                                                <rect key="frame" x="325.5" y="0.0" width="48.5" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50Kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ks9-dG-vKJ">
+                                                <rect key="frame" x="333.5" y="0.0" width="40.5" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -77,7 +77,7 @@
                                             <constraint firstAttribute="height" constant="21" id="Hf8-N7-4HR"/>
                                         </constraints>
                                     </stackView>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="MYl-vv-Wx0">
+                                    <slider opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="MYl-vv-Wx0">
                                         <rect key="frame" x="-2" y="657" width="378" height="61"/>
                                         <color key="tintColor" red="0.20000000000000001" green="0.0" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -103,6 +103,9 @@
                                                 <integer key="value" value="15"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onCalculateClick:" destination="Zqg-kQ-QPk" eventType="touchUpInside" id="5hs-3O-Zlv"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -118,7 +121,9 @@
                     </view>
                     <connections>
                         <outlet property="heightLabel" destination="3F2-RC-qKg" id="VQy-ss-Olk"/>
+                        <outlet property="heightSlider" destination="9cm-cj-GZA" id="nVN-Dw-fun"/>
                         <outlet property="weightLabel" destination="ks9-dG-vKJ" id="Ec9-Vb-JZs"/>
+                        <outlet property="weightSlider" destination="MYl-vv-Wx0" id="xfC-DX-lvj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ir6-p1-g4L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
