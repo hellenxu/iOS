@@ -130,6 +130,64 @@
             </objects>
             <point key="canvasLocation" x="-249.27536231884059" y="-236.38392857142856"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="06y-iL-yvM">
+            <objects>
+                <viewController id="c73-Me-Se5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gJ2-Mv-tLK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9fT-ZB-gb8">
+                                <rect key="frame" x="102" y="377.5" width="210" height="141"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQu-6q-bPJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="210" height="48"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2f-YZ-nGY">
+                                        <rect key="frame" x="0.0" y="56" width="210" height="48"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eat more vegs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rGL-wa-IkF">
+                                        <rect key="frame" x="0.0" y="112" width="210" height="29"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yX5-jG-Sph">
+                                <rect key="frame" x="20" y="792" width="374" height="50"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.0" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="EaG-zc-Cvk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="RECALCULATE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eO6-wm-59Q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eO6-wm-59Q" firstAttribute="bottom" secondItem="yX5-jG-Sph" secondAttribute="bottom" constant="20" id="49z-79-rKD"/>
+                            <constraint firstItem="9fT-ZB-gb8" firstAttribute="centerX" secondItem="gJ2-Mv-tLK" secondAttribute="centerX" id="8Jj-Dt-lD2"/>
+                            <constraint firstItem="eO6-wm-59Q" firstAttribute="trailing" secondItem="yX5-jG-Sph" secondAttribute="trailing" constant="20" id="U3J-O6-VUZ"/>
+                            <constraint firstItem="9fT-ZB-gb8" firstAttribute="centerY" secondItem="gJ2-Mv-tLK" secondAttribute="centerY" id="Uje-Qd-cEu"/>
+                            <constraint firstItem="yX5-jG-Sph" firstAttribute="leading" secondItem="eO6-wm-59Q" secondAttribute="leading" constant="20" id="nDV-V9-vuV"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YAl-UG-ANH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="420" y="-236"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
