@@ -39,6 +39,7 @@
 		1193D235260053F800799C6D /* Calculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1193D234260053F800799C6D /* Calculator.storyboard */; };
 		1193D239260194E500799C6D /* Keyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1193D238260194E500799C6D /* Keyboard.storyboard */; };
 		1193D24726019C2100799C6D /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1193D24626019C2100799C6D /* KeyboardViewController.swift */; };
+		11ED017E263BB6B000D5C087 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ED017D263BB6B000D5C087 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		1193D234260053F800799C6D /* Calculator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calculator.storyboard; sourceTree = "<group>"; };
 		1193D238260194E500799C6D /* Keyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Keyboard.storyboard; sourceTree = "<group>"; };
 		1193D24626019C2100799C6D /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		11ED017D263BB6B000D5C087 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 				1102DE4D260C3F4100BDBBA3 /* QuizzMultipleChoiceViewController.swift */,
 				1102DE5726252A9300BDBBA3 /* DestinyViewController.swift */,
 				118E524B262694CC00BA8824 /* BMICalculatorViewController.swift */,
+				11ED017D263BB6B000D5C087 /* ResultViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				1102DDB8260300DF00BDBBA3 /* CountDownViewController.swift in Sources */,
 				118E524C262694CC00BA8824 /* BMICalculatorViewController.swift in Sources */,
 				1102DDC62605020700BDBBA3 /* Question.swift in Sources */,
+				11ED017E263BB6B000D5C087 /* ResultViewController.swift in Sources */,
 				1155B20E21EC201E00D08EAF /* AboutViewController.swift in Sources */,
 				1193D24726019C2100799C6D /* KeyboardViewController.swift in Sources */,
 				1102DE48260AE71500BDBBA3 /* MultiOptionQuestion.swift in Sources */,

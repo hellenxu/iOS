@@ -130,10 +130,10 @@
             </objects>
             <point key="canvasLocation" x="-249.27536231884059" y="-236.38392857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="06y-iL-yvM">
             <objects>
-                <viewController id="c73-Me-Se5" sceneMemberID="viewController">
+                <viewController id="c73-Me-Se5" customClass="ResultViewController" customModule="Playground" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gJ2-Mv-tLK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -171,6 +171,14 @@
                                 <state key="normal" title="RECALCULATE">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onRecalculate:" destination="c73-Me-Se5" eventType="touchUpInside" id="mhB-sv-3XM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eO6-wm-59Q"/>
@@ -183,6 +191,11 @@
                             <constraint firstItem="yX5-jG-Sph" firstAttribute="leading" secondItem="eO6-wm-59Q" secondAttribute="leading" constant="20" id="nDV-V9-vuV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="adviceLabel" destination="rGL-wa-IkF" id="BBG-3V-A4f"/>
+                        <outlet property="bmiLabel" destination="v2f-YZ-nGY" id="cT2-rs-WhJ"/>
+                        <outlet property="recalculateButton" destination="yX5-jG-Sph" id="ToR-Io-KBY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YAl-UG-ANH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
