@@ -16,6 +16,7 @@ class BMICalculatorViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        weightSlider.value = weightSlider.maximumValue * 0.5
     }
     
     @IBAction func onHeightChanged(_ sender: UISlider) {
@@ -27,10 +28,20 @@ class BMICalculatorViewController: UIViewController {
     }
     
     @IBAction func onCalculateClick(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "toBmiResult", sender: self)
+    }
+    
+    private func calculateBmi () -> Float {
         let weight = weightSlider.value
         let height = heightSlider.value
         let bmi = weight / pow(height, 2)
-        // bmi will be correct if both sliders are moved.
-        print("xxl-bmi: \(bmi)")
+        return bmi
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toBmiResult" {
+            let resultVc = segue.destination as! ResultViewController
+            resultVc.bmiResult = calculateBmi()
+        }
     }
 }

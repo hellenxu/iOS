@@ -124,6 +124,7 @@
                         <outlet property="heightSlider" destination="9cm-cj-GZA" id="nVN-Dw-fun"/>
                         <outlet property="weightLabel" destination="ks9-dG-vKJ" id="Ec9-Vb-JZs"/>
                         <outlet property="weightSlider" destination="MYl-vv-Wx0" id="xfC-DX-lvj"/>
+                        <segue destination="c73-Me-Se5" kind="presentation" identifier="toBmiResult" id="eZ5-Y4-Ges"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ir6-p1-g4L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -135,11 +136,11 @@
             <objects>
                 <viewController id="c73-Me-Se5" customClass="ResultViewController" customModule="Playground" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gJ2-Mv-tLK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9fT-ZB-gb8">
-                                <rect key="frame" x="102" y="377.5" width="210" height="141"/>
+                                <rect key="frame" x="102" y="344.5" width="210" height="153"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQu-6q-bPJ">
                                         <rect key="frame" x="0.0" y="0.0" width="210" height="48"/>
@@ -148,13 +149,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2f-YZ-nGY">
-                                        <rect key="frame" x="0.0" y="56" width="210" height="48"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                        <rect key="frame" x="0.0" y="56" width="210" height="60"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eat more vegs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rGL-wa-IkF">
-                                        <rect key="frame" x="0.0" y="112" width="210" height="29"/>
+                                        <rect key="frame" x="0.0" y="124" width="210" height="29"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -162,7 +163,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yX5-jG-Sph">
-                                <rect key="frame" x="20" y="792" width="374" height="50"/>
+                                <rect key="frame" x="20" y="738" width="374" height="50"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.0" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="EaG-zc-Cvk"/>
