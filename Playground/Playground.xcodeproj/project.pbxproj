@@ -40,6 +40,7 @@
 		1193D239260194E500799C6D /* Keyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1193D238260194E500799C6D /* Keyboard.storyboard */; };
 		1193D24726019C2100799C6D /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1193D24626019C2100799C6D /* KeyboardViewController.swift */; };
 		11ED017E263BB6B000D5C087 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ED017D263BB6B000D5C087 /* ResultViewController.swift */; };
+		11ED01852640E6E800D5C087 /* BmiCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ED01842640E6E800D5C087 /* BmiCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		1193D238260194E500799C6D /* Keyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Keyboard.storyboard; sourceTree = "<group>"; };
 		1193D24626019C2100799C6D /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		11ED017D263BB6B000D5C087 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		11ED01842640E6E800D5C087 /* BmiCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BmiCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				1102DE47260AE71500BDBBA3 /* MultiOptionQuestion.swift */,
 				1102DE5126142E5E00BDBBA3 /* StoryHub.swift */,
 				1102DE5426142E6D00BDBBA3 /* Story.swift */,
+				11ED01842640E6E800D5C087 /* BmiCalculator.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				1102DE5526142E6D00BDBBA3 /* Story.swift in Sources */,
 				1190E92521DF089C001F52C4 /* AppDelegate.swift in Sources */,
 				1102DE5226142E5E00BDBBA3 /* StoryHub.swift in Sources */,
+				11ED01852640E6E800D5C087 /* BmiCalculator.swift in Sources */,
 				1102DDD026096B8600BDBBA3 /* QuizHub.swift in Sources */,
 				1102DE4E260C3F4100BDBBA3 /* QuizzMultipleChoiceViewController.swift in Sources */,
 			);
