@@ -20,8 +20,8 @@ class ResultViewController: UIViewController {
         super.viewDidLoad()
         
         bmiLabel.text = String(format: "%.1f", bmiResult?.value ?? 0.0)
-        adviceLabel.text = bmiResult?.advice
-        view.backgroundColor = bmiResult?.backgroundColor
+        adviceLabel.text = bmiResult?.advice ?? "No advice"
+        view.backgroundColor = bmiResult?.backgroundColor ?? #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
         
     }
     
