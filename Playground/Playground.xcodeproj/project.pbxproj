@@ -44,6 +44,7 @@
 		11ED018826423B6800D5C087 /* Tipsplit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11ED018726423B6800D5C087 /* Tipsplit.storyboard */; };
 		11ED018B26423BBB00D5C087 /* TipCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ED018A26423BBB00D5C087 /* TipCalculatorViewController.swift */; };
 		11ED018E26423C2400D5C087 /* TipCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ED018D26423C2400D5C087 /* TipCalculator.swift */; };
+		11ED01922642408200D5C087 /* TipResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ED01912642408200D5C087 /* TipResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		11ED018726423B6800D5C087 /* Tipsplit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tipsplit.storyboard; sourceTree = "<group>"; };
 		11ED018A26423BBB00D5C087 /* TipCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorViewController.swift; sourceTree = "<group>"; };
 		11ED018D26423C2400D5C087 /* TipCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculator.swift; sourceTree = "<group>"; };
+		11ED01912642408200D5C087 /* TipResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				118E524B262694CC00BA8824 /* BMICalculatorViewController.swift */,
 				11ED017D263BB6B000D5C087 /* ResultViewController.swift */,
 				11ED018A26423BBB00D5C087 /* TipCalculatorViewController.swift */,
+				11ED01912642408200D5C087 /* TipResultViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				1102DDB8260300DF00BDBBA3 /* CountDownViewController.swift in Sources */,
 				118E524C262694CC00BA8824 /* BMICalculatorViewController.swift in Sources */,
 				1102DDC62605020700BDBBA3 /* Question.swift in Sources */,
+				11ED01922642408200D5C087 /* TipResultViewController.swift in Sources */,
 				11ED017E263BB6B000D5C087 /* ResultViewController.swift in Sources */,
 				1155B20E21EC201E00D08EAF /* AboutViewController.swift in Sources */,
 				1193D24726019C2100799C6D /* KeyboardViewController.swift in Sources */,
