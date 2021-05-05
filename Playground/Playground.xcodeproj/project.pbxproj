@@ -41,6 +41,9 @@
 		1193D24726019C2100799C6D /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1193D24626019C2100799C6D /* KeyboardViewController.swift */; };
 		11ED017E263BB6B000D5C087 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ED017D263BB6B000D5C087 /* ResultViewController.swift */; };
 		11ED01852640E6E800D5C087 /* BmiCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ED01842640E6E800D5C087 /* BmiCalculator.swift */; };
+		11ED018826423B6800D5C087 /* Tipsplit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11ED018726423B6800D5C087 /* Tipsplit.storyboard */; };
+		11ED018B26423BBB00D5C087 /* TipCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ED018A26423BBB00D5C087 /* TipCalculatorViewController.swift */; };
+		11ED018E26423C2400D5C087 /* TipCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ED018D26423C2400D5C087 /* TipCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +83,9 @@
 		1193D24626019C2100799C6D /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		11ED017D263BB6B000D5C087 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		11ED01842640E6E800D5C087 /* BmiCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BmiCalculator.swift; sourceTree = "<group>"; };
+		11ED018726423B6800D5C087 /* Tipsplit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tipsplit.storyboard; sourceTree = "<group>"; };
+		11ED018A26423BBB00D5C087 /* TipCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorViewController.swift; sourceTree = "<group>"; };
+		11ED018D26423C2400D5C087 /* TipCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,7 @@
 				1102DE44260AE61F00BDBBA3 /* Destiny.storyboard */,
 				1102DE4A260C3D1600BDBBA3 /* QuizzzMultipleChoice.storyboard */,
 				118E5246262543E300BA8824 /* BMICalculator.storyboard */,
+				11ED018726423B6800D5C087 /* Tipsplit.storyboard */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -131,6 +138,7 @@
 				1102DE5126142E5E00BDBBA3 /* StoryHub.swift */,
 				1102DE5426142E6D00BDBBA3 /* Story.swift */,
 				11ED01842640E6E800D5C087 /* BmiCalculator.swift */,
+				11ED018D26423C2400D5C087 /* TipCalculator.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -148,6 +156,7 @@
 				1102DE5726252A9300BDBBA3 /* DestinyViewController.swift */,
 				118E524B262694CC00BA8824 /* BMICalculatorViewController.swift */,
 				11ED017D263BB6B000D5C087 /* ResultViewController.swift */,
+				11ED018A26423BBB00D5C087 /* TipCalculatorViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -248,6 +257,7 @@
 				1190E92F21DF089E001F52C4 /* LaunchScreen.storyboard in Resources */,
 				1155B21221EECD5700D08EAF /* About.html in Resources */,
 				1193D239260194E500799C6D /* Keyboard.storyboard in Resources */,
+				11ED018826423B6800D5C087 /* Tipsplit.storyboard in Resources */,
 				1102DE45260AE61F00BDBBA3 /* Destiny.storyboard in Resources */,
 				1190E92C21DF089E001F52C4 /* Assets.xcassets in Resources */,
 				1190E92A21DF089C001F52C4 /* Main.storyboard in Resources */,
@@ -278,6 +288,8 @@
 				1102DE5826252A9300BDBBA3 /* DestinyViewController.swift in Sources */,
 				1190E92721DF089C001F52C4 /* ViewController.swift in Sources */,
 				1102DDC22604211800BDBBA3 /* QuizzViewController.swift in Sources */,
+				11ED018E26423C2400D5C087 /* TipCalculator.swift in Sources */,
+				11ED018B26423BBB00D5C087 /* TipCalculatorViewController.swift in Sources */,
 				1141C7EE2547C3EC00FE8166 /* BonusViewController.swift in Sources */,
 				1102DE5526142E6D00BDBBA3 /* Story.swift in Sources */,
 				1190E92521DF089C001F52C4 /* AppDelegate.swift in Sources */,
