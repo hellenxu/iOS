@@ -10,21 +10,25 @@ import UIKit
 
 class TipCalculatorViewController: UIViewController {
 
+    @IBOutlet weak var billAmtTextField: UITextField!
+    @IBOutlet weak var zeroButton: UIButton!
+    @IBOutlet weak var tenButton: UIButton!
+    @IBOutlet weak var twentyButton: UIButton!
+    @IBOutlet weak var splitLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
 
-        // Do any additional setup after loading the view.
+    @IBAction func onTipChanged(_ sender: UIButton) {
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func onSplitNumberChanged(_ sender: UIStepper) {
+        
     }
-    */
-
+    
+    @IBAction func onCalculatePressed(_ sender: UIButton) {
+        
+    }
 }

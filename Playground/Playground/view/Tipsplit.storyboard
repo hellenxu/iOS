@@ -42,6 +42,9 @@
                                                         <state key="normal" title="0%">
                                                             <color key="titleColor" red="0.40000000000000002" green="0.0" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="onTipChanged:" destination="gcR-WB-9OW" eventType="touchUpInside" id="hNz-qi-ZPR"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleAspectFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFZ-ms-zdc">
                                                         <rect key="frame" x="101.5" y="0.0" width="171" height="54"/>
@@ -50,6 +53,9 @@
                                                         <state key="normal" title="10%">
                                                             <color key="titleColor" red="0.40000000000000002" green="0.20000000000000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="onTipChanged:" destination="gcR-WB-9OW" eventType="touchUpInside" id="F19-RU-vdV"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yR2-FL-OH2">
                                                         <rect key="frame" x="272.5" y="0.0" width="101.5" height="54"/>
@@ -58,6 +64,9 @@
                                                         <state key="normal" title="20%">
                                                             <color key="titleColor" red="0.40000000000000002" green="0.20000000000000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="onTipChanged:" destination="gcR-WB-9OW" eventType="touchUpInside" id="m4G-3r-nwO"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -91,6 +100,9 @@
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="94" id="UL8-S7-hcH"/>
                                                         </constraints>
+                                                        <connections>
+                                                            <action selector="onSplitNumberChanged:" destination="gcR-WB-9OW" eventType="valueChanged" id="0A6-bY-cjW"/>
+                                                        </connections>
                                                     </stepper>
                                                 </subviews>
                                                 <constraints>
@@ -161,6 +173,9 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onCalculatePressed:" destination="gcR-WB-9OW" eventType="touchUpInside" id="4Mw-wQ-0ti"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rhQ-MG-Ln3"/>
@@ -177,6 +192,13 @@
                             <constraint firstItem="rhQ-MG-Ln3" firstAttribute="bottom" secondItem="raV-09-OCE" secondAttribute="bottom" id="zBe-YC-mgr"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="billAmtTextField" destination="Wfz-RP-u5n" id="L5X-1f-TxI"/>
+                        <outlet property="splitLabel" destination="1hD-J7-Oqm" id="D5b-jt-9Y5"/>
+                        <outlet property="tenButton" destination="iFZ-ms-zdc" id="L88-Ww-OyH"/>
+                        <outlet property="twentyButton" destination="yR2-FL-OH2" id="8vD-bS-U5a"/>
+                        <outlet property="zeroButton" destination="MLz-1i-jVf" id="Vil-8P-OmI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="boC-Tt-yMy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
