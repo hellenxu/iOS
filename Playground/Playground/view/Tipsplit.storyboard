@@ -195,6 +195,7 @@
                     <connections>
                         <outlet property="billAmtTextField" destination="Wfz-RP-u5n" id="L5X-1f-TxI"/>
                         <outlet property="splitLabel" destination="1hD-J7-Oqm" id="D5b-jt-9Y5"/>
+                        <outlet property="splitStepper" destination="25V-eW-tlF" id="phC-cS-kC1"/>
                         <outlet property="tenButton" destination="iFZ-ms-zdc" id="L88-Ww-OyH"/>
                         <outlet property="twentyButton" destination="yR2-FL-OH2" id="8vD-bS-U5a"/>
                         <outlet property="zeroButton" destination="MLz-1i-jVf" id="Vil-8P-OmI"/>

@@ -15,6 +15,10 @@ class TipCalculatorViewController: UIViewController {
     @IBOutlet weak var tenButton: UIButton!
     @IBOutlet weak var twentyButton: UIButton!
     @IBOutlet weak var splitLabel: UILabel!
+    @IBOutlet weak var splitStepper: UIStepper!
+    
+    private let calculator: TipCalculator = TipCalculator()
+    private var tip: Float = 0.1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +26,8 @@ class TipCalculatorViewController: UIViewController {
 
     @IBAction func onTipChanged(_ sender: UIButton) {
         if let title = sender.currentTitle {
+            tip = Float(title) ?? 0.0
+
             updateTipSelectedButtonState(title: title, target: zeroButton)
             updateTipSelectedButtonState(title: title, target: tenButton)
             updateTipSelectedButtonState(title: title, target: twentyButton)
@@ -41,6 +47,8 @@ class TipCalculatorViewController: UIViewController {
     }
     
     @IBAction func onCalculatePressed(_ sender: UIButton) {
-        
+        let total = Float(billAmtTextField.text ?? "") ?? 0.0
+        let number = Int(splitStepper.value)
+        print("xxl-each-amt: \(calculator.calculateTip(total: total, tip: tip, splitNum: number))")
     }
 }

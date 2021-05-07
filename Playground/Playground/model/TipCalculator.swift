@@ -10,7 +10,8 @@ import Foundation
 
 struct TipCalculator{
     
-    func calculateTip() -> Float {
-        return 0.0
+    func calculateTip(total: Float, tip: Float, splitNum: Int) -> String {
+        let eachAmt = total * (1 + tip)/Float(splitNum)
+        return String(format: "%.2f", eachAmt)
     }
 }
