@@ -37,7 +37,7 @@ class TipCalculatorViewController: UIViewController {
     }
     
     @IBAction func onSplitNumberChanged(_ sender: UIStepper) {
-        
+        splitLabel.text = String(format: "%.f", sender.value)
     }
     
     @IBAction func onCalculatePressed(_ sender: UIButton) {
