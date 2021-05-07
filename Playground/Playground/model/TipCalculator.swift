@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+struct TipCalculator{
+    
+    func calculateTip() -> Float {
+        return 0.0
+    }
+}

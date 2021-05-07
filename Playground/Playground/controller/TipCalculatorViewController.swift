@@ -21,7 +21,19 @@ class TipCalculatorViewController: UIViewController {
     }
 
     @IBAction func onTipChanged(_ sender: UIButton) {
-        
+        if let title = sender.currentTitle {
+            updateTipSelectedButtonState(title: title, target: zeroButton)
+            updateTipSelectedButtonState(title: title, target: tenButton)
+            updateTipSelectedButtonState(title: title, target: twentyButton)
+        }
+    }
+    
+    private func updateTipSelectedButtonState(title: String, target: UIButton) {
+        if target.currentTitle == title {
+            target.isSelected = true
+        } else {
+            target.isSelected = false
+        }
     }
     
     @IBAction func onSplitNumberChanged(_ sender: UIStepper) {
