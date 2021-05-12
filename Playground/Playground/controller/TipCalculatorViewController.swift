@@ -18,7 +18,7 @@ class TipCalculatorViewController: UIViewController {
     @IBOutlet weak var splitStepper: UIStepper!
     
     private let calculator: TipCalculator = TipCalculator()
-    private var selectedTip = ""
+    private var selectedTip = "10%"
     
     override func viewDidLoad() {
         super.viewDidLoad()
