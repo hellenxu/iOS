@@ -264,6 +264,9 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onRecalculatePressed:" destination="TU6-RL-sDd" eventType="touchUpInside" id="ZdS-BB-yyJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hnN-7G-q2P"/>
@@ -281,6 +284,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6ak-1f-rh4"/>
+                    <connections>
+                        <outlet property="infoLabel" destination="hcz-Sm-4Lp" id="iQW-h6-Z6W"/>
+                        <outlet property="recalculateButton" destination="7dJ-jy-gqw" id="tpd-hx-gKL"/>
+                        <outlet property="tipEachLabel" destination="m8P-ar-c7b" id="ZOe-Si-RsR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9M6-tU-Kom" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -18,7 +18,7 @@ class TipCalculatorViewController: UIViewController {
     @IBOutlet weak var splitStepper: UIStepper!
     
     private let calculator: TipCalculator = TipCalculator()
-    private var tip: Float = 0.1
+    private var selectedTip = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +26,7 @@ class TipCalculatorViewController: UIViewController {
 
     @IBAction func onTipChanged(_ sender: UIButton) {
         if let title = sender.currentTitle {
-            tip = Float(title) ?? 0.0
+            selectedTip = title
 
             updateTipSelectedButtonState(title: title, target: zeroButton)
             updateTipSelectedButtonState(title: title, target: tenButton)
@@ -47,8 +47,19 @@ class TipCalculatorViewController: UIViewController {
     }
     
     @IBAction func onCalculatePressed(_ sender: UIButton) {
-        let total = Float(billAmtTextField.text ?? "") ?? 0.0
-        let number = Int(splitStepper.value)
-        print("xxl-each-amt: \(calculator.calculateTip(total: total, tip: tip, splitNum: number))")
+        performSegue(withIdentifier: "toResult", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "toResult") {
+            let total = Float(billAmtTextField.text ?? "") ?? 0.0
+            let number = Int(splitStepper.value)
+            let tip = Float(selectedTip) ?? 0.0
+            let destinationVc = segue.destination as! TipResultViewController
+            destinationVc.tipEach = calculator.calculateTip(total: total, tip: tip, splitNum: number)
+            destinationVc.splitNumber = number
+            destinationVc.tip = selectedTip
+            print("xxl-prepare: \(selectedTip)")
+        }
     }
 }
