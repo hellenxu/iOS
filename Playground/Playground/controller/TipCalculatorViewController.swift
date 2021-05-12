@@ -60,12 +60,12 @@ class TipCalculatorViewController: UIViewController {
         if (segue.identifier == "toResult") {
             let total = Float(billAmtTextField.text ?? "") ?? 0.0
             let number = Int(splitStepper.value)
-            let tip = Float(selectedTip) ?? 0.0
+            let tip = Float(selectedTip.dropLast())!/100
             let destinationVc = segue.destination as! TipResultViewController
             destinationVc.tipEach = calculator.calculateTip(total: total, tip: tip, splitNum: number)
             destinationVc.splitNumber = number
             destinationVc.tip = selectedTip
-            print("xxl-prepare: \(selectedTip)")
+            print("xxl-prepare: \(tip)")
         }
     }
 }
