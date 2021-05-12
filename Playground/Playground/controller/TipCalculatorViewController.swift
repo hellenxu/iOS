@@ -26,12 +26,17 @@ class TipCalculatorViewController: UIViewController {
 
     @IBAction func onTipChanged(_ sender: UIButton) {
         if let title = sender.currentTitle {
+            endAmtEditing()
             selectedTip = title
 
             updateTipSelectedButtonState(title: title, target: zeroButton)
             updateTipSelectedButtonState(title: title, target: tenButton)
             updateTipSelectedButtonState(title: title, target: twentyButton)
         }
+    }
+    
+    private func endAmtEditing() {
+        billAmtTextField.endEditing(true)
     }
     
     private func updateTipSelectedButtonState(title: String, target: UIButton) {
@@ -43,6 +48,7 @@ class TipCalculatorViewController: UIViewController {
     }
     
     @IBAction func onSplitNumberChanged(_ sender: UIStepper) {
+        endAmtEditing()
         splitLabel.text = String(format: "%.f", sender.value)
     }
     
