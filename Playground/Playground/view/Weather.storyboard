@@ -35,6 +35,9 @@
                                                 </constraints>
                                                 <color key="tintColor" systemColor="labelColor"/>
                                                 <state key="normal" backgroundImage="location.circle.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="onLocationClicked:" destination="fY8-Vu-Fjy" eventType="touchUpInside" id="Xzd-7Y-ULz"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uGO-wi-que">
                                                 <rect key="frame" x="50" y="0.0" width="290" height="40"/>
@@ -49,6 +52,9 @@
                                                 </constraints>
                                                 <color key="tintColor" systemColor="labelColor"/>
                                                 <state key="normal" backgroundImage="magnifyingglass" catalog="system"/>
+                                                <connections>
+                                                    <action selector="onSearchClicked:" destination="fY8-Vu-Fjy" eventType="touchUpInside" id="fXH-Tn-Nc9"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -108,6 +114,14 @@
                             <constraint firstItem="gM8-1J-vCC" firstAttribute="leading" secondItem="hc4-Ta-dzD" secondAttribute="leading" id="Vgy-eT-dxF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="Ud5-B7-I2o" id="E67-Cd-uOf"/>
+                        <outlet property="conditionImageView" destination="YTP-tn-7kS" id="67O-bA-5Ig"/>
+                        <outlet property="locationBtn" destination="mdt-Hg-6Af" id="Koa-BV-SVO"/>
+                        <outlet property="searchBtn" destination="e2E-mb-HwF" id="jCT-cD-5vh"/>
+                        <outlet property="searchTextField" destination="uGO-wi-que" id="Fs6-aa-GAA"/>
+                        <outlet property="temperatureLabel" destination="yxv-NG-spU" id="3nm-7V-dZI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mmr-f4-nuX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
