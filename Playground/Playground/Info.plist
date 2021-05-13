@@ -23,7 +23,7 @@
 	<key>UILaunchStoryboardName</key>
 	<string>Portrait</string>
 	<key>UIMainStoryboardFile</key>
-	<string>Tipsplit</string>
+	<string>Weather</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

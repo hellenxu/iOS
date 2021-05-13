@@ -47,6 +47,9 @@
 		11ED01922642408200D5C087 /* TipResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ED01912642408200D5C087 /* TipResultViewController.swift */; };
 		11ED0197264CCF6C00D5C087 /* light_background.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 11ED0195264CCF6B00D5C087 /* light_background.pdf */; };
 		11ED0198264CCF6C00D5C087 /* dark_background.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 11ED0196264CCF6B00D5C087 /* dark_background.pdf */; };
+		11ED019C264CCFDD00D5C087 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ED019B264CCFDD00D5C087 /* WeatherViewController.swift */; };
+		11ED01A0264CD00400D5C087 /* Weather.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11ED019F264CD00400D5C087 /* Weather.storyboard */; };
+		11ED01A3264CD0CF00D5C087 /* WeatherHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ED01A2264CD0CF00D5C087 /* WeatherHub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +95,9 @@
 		11ED01912642408200D5C087 /* TipResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipResultViewController.swift; sourceTree = "<group>"; };
 		11ED0195264CCF6B00D5C087 /* light_background.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = light_background.pdf; sourceTree = "<group>"; };
 		11ED0196264CCF6B00D5C087 /* dark_background.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = dark_background.pdf; sourceTree = "<group>"; };
+		11ED019B264CCFDD00D5C087 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		11ED019F264CD00400D5C087 /* Weather.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Weather.storyboard; sourceTree = "<group>"; };
+		11ED01A2264CD0CF00D5C087 /* WeatherHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherHub.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +137,7 @@
 				1102DE4A260C3D1600BDBBA3 /* QuizzzMultipleChoice.storyboard */,
 				118E5246262543E300BA8824 /* BMICalculator.storyboard */,
 				11ED018726423B6800D5C087 /* Tipsplit.storyboard */,
+				11ED019F264CD00400D5C087 /* Weather.storyboard */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -145,6 +152,7 @@
 				1102DE5426142E6D00BDBBA3 /* Story.swift */,
 				11ED01842640E6E800D5C087 /* BmiCalculator.swift */,
 				11ED018D26423C2400D5C087 /* TipCalculator.swift */,
+				11ED01A2264CD0CF00D5C087 /* WeatherHub.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -164,6 +172,7 @@
 				11ED017D263BB6B000D5C087 /* ResultViewController.swift */,
 				11ED018A26423BBB00D5C087 /* TipCalculatorViewController.swift */,
 				11ED01912642408200D5C087 /* TipResultViewController.swift */,
+				11ED019B264CCFDD00D5C087 /* WeatherViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -274,6 +283,7 @@
 				1193D235260053F800799C6D /* Calculator.storyboard in Resources */,
 				1190E92F21DF089E001F52C4 /* LaunchScreen.storyboard in Resources */,
 				1155B21221EECD5700D08EAF /* About.html in Resources */,
+				11ED01A0264CD00400D5C087 /* Weather.storyboard in Resources */,
 				1193D239260194E500799C6D /* Keyboard.storyboard in Resources */,
 				11ED018826423B6800D5C087 /* Tipsplit.storyboard in Resources */,
 				1102DE45260AE61F00BDBBA3 /* Destiny.storyboard in Resources */,
@@ -297,10 +307,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11ED01A3264CD0CF00D5C087 /* WeatherHub.swift in Sources */,
 				1102DDB8260300DF00BDBBA3 /* CountDownViewController.swift in Sources */,
 				118E524C262694CC00BA8824 /* BMICalculatorViewController.swift in Sources */,
 				1102DDC62605020700BDBBA3 /* Question.swift in Sources */,
 				11ED01922642408200D5C087 /* TipResultViewController.swift in Sources */,
+				11ED019C264CCFDD00D5C087 /* WeatherViewController.swift in Sources */,
 				11ED017E263BB6B000D5C087 /* ResultViewController.swift in Sources */,
 				1155B20E21EC201E00D08EAF /* AboutViewController.swift in Sources */,
 				1193D24726019C2100799C6D /* KeyboardViewController.swift in Sources */,
