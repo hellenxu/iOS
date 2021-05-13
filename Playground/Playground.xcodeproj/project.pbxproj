@@ -45,6 +45,8 @@
 		11ED018B26423BBB00D5C087 /* TipCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ED018A26423BBB00D5C087 /* TipCalculatorViewController.swift */; };
 		11ED018E26423C2400D5C087 /* TipCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ED018D26423C2400D5C087 /* TipCalculator.swift */; };
 		11ED01922642408200D5C087 /* TipResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ED01912642408200D5C087 /* TipResultViewController.swift */; };
+		11ED0197264CCF6C00D5C087 /* light_background.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 11ED0195264CCF6B00D5C087 /* light_background.pdf */; };
+		11ED0198264CCF6C00D5C087 /* dark_background.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 11ED0196264CCF6B00D5C087 /* dark_background.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +90,8 @@
 		11ED018A26423BBB00D5C087 /* TipCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorViewController.swift; sourceTree = "<group>"; };
 		11ED018D26423C2400D5C087 /* TipCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculator.swift; sourceTree = "<group>"; };
 		11ED01912642408200D5C087 /* TipResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipResultViewController.swift; sourceTree = "<group>"; };
+		11ED0195264CCF6B00D5C087 /* light_background.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = light_background.pdf; sourceTree = "<group>"; };
+		11ED0196264CCF6B00D5C087 /* dark_background.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = dark_background.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +187,7 @@
 		1190E92321DF089C001F52C4 /* Playground */ = {
 			isa = PBXGroup;
 			children = (
+				11ED019A264CCF8600D5C087 /* background */,
 				1102DDB52601A71D00BDBBA3 /* sounds */,
 				1155B21121EECD5700D08EAF /* About.html */,
 				1190E92421DF089C001F52C4 /* AppDelegate.swift */,
@@ -193,6 +198,15 @@
 				1190E93021DF089E001F52C4 /* Info.plist */,
 			);
 			path = Playground;
+			sourceTree = "<group>";
+		};
+		11ED019A264CCF8600D5C087 /* background */ = {
+			isa = PBXGroup;
+			children = (
+				11ED0196264CCF6B00D5C087 /* dark_background.pdf */,
+				11ED0195264CCF6B00D5C087 /* light_background.pdf */,
+			);
+			path = background;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11ED0198264CCF6C00D5C087 /* dark_background.pdf in Resources */,
 				1102DDB32601A70300BDBBA3 /* C.wav in Resources */,
 				1102DDB22601A70300BDBBA3 /* E.wav in Resources */,
 				1102DDB02601A70300BDBBA3 /* G.wav in Resources */,
@@ -262,6 +277,7 @@
 				1193D239260194E500799C6D /* Keyboard.storyboard in Resources */,
 				11ED018826423B6800D5C087 /* Tipsplit.storyboard in Resources */,
 				1102DE45260AE61F00BDBBA3 /* Destiny.storyboard in Resources */,
+				11ED0197264CCF6C00D5C087 /* light_background.pdf in Resources */,
 				1190E92C21DF089E001F52C4 /* Assets.xcassets in Resources */,
 				1190E92A21DF089C001F52C4 /* Main.storyboard in Resources */,
 				1102DE4B260C3D1600BDBBA3 /* QuizzzMultipleChoice.storyboard in Resources */,
