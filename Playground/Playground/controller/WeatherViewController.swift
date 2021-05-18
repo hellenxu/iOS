@@ -17,6 +17,8 @@ class WeatherViewController: UIViewController {
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var cityLabel: UILabel!
     
+    let weatherHub = WeatherHub()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,6 +28,11 @@ class WeatherViewController: UIViewController {
     }
     
     @IBAction func onSearchClicked(_ sender: UIButton) {
+        if searchTextField.text?.isEmpty == true {
+            return
+        }
+        
+        weatherHub.queryWeather(cityName: searchTextField.text ?? "Toronto")
     }
     
 }
