@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WeatherViewController: UIViewController {
+class WeatherViewController: UIViewController, WeatherUpdateDelegate {
 
     @IBOutlet weak var locationBtn: UIButton!
     @IBOutlet weak var searchTextField: UITextField!
@@ -17,11 +17,12 @@ class WeatherViewController: UIViewController {
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var cityLabel: UILabel!
     
-    let weatherHub = WeatherHub()
+    var weatherHub = WeatherHub()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        weatherHub.delegate = self
     }
     
     @IBAction func onLocationClicked(_ sender: UIButton) {
@@ -35,4 +36,10 @@ class WeatherViewController: UIViewController {
         weatherHub.queryWeather(cityName: searchTextField.text ?? "Toronto")
     }
     
+    func onWeatherUpdated(weather: WeatherUIModel) {
+//        temperatureLabel.text = weather.temperatureString
+//        cityLabel.text = weather.cityName
+//        conditionImageView.image = UIImage(named: weather.conditionImageName)
+        print("xxl-updated: \(weather.cityName)")
+    }
 }
