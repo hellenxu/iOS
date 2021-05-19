@@ -9,7 +9,7 @@
 import UIKit
 
 class WeatherViewController: UIViewController, WeatherUpdateDelegate {
-
+    
     @IBOutlet weak var locationBtn: UIButton!
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var searchBtn: UIButton!
@@ -37,9 +37,12 @@ class WeatherViewController: UIViewController, WeatherUpdateDelegate {
     }
     
     func onWeatherUpdated(weather: WeatherUIModel) {
-//        temperatureLabel.text = weather.temperatureString
-//        cityLabel.text = weather.cityName
-//        conditionImageView.image = UIImage(named: weather.conditionImageName)
-        print("xxl-updated: \(weather.cityName)")
+        print("xxl-updated: \(weather.cityName); \(Thread.current.isMainThread)")
+        
+        DispatchQueue.main.async {
+            self.temperatureLabel.text = weather.temperatureString
+            self.cityLabel.text = weather.cityName
+            self.conditionImageView.image = UIImage(systemName: weather.conditionImageName)
+        }
     }
 }
