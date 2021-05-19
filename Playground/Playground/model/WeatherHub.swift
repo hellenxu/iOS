@@ -23,21 +23,26 @@ struct WeatherHub{
             
             let urlSession = URLSession(configuration: .default)
             
-            let sessionTask = urlSession.dataTask(with: validUrl, completionHandler: handleRequestCompletion(data:response:err:))
+            let sessionTask = urlSession.dataTask(with: validUrl) { (data, response, err) in
+                if err != nil {
+                    return
+                }
+                
+                if let validData = data {
+                    print("xxl-result: \(String(data: validData, encoding: .utf8) ?? "no data")")
+                    let decoder = JSONDecoder()
+                    do {
+                        let weatherInfo = try decoder.decode(WeatherResponse.self, from: validData)
+                        
+                    } catch {
+                        print("xxl-error: \(String(describing: error))")
+                    }
+                    
+                }
+                
+            }
             
             sessionTask.resume()
         }
     }
-
-    private func handleRequestCompletion(data: Data?, response: URLResponse?, err: Error?) {
-        if err != nil {
-            return
-        }
-        
-        if let validData = data {
-            print("xxl-result: \(String(data: validData, encoding: .utf8) ?? "no data")")
-        }
-        
-    }
-    
 }
