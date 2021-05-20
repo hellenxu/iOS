@@ -41,6 +41,7 @@
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="right" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uGO-wi-que">
                                                 <rect key="frame" x="50" y="0.0" width="250" height="40"/>
+                                                <color key="backgroundColor" systemColor="systemFillColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="go"/>
                                             </textField>
@@ -67,20 +68,20 @@
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X2b-bl-XXf">
-                                        <rect key="frame" x="98.333333333333329" y="180" width="251.66666666666669" height="95.666666666666686"/>
+                                        <rect key="frame" x="91.333333333333343" y="180" width="258.66666666666663" height="95.666666666666686"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20.3" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxv-NG-spU">
-                                                <rect key="frame" x="0.0" y="0.0" width="156.66666666666666" height="95.666666666666671"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="163.66666666666666" height="95.666666666666671"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="80"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="˚" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TxF-7i-9Aq">
-                                                <rect key="frame" x="156.66666666666669" y="0.0" width="40" height="95.666666666666671"/>
+                                                <rect key="frame" x="163.66666666666669" y="0.0" width="40" height="95.666666666666671"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wkj-n8-zPW">
-                                                <rect key="frame" x="196.66666666666669" y="0.0" width="55" height="95.666666666666671"/>
+                                                <rect key="frame" x="203.66666666666669" y="0.0" width="55" height="95.666666666666671"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -143,6 +144,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemFillColor">
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
