@@ -12,7 +12,7 @@ struct WeatherHub{
     private let weatherSearchUrl = "https://api.openweathermap.org/data/2.5/weather?appid=10bea36c7ac4397e6542ac78a1625619&units=metric&q="
     var delegate: WeatherUpdateDelegate?
     
-    func queryWeather(cityName: String) {
+    func queryWeather(_ cityName: String) {
         let queryUrl = weatherSearchUrl + cityName
         
         sendQueryRequest(url: queryUrl)

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WeatherViewController: UIViewController, WeatherUpdateDelegate {
+class WeatherViewController: UIViewController, WeatherUpdateDelegate, UITextFieldDelegate {
     
     @IBOutlet weak var locationBtn: UIButton!
     @IBOutlet weak var searchTextField: UITextField!
@@ -23,6 +23,7 @@ class WeatherViewController: UIViewController, WeatherUpdateDelegate {
         super.viewDidLoad()
         
         weatherHub.delegate = self
+        searchTextField.delegate = self
     }
     
     @IBAction func onLocationClicked(_ sender: UIButton) {
@@ -33,7 +34,7 @@ class WeatherViewController: UIViewController, WeatherUpdateDelegate {
             return
         }
         
-        weatherHub.queryWeather(cityName: searchTextField.text ?? "Toronto")
+        weatherHub.queryWeather(searchTextField.text ?? "Toronto")
     }
     
     func onWeatherUpdated(weather: WeatherUIModel) {
@@ -44,5 +45,27 @@ class WeatherViewController: UIViewController, WeatherUpdateDelegate {
             self.cityLabel.text = weather.cityName
             self.conditionImageView.image = UIImage(systemName: weather.conditionImageName)
         }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        searchTextField.endEditing(true)
+        return true
+    }
+    
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        if textField.text != "" {
+            return true
+        } else {
+            textField.placeholder = "Please input a city name."
+            return false
+        }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if let city = searchTextField.text {
+            weatherHub.queryWeather(city)
+        }
+        
+        textField.text = ""
     }
 }
