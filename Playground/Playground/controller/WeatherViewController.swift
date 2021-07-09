@@ -33,6 +33,7 @@ class WeatherViewController: UIViewController {
     }
     
     @IBAction func onLocationClicked(_ sender: UIButton) {
+        locManager.requestLocation()
     }
     
     @IBAction func onSearchClicked(_ sender: UIButton) {
@@ -86,10 +87,11 @@ extension WeatherViewController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.last {
-            let altitude = location.coordinate.latitude
+            let latitude = location.coordinate.latitude
             let longitude = location.coordinate.longitude
             
-            print("xxl-got location: \(altitude); \(longitude)")
+            print("xxl-got location: \(latitude); \(longitude)")
+            weatherHub.queryWeather(latitude, longitude)
         }
         
         print("xxl-got location: no last location")

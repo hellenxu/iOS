@@ -7,13 +7,20 @@
 //
 
 import Foundation
+import CoreLocation
 
 struct WeatherHub{
-    private let weatherSearchUrl = "https://api.openweathermap.org/data/2.5/weather?appid=10bea36c7ac4397e6542ac78a1625619&units=metric&q="
+    private let weatherSearchUrl = "https://api.openweathermap.org/data/2.5/weather?appid=10bea36c7ac4397e6542ac78a1625619&units=metric"
     var delegate: WeatherUpdateDelegate?
     
     func queryWeather(_ cityName: String) {
-        let queryUrl = weatherSearchUrl + cityName
+        let queryUrl = weatherSearchUrl + "&q=\(cityName)"
+        
+        sendQueryRequest(url: queryUrl)
+    }
+    
+    func queryWeather(_ lat: CLLocationDegrees, _ lon: CLLocationDegrees) {
+        let queryUrl = weatherSearchUrl + "&lat=\(lat)&lon=\(lon)"
         
         sendQueryRequest(url: queryUrl)
     }
