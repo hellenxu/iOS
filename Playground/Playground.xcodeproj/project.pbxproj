@@ -39,6 +39,8 @@
 		1193D235260053F800799C6D /* Calculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1193D234260053F800799C6D /* Calculator.storyboard */; };
 		1193D239260194E500799C6D /* Keyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1193D238260194E500799C6D /* Keyboard.storyboard */; };
 		1193D24726019C2100799C6D /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1193D24626019C2100799C6D /* KeyboardViewController.swift */; };
+		11D0AADC26993BC700408B0B /* BitReporter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11D0AADB26993BC700408B0B /* BitReporter.storyboard */; };
+		11D0AADF26993E5300408B0B /* BitCoinReporterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D0AADE26993E5300408B0B /* BitCoinReporterViewController.swift */; };
 		11EA25DE265467C200678CE7 /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA25DD265467C100678CE7 /* WeatherResponse.swift */; };
 		11EA25E42654B66B00678CE7 /* WeatherUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA25E32654B66B00678CE7 /* WeatherUIModel.swift */; };
 		11ED017E263BB6B000D5C087 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ED017D263BB6B000D5C087 /* ResultViewController.swift */; };
@@ -87,6 +89,8 @@
 		1193D234260053F800799C6D /* Calculator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calculator.storyboard; sourceTree = "<group>"; };
 		1193D238260194E500799C6D /* Keyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Keyboard.storyboard; sourceTree = "<group>"; };
 		1193D24626019C2100799C6D /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		11D0AADB26993BC700408B0B /* BitReporter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BitReporter.storyboard; sourceTree = "<group>"; };
+		11D0AADE26993E5300408B0B /* BitCoinReporterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitCoinReporterViewController.swift; sourceTree = "<group>"; };
 		11EA25DD265467C100678CE7 /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
 		11EA25E32654B66B00678CE7 /* WeatherUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherUIModel.swift; sourceTree = "<group>"; };
 		11ED017D263BB6B000D5C087 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +142,7 @@
 				118E5246262543E300BA8824 /* BMICalculator.storyboard */,
 				11ED018726423B6800D5C087 /* Tipsplit.storyboard */,
 				11ED019F264CD00400D5C087 /* Weather.storyboard */,
+				11D0AADB26993BC700408B0B /* BitReporter.storyboard */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 				11ED018A26423BBB00D5C087 /* TipCalculatorViewController.swift */,
 				11ED01912642408200D5C087 /* TipResultViewController.swift */,
 				11ED019B264CCFDD00D5C087 /* WeatherViewController.swift */,
+				11D0AADE26993E5300408B0B /* BitCoinReporterViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -275,6 +281,7 @@
 				1190E92F21DF089E001F52C4 /* LaunchScreen.storyboard in Resources */,
 				1155B21221EECD5700D08EAF /* About.html in Resources */,
 				11ED01A0264CD00400D5C087 /* Weather.storyboard in Resources */,
+				11D0AADC26993BC700408B0B /* BitReporter.storyboard in Resources */,
 				1193D239260194E500799C6D /* Keyboard.storyboard in Resources */,
 				11ED018826423B6800D5C087 /* Tipsplit.storyboard in Resources */,
 				1102DE45260AE61F00BDBBA3 /* Destiny.storyboard in Resources */,
@@ -302,6 +309,7 @@
 				118E524C262694CC00BA8824 /* BMICalculatorViewController.swift in Sources */,
 				1102DDC62605020700BDBBA3 /* Question.swift in Sources */,
 				11ED01922642408200D5C087 /* TipResultViewController.swift in Sources */,
+				11D0AADF26993E5300408B0B /* BitCoinReporterViewController.swift in Sources */,
 				11ED019C264CCFDD00D5C087 /* WeatherViewController.swift in Sources */,
 				11ED017E263BB6B000D5C087 /* ResultViewController.swift in Sources */,
 				1155B20E21EC201E00D08EAF /* AboutViewController.swift in Sources */,

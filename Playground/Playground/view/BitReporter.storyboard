@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MT9-XB-gpN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bit Coin Reporter View Controller-->
+        <scene sceneID="IgF-o3-21b">
+            <objects>
+                <viewController id="MT9-XB-gpN" customClass="BitCoinReporterViewController" customModule="Playground" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Otj-BF-M7N">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wsz-mO-Nqv">
+                                <rect key="frame" x="0.0" y="642" width="414" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="dQe-S1-JMp"/>
+                                </constraints>
+                            </pickerView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Mrp-sB-OHb">
+                                <rect key="frame" x="0.0" y="54" width="414" height="165"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ByteCoin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eqz-m2-CAU">
+                                        <rect key="frame" x="109.5" y="0.0" width="195" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="fI6-Xh-Irp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <color key="textColor" name="weatherConditionColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kdF-Qh-Ju1">
+                                        <rect key="frame" x="87" y="85" width="240" height="80"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Qgi-Wu-qSR">
+                                                <rect key="frame" x="10" y="0.0" width="220" height="80"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCn-F9-420">
+                                                        <rect key="frame" x="0.0" y="24.5" width="160.5" height="31.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EUR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggT-tq-T7k">
+                                                        <rect key="frame" x="170.5" y="24.5" width="49.5" height="31.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="0yH-7p-awG"/>
+                                            <constraint firstItem="Qgi-Wu-qSR" firstAttribute="top" secondItem="kdF-Qh-Ju1" secondAttribute="top" id="Suf-rC-e0d"/>
+                                            <constraint firstAttribute="bottom" secondItem="Qgi-Wu-qSR" secondAttribute="bottom" id="WAu-pK-tXo"/>
+                                            <constraint firstItem="Qgi-Wu-qSR" firstAttribute="leading" secondItem="kdF-Qh-Ju1" secondAttribute="leading" constant="10" id="i1J-8o-kyy"/>
+                                            <constraint firstAttribute="trailing" secondItem="Qgi-Wu-qSR" secondAttribute="trailing" constant="10" id="syF-aO-f4a"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="H2T-Gx-R7F"/>
+                        <color key="backgroundColor" red="0.59999999999999998" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="H2T-Gx-R7F" firstAttribute="trailing" secondItem="Mrp-sB-OHb" secondAttribute="trailing" id="1sw-UI-urQ"/>
+                            <constraint firstItem="Mrp-sB-OHb" firstAttribute="leading" secondItem="H2T-Gx-R7F" secondAttribute="leading" id="Qae-Fe-fJf"/>
+                            <constraint firstItem="wsz-mO-Nqv" firstAttribute="trailing" secondItem="H2T-Gx-R7F" secondAttribute="trailing" id="Sgm-ws-nab"/>
+                            <constraint firstItem="H2T-Gx-R7F" firstAttribute="bottom" secondItem="wsz-mO-Nqv" secondAttribute="bottom" id="TfM-MC-zp1"/>
+                            <constraint firstItem="wsz-mO-Nqv" firstAttribute="leading" secondItem="H2T-Gx-R7F" secondAttribute="leading" id="jxZ-5h-Wpe"/>
+                            <constraint firstItem="Mrp-sB-OHb" firstAttribute="top" secondItem="H2T-Gx-R7F" secondAttribute="top" constant="10" id="xoz-AM-uxn"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Gn-Pn-pof" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-367" y="81"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="weatherConditionColor">
+            <color red="0.11800000071525574" green="0.29899999499320984" blue="0.31999999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
