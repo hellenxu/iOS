@@ -41,6 +41,7 @@
 		1193D24726019C2100799C6D /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1193D24626019C2100799C6D /* KeyboardViewController.swift */; };
 		11D0AADC26993BC700408B0B /* BitReporter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11D0AADB26993BC700408B0B /* BitReporter.storyboard */; };
 		11D0AADF26993E5300408B0B /* BitCoinReporterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D0AADE26993E5300408B0B /* BitCoinReporterViewController.swift */; };
+		11D0AAE426994ECA00408B0B /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D0AAE326994ECA00408B0B /* CoinManager.swift */; };
 		11EA25DE265467C200678CE7 /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA25DD265467C100678CE7 /* WeatherResponse.swift */; };
 		11EA25E42654B66B00678CE7 /* WeatherUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA25E32654B66B00678CE7 /* WeatherUIModel.swift */; };
 		11ED017E263BB6B000D5C087 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ED017D263BB6B000D5C087 /* ResultViewController.swift */; };
@@ -91,6 +92,7 @@
 		1193D24626019C2100799C6D /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		11D0AADB26993BC700408B0B /* BitReporter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BitReporter.storyboard; sourceTree = "<group>"; };
 		11D0AADE26993E5300408B0B /* BitCoinReporterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitCoinReporterViewController.swift; sourceTree = "<group>"; };
+		11D0AAE326994ECA00408B0B /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
 		11EA25DD265467C100678CE7 /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
 		11EA25E32654B66B00678CE7 /* WeatherUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherUIModel.swift; sourceTree = "<group>"; };
 		11ED017D263BB6B000D5C087 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				11ED01A2264CD0CF00D5C087 /* WeatherHub.swift */,
 				11EA25DD265467C100678CE7 /* WeatherResponse.swift */,
 				11EA25E32654B66B00678CE7 /* WeatherUIModel.swift */,
+				11D0AAE326994ECA00408B0B /* CoinManager.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				1102DE5526142E6D00BDBBA3 /* Story.swift in Sources */,
 				1190E92521DF089C001F52C4 /* AppDelegate.swift in Sources */,
 				1102DE5226142E5E00BDBBA3 /* StoryHub.swift in Sources */,
+				11D0AAE426994ECA00408B0B /* CoinManager.swift in Sources */,
 				11ED01852640E6E800D5C087 /* BmiCalculator.swift in Sources */,
 				1102DDD026096B8600BDBBA3 /* QuizHub.swift in Sources */,
 				11EA25DE265467C200678CE7 /* WeatherResponse.swift in Sources */,

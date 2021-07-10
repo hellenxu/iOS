@@ -84,6 +84,11 @@
                             <constraint firstItem="Mrp-sB-OHb" firstAttribute="top" secondItem="H2T-Gx-R7F" secondAttribute="top" constant="10" id="xoz-AM-uxn"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="currencyPickerView" destination="wsz-mO-Nqv" id="hAl-H5-FyS"/>
+                        <outlet property="currencyUnitLabel" destination="ggT-tq-T7k" id="b9I-AG-HcT"/>
+                        <outlet property="valueLabel" destination="QCn-F9-420" id="g3z-p1-fKE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Gn-Pn-pof" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
