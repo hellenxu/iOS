@@ -13,7 +13,7 @@ class BitCoinReporterViewController: UIViewController {
     @IBOutlet weak var currencyUnitLabel: UILabel!
     @IBOutlet weak var currencyPickerView: UIPickerView!
     
-    let coinManager = CoinManager()
+    var coinManager = CoinManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +21,7 @@ class BitCoinReporterViewController: UIViewController {
         // Do any additional setup after loading the view.
         currencyPickerView.dataSource = self
         currencyPickerView.delegate = self
+        coinManager.delegate = self
     }
 }
 
@@ -42,8 +43,20 @@ extension BitCoinReporterViewController: UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let selectedCurrency = coinManager.currencyArray[row]
         print("xxl-selected: \(selectedCurrency)")
-        let value = coinManager.getCoinValue(currencyUnit: selectedCurrency)
-        valueLabel.text = value
-        currencyUnitLabel.text = selectedCurrency
+        coinManager.getCoinValue(currencyUnit: selectedCurrency)
+    }
+}
+
+extension BitCoinReporterViewController: CoinValueDelegate {
+    func onValueFetchFailed() {
+        print("xxl-vc: failed to fetch rates")
+    }
+    
+    func onValueFetchSucceed(model: SpecificRateUIModel) {
+        
+        DispatchQueue.main.async {
+            self.valueLabel.text = model.rate
+            self.currencyUnitLabel.text = model.currency
+        }
     }
 }
